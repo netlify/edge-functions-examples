@@ -5,7 +5,8 @@
   "version": "1.0.0",
   "scripts": {
     "cli": "ntl-internal",
-    "gen": "eleventy"
+    "gen": "eleventy",
+    "dev": "eleventy --watch"
   },
   "repository": {
     "type": "git",
