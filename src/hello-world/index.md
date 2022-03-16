@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Hello World Edge Handler Example
+shortName: Hello World
 ---
 
 # Hello World Edge Handler

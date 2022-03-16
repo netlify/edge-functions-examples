@@ -17,8 +17,10 @@
   </head>
 
   <body>
+    {% include "header.html" %}
     <main class="main">
     {{ content | safe }}
     </main>
+    {% include "footer.html" %}
   </body>
 </html>

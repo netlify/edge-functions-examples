@@ -2,6 +2,9 @@
   --color-bg: #ffffff;
   --color-fg: #151a1e;
 
+  --color-gray-L300: #e7eaed;
+  --color-gray-L800: #151a1e;
+
   --font-family-main: Mulish, sans-serif;
   --font-weight-normal: 300;
   --font-weight-bold: 900;
@@ -194,4 +197,46 @@ pre code {
   background: 0 0;
   box-shadow: none;
   display: inline;
+}
+
+.header {
+  max-width: var(--max-width-main);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.header__logo {
+  height: 4rem;
+}
+
+.header__logo svg {
+  height: 100%;
+}
+
+.header__title {
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+  color: var(--color-gray-L800);
+  max-width: none;
+}
+
+.footer {
+}
+
+.footer__copyright {
+  border-top: 1px solid var(--color-gray-L300);
+  padding: 2.625em 0 1.5em;
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  color: var(--color-gray-L800);
+  max-width: none;
 }
