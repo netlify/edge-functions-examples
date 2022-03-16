@@ -1,6 +1,6 @@
 [build]
   command = "echo something soon"
-  publish = "dist"
+  publish = "."
 
 [[plugins]]
   package = "@netlify-labs/plugin-edge-handlers-test"

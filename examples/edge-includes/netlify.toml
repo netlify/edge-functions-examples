@@ -6,5 +6,5 @@
   package = "@netlify-labs/plugin-edge-handlers-test"
 
 [[edge_handlers]]
-  handler = "hello-world"
-  path = "/hello-world"
+  handler = "edge-include"
+  path = "/include"

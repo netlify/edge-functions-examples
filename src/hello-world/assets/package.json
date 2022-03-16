@@ -6,6 +6,11 @@
   "scripts": {
     "cli": "ntl-internal"
   },
+  "dependencies": {
+    "@netlify-labs/cli-internal": "^1.0.12",
+    "@netlify-labs/plugin-edge-handlers-test": "^1.0.3"
+  },
+
   "author": "",
   "license": "MIT"
 }
