@@ -1,0 +1,24 @@
+{
+
+  "name": "edge-handlers-examples",
+  "description": "Let's grow the list...",
+  "version": "1.0.0",
+  "scripts": {
+    "cli": "ntl-internal"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netlify/edge-handlers-examples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netlify/edge-handlers-examples/issues"
+  },
+  "homepage": "https://github.com/netlify/edge-handlers-examples#readme",
+  "dependencies": {
+    "@netlify-labs/cli-internal": "^1.0.12",
+    "@netlify-labs/plugin-edge-handlers-test": "^1.0.3"
+  }
+}
