@@ -4,7 +4,8 @@
   "description": "Let's grow the list...",
   "version": "1.0.0",
   "scripts": {
-    "cli": "ntl-internal"
+    "cli": "ntl-internal",
+    "gen": "eleventy"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/netlify/edge-handlers-examples#readme",
   "dependencies": {
     "@netlify-labs/cli-internal": "^1.0.12",
-    "@netlify-labs/plugin-edge-handlers-test": "^1.0.3"
+    "@netlify-labs/plugin-edge-handlers-test": "^1.0.3",
+    "@11ty/eleventy": "v2.0.0-canary.3"
   }
 }

@@ -1,0 +1,10 @@
+[build]
+  command = "echo something soon"
+  publish = "dist"
+
+[[plugins]]
+  package = "@netlify-labs/plugin-edge-handlers-test"
+
+[[edge_handlers]]
+  handler = "hello-world"
+  path = "/hello-world"
