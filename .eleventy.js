@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/hello-world/assets": "hello-world" });
   // eleventyConfig.addPassthroughCopy({ "src/MY-NEW-EXAMPLE-FOLDER/assets": "MY-NEW-EXAMPLE-FOLDER" });
 
+
   eleventyConfig.ignores.add("/src/**/assets/README.md");
 
   return {
