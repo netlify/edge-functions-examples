@@ -1,0 +1,11 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "Hello, world!",
+  "main": "index.js",
+  "scripts": {
+    "cli": "ntl-internal"
+  },
+  "author": "",
+  "license": "MIT"
+}
