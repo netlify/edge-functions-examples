@@ -52,5 +52,5 @@ We're using eleventy as a build mechanic to generate new example folders with a 
 
 1. Duplicate the `/src/hello-world` folder and name your new folder appropriately
 2. Add a pass through copy rule to the `.eleventy.js` config file to use the folder name of your new example folder
-3. Generate a new example folder in the repo from your new source with `npm run gen`. (You can also run `npm run dev` to watch the src folder for changes as you build you edge handlers)
+3. Generate a new example folder in the repo from your new source with `npm run gen`. (You can also run `npm run dev` to watch the src folder for changes as you build your edge handlers)
 
