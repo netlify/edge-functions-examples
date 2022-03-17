@@ -6,17 +6,15 @@
   package = "@netlify-labs/plugin-edge-handlers-test"
 
 
-
-# Serve our index page
-[[edge_handlers]]
-  path = "/"
-  handler = "[page]"
-
 # Serve pages explaining each example 
 [[edge_handlers]]
   path = "/example/*"
   handler = "[page]"
 
+# Serve our index page
+[[edge_handlers]]
+  path = "/"
+  handler = "[page]"
 
 
 # The URL for each edge hander

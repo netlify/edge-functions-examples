@@ -2,12 +2,10 @@ import layout from "../../components/layout.js";
 
 import pageHome from "../../examples/home/index.js";
 import pageHello from "../../examples/hello/index.js";
-import pageTransforms from "../../examples/transforms/index.js";
 
 const pages = {
   "home": pageHome,
-  "hello": pageHello,
-  "transforms": pageTransforms
+  "hello": pageHello
 };
 
 export default async(Request) => {
