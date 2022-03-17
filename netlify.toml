@@ -1,10 +1,31 @@
 [build]
-  command = "echo something soon"
-  publish = "dist"
+  command = "echo No build for this site, we're living on the edge"
+  publish = "public"
 
 [[plugins]]
   package = "@netlify-labs/plugin-edge-handlers-test"
 
+
+
+# Serve our index page
 [[edge_handlers]]
+  path = "/"
+  handler = "[page]"
+
+# Serve pages explaining each example 
+[[edge_handlers]]
+  path = "/example/*"
+  handler = "[page]"
+
+
+
+# The URL for each edge hander
+[[edge_handlers]]
+  path = "/hello"
   handler = "hello"
-  path = "/test"
+
+# [[edge_handlers]]
+#   path = "/transforms"
+#   handler = "transforms"
+
+

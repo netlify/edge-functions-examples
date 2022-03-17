@@ -48,9 +48,20 @@
 
 ### Creating a new example
 
-We're using eleventy as a build mechanic to generate new example folders with a common set of assets and to include the same CSS and format.
+We're using eleventy as a build mechanic to generate new example folders with a common set of assets and to include the same CSS and format and boilerplate.
 
 1. Duplicate the `/src/hello-world` folder and name your new folder appropriately
 2. Add a pass through copy rule to the `.eleventy.js` config file to use the folder name of your new example folder
 3. Generate a new example folder in the repo from your new source with `npm run gen`. (You can also run `npm run dev` to watch the src folder for changes as you build your edge handlers)
+
+### Serving your examples locally
+
+The steps above generate an example folder for you and will update it when you edit your filers in the src. But we'll use `netlify dev` to serve your generated examples.
+
+1. Leave your terminal session with `npm run dev` watching your src. Open another terminal
+2. Move into the desired example folder which was generated for you
+3. This is a new site and project, so run `npm i` to install dependencies.
+4. run  `npm run cli -- dev` to have the internal version of the CLI run netlify dev and serve your site, functions and edge handlers.
+5. Do your development work in the `src/YOUR-EXAMPLE` folder. Changes will be built into the folder that you are serving.
+
 
