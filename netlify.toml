@@ -23,8 +23,9 @@
   path = "/hello"
   handler = "hello"
 
-# [[edge_handlers]]
-#   path = "/transforms"
-#   handler = "transforms"
+[[edge_handlers]]
+  path = "/transform"
+  handler = "transform"
+
 
 

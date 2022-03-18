@@ -1,5 +1,5 @@
 export default async(Request) => {
-  return new Response("Make this into the transform example :)", {
+  return new Response("Hello, World!", {
     headers: { "content-type": "text/html" },
   });
 };
