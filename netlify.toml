@@ -1,10 +1,12 @@
+[dev]
+  framework = "#static"
+
 [build]
-  command = "echo No build for this site, we're living on the edge"
+  command = "echo No build for this site, we are living on the edge"
   publish = "public"
 
 [[plugins]]
   package = "@netlify-labs/plugin-edge-handlers-test"
-
 
 # Serve pages explaining each example 
 [[edge_handlers]]
@@ -16,8 +18,7 @@
   path = "/"
   handler = "[page]"
 
-
-# The URL for each edge hander
+# The URL for each edge handler
 [[edge_handlers]]
   path = "/hello"
   handler = "hello"

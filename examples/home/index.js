@@ -1,9 +1,7 @@
 export default function page() {
   return `
-  <header>
-    <h1>Edge Handler examples</h1>
-    <h2>Follow the links for different edge examples</h2>
-  </header>
+  <h1>Edge Handler examples</h1>
+  <h2>Follow the links for different edge examples</h2>
   <h3>Try these:</h3>
   <ul>
     <li><a href="/example/hello">Static Hello World page</a></li>
