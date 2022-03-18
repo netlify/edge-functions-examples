@@ -44,7 +44,7 @@
 
 ## Notes for development of these examples
 
-(To be removed before publishing)
+(To be removed before publishing) OUT OF DATE
 
 ### Creating a new example
 
