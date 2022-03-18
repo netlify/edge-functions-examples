@@ -2,5 +2,3 @@
 .netlify
 
 node_modules
-
-src/_includes/netlifycss.css

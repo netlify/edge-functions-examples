@@ -7,6 +7,7 @@ export default function page() {
   <h3>Try these:</h3>
   <ul>
     <li><a href="/example/hello">Static Hello World page</a></li>
+    <li><a href="/example/transform">transform HTTP responses</a></li>
 
     <!--
     <li><a href="/rewrite">Deno rewrite to hello world</a></li>
