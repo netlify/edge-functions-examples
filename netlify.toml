@@ -8,6 +8,15 @@
 [[plugins]]
   package = "@netlify-labs/plugin-edge-handlers-test"
 
+# The URL for each edge handler
+[[edge_handlers]]
+  handler = "transform"
+  path = "/*"
+
+[[edge_handlers]]
+  path = "/hello"
+  handler = "hello"
+
 # Serve pages explaining each example 
 [[edge_handlers]]
   path = "/example/*"
@@ -18,14 +27,8 @@
   path = "/"
   handler = "[page]"
 
-# The URL for each edge handler
-[[edge_handlers]]
-  path = "/hello"
-  handler = "hello"
 
-[[edge_handlers]]
-  path = "/transform"
-  handler = "transform"
+
 
 
 

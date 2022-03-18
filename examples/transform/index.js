@@ -10,11 +10,11 @@ export default function page() {
     </p>
     <ul>
       <li>the EH code in the repo: <a href="">transform.js</a></li>
-      <li><a href="/transform">the result</a></li>
+      <li><a href="/hello?method=transform">Transform the /hello response</a></li>
     </p>
     <h2>code looks like</h2>
     <code>
-      export default () => new Response("Hello world!!!");
+      ...
     </code>
   </main>
 `;
