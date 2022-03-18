@@ -3,7 +3,8 @@
   "description": "Let's grow the list...",
   "version": "1.0.0",
   "scripts": {
-    "cli": "ntl-internal"
+    "cli": "ntl-internal",
+    "build": "ntl-internal build"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
   },
   "homepage": "https://github.com/netlify/edge-handlers-examples#readme",
   "dependencies": {
-    "@netlify-labs/cli-internal": "^1.0.12",
+    "@netlify-labs/cli-internal": "^1.0.13",
     "@netlify-labs/plugin-edge-handlers-test": "^1.0.3",
     "clean-css": "^5.2.4"
   }

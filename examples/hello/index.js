@@ -1,10 +1,7 @@
 export default function page() {
   return `
-  <header>
     <h1>Edge Handler examples</h1>
     <h2>Hello world!</h2>
-  </header>
-  <main>
     <p>
       Let's get started by just returning something from an Edge Handler.
     </p>
@@ -16,6 +13,5 @@ export default function page() {
     <code>
       export default () => new Response("Hello world!!!");
     </code>
-  </main>
 `;
 }
