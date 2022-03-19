@@ -19,7 +19,6 @@
   "homepage": "https://github.com/netlify/edge-handlers-examples#readme",
   "dependencies": {
     "@netlify-labs/cli-internal": "^1.0.13",
-    "@netlify-labs/plugin-edge-handlers-test": "^1.0.3",
-    "clean-css": "^5.2.4"
+    "@netlify-labs/plugin-edge-handlers-test": "^1.0.3"
   }
 }
