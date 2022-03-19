@@ -1,4 +1,5 @@
-import { Context } from "netlify:edge";
+// import { Context } from "netlify:edge";
+import { Context } from "https://dinosaurs:are-the-future!@edge-bootstrap.netlify.app/context.ts";
 
 export default async (req: Request, { next }: Context) => {
 

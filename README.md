@@ -63,4 +63,12 @@ At the root of the project, run:
 npm run cli -- dev
 ```
 
-## Adding a new Edge Handler
+## Adding a new Edge Handler example
+
+- Add your edge handler to the `netlify/edge-handlers` directory
+- Add your page which explains this example as a new directory in the  `pages` directory. Copying one of the other directories in `examples` is a good start
+- Populate the page and the README.me in your folder
+- Import you new page in the `[pages].js` edge handler which serves the example pages.
+- Add your new example page to the list on the index page in `pages/home`
+- Add routes to your new edge handler as necessary in teh `netlify.toml` file.
+
