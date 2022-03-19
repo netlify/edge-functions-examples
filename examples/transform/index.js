@@ -7,6 +7,7 @@ export default function page() {
     </p>
     <ul>
       <li>the EH code in the repo: <a href="">transform.js</a></li>
+      <li><a href="/hello">Just the /hello response</a></li>
       <li><a href="/hello?method=transform">Transform the /hello response</a></li>
     </p>
     <h2>code looks like</h2>
