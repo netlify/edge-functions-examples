@@ -8,10 +8,12 @@ import layout from "../../components/layout.js";
 import pageHome from "../../examples/home/index.js";
 import pageHello from "../../examples/hello/index.js";
 import pageTransform from "../../examples/transform/index.js";
+import pageIncludes from "../../examples/includes/index.js";
 const pages = {
   "home": pageHome,
   "hello": pageHello,
-  "transform": pageTransform
+  "transform": pageTransform,
+  "include": pageIncludes
 };
 
 export default async(Request) => {

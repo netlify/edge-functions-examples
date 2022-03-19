@@ -10,8 +10,10 @@ export default function page() {
       <li><a href="/hello">the result</a></li>
     </p>
     <h2>code looks like</h2>
+    <pre>
     <code>
-      export default () => new Response("Hello world!!!");
+export default () => new Response("Hello world!!!");
     </code>
+    </pre>      
 `;
 }

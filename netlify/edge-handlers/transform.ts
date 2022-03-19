@@ -7,7 +7,7 @@ export default async (req: Request, { next }: Context) => {
     return next();
   }
   
-  console.log("Tranforming the response from this URL");
+  console.log("Transforming the response from this URL");
 
   const resp = await next();
   if (resp.status === 304) {

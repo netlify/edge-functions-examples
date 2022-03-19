@@ -12,6 +12,10 @@
 [[edge_handlers]]
   handler = "transform"
   path = "/*"
+# The URL for each edge handler
+[[edge_handlers]]
+  handler = "include"
+  path = "/*"
 
 [[edge_handlers]]
   path = "/hello"

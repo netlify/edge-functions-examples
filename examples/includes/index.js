@@ -2,15 +2,16 @@ export default function page() {
   return `
   <header>
     <h1>Edge Handler examples</h1>
-    <h2>Transform response</h2>
+    <h2>Edge includes</h2>
   </header>
   <main>
     <p>
-      Dynamically transform any page into uppercase
+      Include content into templates at the edge
     </p>
     <ul>
-      <li>the EH code in the repo: <a href="">transform.js</a></li>
-      <li><a href="/hello?method=transform">Transform the /hello response</a></li>
+      <li>the EH code in the repo: <a href="">include.js</a></li>
+      <li><a href="/some-content-page">Just some template</a></li>
+      <li><a href="/some-content-page?include=pricing">Page with pricing data included at the edge</a></li>
     </p>
     <h2>code looks like</h2>
     <pre>
