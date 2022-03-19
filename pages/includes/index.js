@@ -38,7 +38,6 @@ export default function page() {
     
       return new Response(updatedPage, resp);
     };
-    
 </code>
 </pre>
   </main>
