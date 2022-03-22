@@ -3,7 +3,7 @@
 import layout from "../../components/layout.js";
 
 // A data file containing metadata for each page
-import pageMetaData from "../../data/pageMetaData.json" assert { type: "json" };
+import pageMetaData from "../../data/pageMetaData.js";
 
 /** Example pageMetaData object
  *

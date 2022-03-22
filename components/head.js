@@ -1,4 +1,4 @@
-export default function head({ title, metaDescription, url, openGraphImage }) {
+export default function head({ title, metaDescription, url, openGraphImageName }) {
   return `
     <head>
     <meta charset="UTF-8" />
