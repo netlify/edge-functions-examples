@@ -1,7 +1,11 @@
 import repoLink from "../../components/repo-link.js";
 
-export default function page() {
-  return `
+export default {
+  title: "Home",
+  metaDescription: "Explore our library of edge function examples and deploy your own to Netlify.",
+  openGraphImageName: "home",
+  page: function() {
+    return `
     <section>
       <h1>Hello, world!</h1>
       <p>
@@ -12,5 +16,6 @@ export default function page() {
         <li>${repoLink("hello.js")}</li>
       </ul>
     </section>
-`;
-}
+  `
+  }
+};

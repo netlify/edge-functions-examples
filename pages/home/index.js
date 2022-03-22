@@ -1,6 +1,10 @@
-export default function page() {
-  return `
-  <section>
+export default {
+  title: "Home",
+  metaDescription: "Explore our library of edge function examples and deploy your own to Netlify.",
+  openGraphImageName: "home",
+  page: function() {
+    return `
+    <section>
     <h1>Edge Functions on Netlify</h1>
     <p>Explore a library of reference examples for exploring and learning about Edge Functions on Netlify.</p>
     <ul>
@@ -20,5 +24,6 @@ export default function page() {
       -->
     </ul>
   </section>
-`;
-}
+  `
+  }
+};
