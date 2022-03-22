@@ -9,15 +9,17 @@ import pageHome from "../../pages/home/index.js";
 import pageHello from "../../pages/hello/index.js";
 import pageTransform from "../../pages/transform/index.js";
 import pageIncludes from "../../pages/includes/index.js";
+import pageGeolocation from "../../pages/geolocation/index.js";
 
 const pages = {
   home: pageHome,
   hello: pageHello,
   transform: pageTransform,
   include: pageIncludes,
+  geolocation: pageGeolocation,
 };
 
-export default async (Request) => {
+export default async (Request, Context) => {
   const url = new URL(Request.url);
   const path = url.pathname.split("/example/")[1] || "home";
 
@@ -30,6 +32,7 @@ export default async (Request) => {
     content: pages[path].page(),
     metaDescription: pages[path].metaDescription,
     openGraphImageName: pages[path].openGraphImageName,
+    geo: Context.geo,
   });
 
   // send our response
