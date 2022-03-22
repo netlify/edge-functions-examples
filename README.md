@@ -71,3 +71,4 @@ npm run cli -- dev
 - Import your new page in the `[pages].js` edge function which serves the example pages.
 - Add your new example page to the list on the index page in `pages/home`
 - Add routes to your new edge function as necessary in the `netlify.toml` file.
+- Add a link to your file on THIS README.md
