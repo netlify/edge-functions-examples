@@ -4,7 +4,9 @@ Description of what this example does
 
 ## Code example
 
-- [Explore the code](../../netlify/edge-handlers/THE-EDGE-FUNCTION-FILE)
+Edge Functions are files held in the `netlify/edge-handlers` directory.
+
+- [Explore the code for this Edge Function](../../netlify/edge-handlers/THE-EDGE-FUNCTION-FILE)
 
 ## View this example on the web
 

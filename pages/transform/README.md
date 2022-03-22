@@ -5,7 +5,9 @@ You can use Edge Functions to transform the content of an HTTP response. In this
 
 ## Code example
 
-- [Explore the code](../../netlify/edge-handlers/transform.ts)
+Edge Functions are files held in the `netlify/edge-handlers` directory.
+
+- [Explore the code for this Edge Function](../../netlify/edge-handlers/transform.ts)
 
 ## View this example on the web
 
