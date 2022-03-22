@@ -1,59 +1,24 @@
 {
-
   "name": "edge-handlers-examples",
-
   "description": "Let's grow the list...",
-
   "version": "1.0.0",
-
   "scripts": {
-
     "cli": "ntl-internal",
-
-    "gen": "eleventy",
-
-    "dev": "eleventy --watch --serve"
-
+    "build": "ntl-internal build"
   },
-
   "repository": {
-
     "type": "git",
-
     "url": "git+https://github.com/netlify/edge-handlers-examples.git"
-
   },
-
   "keywords": [],
-
   "author": "",
-
   "license": "ISC",
-
   "bugs": {
-
     "url": "https://github.com/netlify/edge-handlers-examples/issues"
-
   },
-
   "homepage": "https://github.com/netlify/edge-handlers-examples#readme",
-
   "dependencies": {
-
-    "@11ty/eleventy": "v2.0.0-canary.3",
-
-    "@netlify-labs/cli-internal": "^1.0.12",
-
-    "@netlify-labs/plugin-edge-handlers-test": "^1.0.3",
-
-    "clean-css": "^5.2.4"
-
-  },
-
-  "devDependencies": {
-
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0"
-
+    "@netlify-labs/cli-internal": "^1.0.17",
+    "@netlify-labs/plugin-edge-handlers-test": "^1.0.3"
   }
-
 }

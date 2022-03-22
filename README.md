@@ -46,11 +46,29 @@
 
 (To be removed before publishing)
 
-### Creating a new example
+## Setting up
 
-We're using eleventy as a build mechanic to generate new example folders with a common set of assets and to include the same CSS and format.
+Run the following commands at the root of the project to set up the experimental development environment:
 
-1. Duplicate the `/src/hello-world` folder and name your new folder appropriately
-2. Add a pass through copy rule to the `.eleventy.js` config file to use the folder name of your new example folder
-3. Generate a new example folder in the repo from your new source with `npm run gen`. (You can also run `npm run dev` to watch the src folder for changes as you build your edge handlers)
+```bash
+npm install
+npm run build
+```
+
+## To run the app locally
+
+At the root of the project, run:
+
+```bash
+npm run cli -- dev
+```
+
+## Adding a new Edge Handler example
+
+- Add your edge handler to the `netlify/edge-handlers` directory
+- Add your page which explains this example as a new directory in the  `pages` directory. Copying one of the other directories in `examples` is a good start
+- Populate the page and the README.me in your folder
+- Import you new page in the `[pages].js` edge handler which serves the example pages.
+- Add your new example page to the list on the index page in `pages/home`
+- Add routes to your new edge handler as necessary in teh `netlify.toml` file.
 
