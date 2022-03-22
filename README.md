@@ -68,6 +68,6 @@ npm run cli -- dev
 - Add your page which explains this example as a new directory in the `pages` directory. Copying one of the other
   directories in `examples` is a good start
 - Populate the page and the README.me in your folder
-- Import you new page in the `[pages].js` edge function which serves the example pages.
+- Import your new page in the `[pages].js` edge function which serves the example pages.
 - Add your new example page to the list on the index page in `pages/home`
-- Add routes to your new edge function as necessary in teh `netlify.toml` file.
+- Add routes to your new edge function as necessary in the `netlify.toml` file.

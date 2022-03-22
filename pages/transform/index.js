@@ -1,7 +1,6 @@
 export default function page() {
   return `
-    <h1>Edge Function Examples</h1>
-    <h2>Transform response</h2>
+    <h1>Transform response</h1>
     <p>
       Dynamically transform any page into uppercase
     </p>
@@ -9,7 +8,7 @@ export default function page() {
       <li>the EH code in the repo: <a href="">transform.js</a></li>
       <li><a href="/hello">Just the /hello response</a></li>
       <li><a href="/hello?method=transform">Transform the /hello response</a></li>
-    </p>
+    </ul>
     <h2>code looks like</h2>
     <pre><code>import { Context } from "netlify:edge";
 
@@ -25,6 +24,5 @@ export default async (req: Request, { next }: Context) => {
   const text = await resp.text();
   return new Response(text.toUpperCase(), resp);
 };</code></pre>
-  </main>
 `;
 }
