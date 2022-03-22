@@ -19,8 +19,8 @@ const pages = {
   geolocation: pageGeolocation,
 };
 
-export default async (Request, Context) => {
-  const url = new URL(Request.url);
+export default async (request, context) => {
+  const url = new URL(request.url);
   const path = url.pathname.split("/example/")[1] || "home";
 
   console.log(`serve page for ${url} `);
@@ -32,7 +32,7 @@ export default async (Request, Context) => {
     content: pages[path].page(),
     metaDescription: pages[path].metaDescription,
     openGraphImageName: pages[path].openGraphImageName,
-    geo: Context.geo,
+    geo: context.geo,
   });
 
   // send our response

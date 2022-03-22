@@ -21,6 +21,10 @@
   path = "/hello"
   handler = "hello"
 
+[[edge_handlers]]
+  path = "/geolocation"
+  handler = "geolocation"
+
 # Serve pages explaining each example 
 [[edge_handlers]]
   path = "/example/*"

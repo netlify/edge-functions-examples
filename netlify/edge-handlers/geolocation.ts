@@ -1,11 +1,13 @@
 import { Context } from "netlify:edge";
 
-export default async (req: Request, { next }: Context) => {
-  console.log(next);
+export default async (req: Request, context: Context) => {
+  console.log(context.geo);
 
-  const resp = await next();
+  const response = {
+    message: "Data not available yet!",
+  };
 
-
-  //raw endpoint to return text/html to browser with geo data
-  return new Response("test", resp);
+  return new Response(JSON.stringify(response), {
+    headers: { "content-type": "application/json" },
+  });
 };
