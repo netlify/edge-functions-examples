@@ -29,7 +29,7 @@ export default function layout(data) {
       
       <p>Using Javascript and Typescript, Netlify Edge Functions give you the power to modify network requests to localize content, serve relevant ads, authenticate visitors, A/B test content, and much more! And this all happens at the <strong>Edge</strong> — directly from the worldwide location closest to each user.</p>
 
-      <a href="/" target="_blank">Explore more examples</a>
+      ${data.url.pathname !== "/" ? `<a href="/">Explore more examples</a>` : ""}
     </section>
 
     <hr />
