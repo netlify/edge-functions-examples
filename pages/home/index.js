@@ -2,8 +2,7 @@ export default function page() {
   return `
   <section>
     <h1>Edge Functions on Netlify</h1>
-    <h2>Follow the links for different edge examples</h2>
-    <h3>Try these:</h3>
+    <p>Explore a library of reference examples for exploring and learning about Edge Functions on Netlify.</p>
     <ul>
       <li><a href="/example/hello">Static Hello World page</a></li>
       <li><a href="/example/transform">Transform HTTP responses</a></li>
