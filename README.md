@@ -22,6 +22,7 @@
 - Feature Flag Split
 - Geolocation Country Block
 - Geolocation
+- [Hello, World](/pages/hello/)
 - Hostname Rewrites
 - i18n
 - Image Response

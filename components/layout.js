@@ -29,6 +29,8 @@ export default function layout(data) {
       
       <p>Using Javascript and Typescript, Netlify Edge Functions give you the power to modify network requests to localize content, serve relevant ads, authenticate visitors, A/B test content, and much more! And this all happens at the <strong>Edge</strong> — directly from the worldwide location closest to each user.</p>
 
+      <p>To use Edge Functions on Netlify, add JavaScript or Typescript files to an edge-handlers directory in your project. <a href="https://docs.netlify.com/edge-handlers/configure-and-build/" target="_blank">Learn more on the docs</a>.</p>
+
       ${data.url.pathname !== "/" ? `<a href="/">Explore more examples</a>` : ""}
     </section>
 
