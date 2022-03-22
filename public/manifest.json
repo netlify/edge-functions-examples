@@ -1,6 +1,6 @@
 {
-  "name": "Hello World Edge Handler",
-  "short_name": "Hello World",
+  "name": "Netlify Edge Functions Examples",
+  "short_name": "Netlify Edge Functions",
   "icons": [
     {
       "src": "google-touch-icon.png",

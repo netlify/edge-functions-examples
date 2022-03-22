@@ -1,6 +1,6 @@
 {
   "name": "edge-handlers-examples",
-  "description": "Let's grow the list...",
+  "description": "A set of reference examples for exploring and learning about Edge Functions on Netlify.",
   "version": "1.0.0",
   "scripts": {
     "cli": "ntl-internal",

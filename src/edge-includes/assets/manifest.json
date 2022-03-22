@@ -1,6 +1,6 @@
 {
-  "name": "Edge Includes Edge Handler",
-  "short_name": "Edge Includes",
+  "name": "Edge Includes Edge Functions",
+  "short_name": "Edge Functions",
   "icons": [
     {
       "src": "google-touch-icon.png",

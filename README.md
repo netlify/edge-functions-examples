@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://netlify.com" target="_blank">
     <img src="./logo.svg" alt="Netlify logo">
-    <h1 align="center">Netlify Edge Handlers Examples</h1>
+    <h1 align="center">Netlify Edge Functions Examples</h1>
   </a>
 </div>
 
@@ -52,7 +52,6 @@ Run the following commands at the root of the project to set up the experimental
 
 ```bash
 npm install
-npm run build
 ```
 
 ## To run the app locally
@@ -63,12 +62,12 @@ At the root of the project, run:
 npm run cli -- dev
 ```
 
-## Adding a new Edge Handler example
+## Adding a new Edge function example
 
-- Add your edge handler to the `netlify/edge-handlers` directory
-- Add your page which explains this example as a new directory in the  `pages` directory. Copying one of the other directories in `examples` is a good start
+- Add your edge function to the `netlify/edge-handlers` directory
+- Add your page which explains this example as a new directory in the `pages` directory. Copying one of the other
+  directories in `examples` is a good start
 - Populate the page and the README.me in your folder
-- Import you new page in the `[pages].js` edge handler which serves the example pages.
+- Import you new page in the `[pages].js` edge function which serves the example pages.
 - Add your new example page to the list on the index page in `pages/home`
-- Add routes to your new edge handler as necessary in teh `netlify.toml` file.
-
+- Add routes to your new edge function as necessary in teh `netlify.toml` file.

@@ -96,7 +96,7 @@ pre {
   color: var(--color-bg);
   background: #33373b;
   border-radius: 0.75rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -109,91 +109,90 @@ pre code {
   padding: 1.25rem;
 }
 
-.token.cdata,
-.token.comment,
-.token.doctype,
-.token.prolog {
+.hljs-cdata,
+.hljs-comment,
+.hljs-doctype,
+.hljs-prolog {
   color: #a3a7ac;
 }
-.token.punctuation {
+.hljs-punctuation {
   color: #c5c8c6;
 }
 .namespace {
   opacity: 0.7;
 }
-.token.keyword,
-.token.property,
-.token.tag {
+.hljs-keyword,
+.hljs-property,
+.hljs-tag {
   color: #96cbfe;
 }
-.token.class-name {
+.hljs-title.class_ {
   color: #ffffb6;
 }
-.token.boolean,
-.token.constant {
+.hljs-boolean,
+.hljs-constant {
   color: #9c9;
 }
-.token.deleted,
-.token.symbol {
+.hljs-symbol {
   color: #f92672;
 }
-.token.number {
+.hljs-number {
   color: #ff73fd;
 }
-.token.attr-name,
-.token.builtin,
-.token.char,
-.token.inserted,
-.token.selector,
-.token.string {
+.hljs-attr-name,
+.hljs-builtin,
+.hljs-char,
+.hljs-inserted,
+.hljs-selector,
+.hljs-string {
   color: #a8ff60;
 }
-.token.variable {
+.hljs-variable {
   color: #c6c5fe;
 }
-.token.operator {
+.hljs-operator {
   color: #ededed;
 }
-.token.entity {
+.hljs-entity {
   color: #ffffb6;
   cursor: help;
 }
-.token.url {
+.hljs-url {
   color: #96cbfe;
 }
-.language-css .token.string,
-.style .token.string {
+.language-css .hljs-string,
+.style .hljs-string {
   color: #87c38a;
 }
-.token.atrule,
-.token.attr-value {
+.hljs-atrule,
+.hljs-attr-value {
   color: #f9ee98;
 }
-.token.function {
+.hljs-title.function_ {
   color: #dad085;
 }
-.token.regex {
+.hljs-regex {
   color: #e9c062;
 }
-.token.important {
+.hljs-important {
   color: #fd971f;
 }
-.token.bold,
-.token.important {
+.hljs-bold,
+.hljs-important {
   font-weight: bold;
 }
-.token.italic {
+.hljs-italic {
   font-style: italic;
 }
-.token.prefix.deleted,
-.token.prefix.inserted,
-.token.prefix.unchanged {
+.hljs-prefix.deleted,
+.hljs-prefix.inserted,
+.hljs-prefix.unchanged {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-.token.table {
+.hljs-table {
   background: 0 0;
   box-shadow: none;
   display: inline;
@@ -206,7 +205,7 @@ pre code {
   padding: 1rem;
   margin-top: 1rem;
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
@@ -226,6 +225,7 @@ pre code {
   text-align: left;
   color: var(--color-gray-L800);
   max-width: none;
+  text-transform: capitalize;
 }
 
 .footer {
