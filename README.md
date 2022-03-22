@@ -26,6 +26,7 @@
 - Hostname Rewrites
 - i18n
 - Image Response
+- [Includes at the Edge](/pages/include)
 - IP Blocking Datadome
 - JSON Response
 - JWT Authentication
@@ -37,6 +38,7 @@
 - Query Params Filter
 - Redirects Upstash
 - Rewrites Upstash
+- [Transform HTTP Response](/pages/transform)
 
 ---
 
