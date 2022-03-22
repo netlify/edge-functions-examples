@@ -1,28 +1,15 @@
+import repoLink from "../../components/repo-link.js";
+
 export default function page() {
   return `
-    <h1>Transform response</h1>
+    <h1>Transform responses</h1>
     <p>
-      Dynamically transform any page into uppercase
+      You can use Edge Functions to transform the content of an HTTP response. In this example, we transform the response of a request to <a href="/hello">/hello</a> with a simple <code>toUpperCase()</code> function.
     </p>
     <ul>
-      <li>the EH code in the repo: <a href="">transform.js</a></li>
-      <li><a href="/hello">Just the /hello response</a></li>
-      <li><a href="/hello?method=transform">Transform the /hello response</a></li>
+      <li><a href="/hello">The original response from /hello</a> without a transform</li>
+      <li>The response from /hello <a href="/hello?method=transform">dynamically transformed with an Edge Function</a></li>
+      <li>${repoLink('transform.ts')}</li>
     </ul>
-    <h2>code looks like</h2>
-    <pre><code>import { Context } from "netlify:edge";
-
-export default async (req: Request, { next }: Context) => {
-  const url = new URL(req.url);
-  if (url.searchParams.get("method") !== "transform") {
-    return next();
-  }
-  const resp = await next();
-  if (resp.status === 304) {
-    return resp;
-  }
-  const text = await resp.text();
-  return new Response(text.toUpperCase(), resp);
-};</code></pre>
 `;
 }

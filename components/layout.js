@@ -2,6 +2,7 @@ import head from "./head.js";
 import header from "./header.js";
 import footer from "./footer.js";
 
+
 export default function layout(data) {
   return `
 <!DOCTYPE html>
