@@ -75,9 +75,11 @@ npm run cli -- dev
 - Add routes to your new edge function as necessary in the `netlify.toml` file.
 - Add a link to your file on THIS README.md
 
-
 ## Deploying examples to production
 
-For the moment, Edge Functions are not exposed in the CI/CD pipeline on Netlify, so we need to build locally and push the result. We have a command for that :)
+For the moment, Edge Functions are not exposed in the CI/CD pipeline on Netlify, so we need to build locally and push
+the result. We have a command for that :)
 
- npm run cli -- deploy --build --prod`
+```
+npm run cli -- deploy --build --prod
+```
