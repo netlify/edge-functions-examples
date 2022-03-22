@@ -16,7 +16,7 @@ export default {
   },
   include: {
     title: "Includes at the Edge",
-    metaDescription: "Dynmically include content into templates at the edge.",
+    metaDescription: "Dynamically include content into templates at the edge.",
     openGraphImageName: "include",
   },
 };

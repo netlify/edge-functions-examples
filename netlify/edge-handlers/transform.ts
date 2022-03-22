@@ -1,5 +1,4 @@
 import { Context } from "netlify:edge";
-// import { Context } from "https://dinosaurs:are-the-future!@edge-bootstrap.netlify.app/context.ts";
 
 export default async (req: Request, { next }: Context) => {
 
@@ -15,6 +14,5 @@ export default async (req: Request, { next }: Context) => {
     return resp;
   }
   const text = await resp.text();
-
   return new Response(text.toUpperCase(), resp);
 };

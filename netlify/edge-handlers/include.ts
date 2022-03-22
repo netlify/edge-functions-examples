@@ -1,7 +1,7 @@
 import { Context } from "netlify:edge";
-// import { Context } from "https://dinosaurs:are-the-future!@edge-bootstrap.netlify.app/context.ts";
 
 export default async (req: Request, { next }: Context) => {
+  
   const url = new URL(req.url);
   if (url.searchParams.get("include") !== "pricing") {
     return next();
@@ -17,6 +17,5 @@ export default async (req: Request, { next }: Context) => {
   const pricingContent = "It's expensive, but buy it anyway.";
   const regex = /{{EDGE_INCLUDE}}/i;
   const updatedPage = page.replace(regex, pricingContent);
-
   return new Response(updatedPage, resp);
 };
