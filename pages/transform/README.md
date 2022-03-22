@@ -13,6 +13,6 @@ You can use Edge Functions to transform the content of an HTTP response. In this
 
 ## Deploy to Netlify
 
-- DTN button for this entire repo
+You can deploy this and all the other examples in this repo as a site of your own to explore and experiment with, by clicking this button.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/edge-functions-examples)

@@ -1,13 +1,17 @@
 # Name of edge function example
 
+Description of what this example does
+
 ## Code example
 
-- links to the edge function files used
+- [Explore the code](../../netlify/edge-handlers/THE-EDGE-FUNCTION-FILE)
 
-## View on the web
+## View this example on the web
 
-- link to the deployed example
+- https://edge-functions-examples.netlify.app/example/THE-EXAMPLE-PATH
 
 ## Deploy to Netlify
 
-- DTN button for this entire repo
+You can deploy this and all the other examples in this repo as a site of your own to explore and experiment with, by clicking this button.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/edge-functions-examples)
