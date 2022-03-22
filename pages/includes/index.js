@@ -1,5 +1,6 @@
 export default function page() {
   return `
+  <section>
     <p>
       Include content into templates at the edge
     </p>
@@ -31,5 +32,6 @@ export default async (req: Request, { next }: Context) => {
 
   return new Response(updatedPage, resp);
 };</code></pre>
+</section>
 `;
 }
