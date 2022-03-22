@@ -1,6 +1,6 @@
 export default function page() {
   return `
-  <h1>Edge Function Examples</h1>
+  <h1>Edge Functions on Netlify</h1>
   <h2>Follow the links for different edge examples</h2>
   <h3>Try these:</h3>
   <ul>
