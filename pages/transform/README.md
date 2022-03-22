@@ -1,11 +1,16 @@
-# Transform responses
+![Netlify examples](https://user-images.githubusercontent.com/5865/159468750-df1c2783-39b2-40da-9c0f-971f72a7ea3f.png)
+
+
+# Transform responses with Netlify Edge Functions
 
 You can use Edge Functions to transform the content of an HTTP response. In this example, we transform the response of a request to <a href="/hello">/hello</a> with JavaScript's <code>toUpperCase()</code> function.
 
 
 ## Code example
 
-- [Explore the code](../../netlify/edge-handlers/transform.ts)
+Edge Functions are files held in the `netlify/edge-handlers` directory.
+
+- [Explore the code for this Edge Function](../../netlify/edge-handlers/transform.ts)
 
 ## View this example on the web
 

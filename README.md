@@ -1,9 +1,6 @@
-<div align="center">
-  <a href="https://netlify.com" target="_blank">
-    <img src="./logo.svg" alt="Netlify logo">
-    <h1 align="center">Netlify Edge Functions Examples</h1>
-  </a>
-</div>
+![Netlify examples](https://user-images.githubusercontent.com/5865/159468750-df1c2783-39b2-40da-9c0f-971f72a7ea3f.png)
+
+# Netlify Edge Functions Examples
 
 ## Contents
 
