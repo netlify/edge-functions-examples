@@ -5,7 +5,7 @@ export default {
   page: function() {
     return `
     <section>
-      <h1>Edge Functions on Netlify</h1>
+    <h1>Edge Functions on Netlify</h1>
       <p>Explore a library of reference examples for exploring and learning about Edge Functions on Netlify.</p>
       <ul>
         <li><a href="/example/hello">Static Hello World page</a></li>
@@ -24,6 +24,6 @@ export default {
         -->
       </ul>
     </section>
-  `
-  }
+  `;
+  },
 };
