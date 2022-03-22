@@ -26,7 +26,7 @@
 - Hostname Rewrites
 - i18n
 - Image Response
-- [Includes at the Edge](/pages/include)
+- [Includes at the Edge](/pages/includesg)
 - IP Blocking Datadome
 - JSON Response
 - JWT Authentication
