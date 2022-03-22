@@ -73,7 +73,7 @@ npm run cli -- dev
 
 ```javascript
   title: "Page title", // will be suffixed with "| Edge Functions on Netlify"
-  metaDescription: "Explore our library of edge function examples and deploy your own to Netlify.",
+  metaDescription: "A one sentence description of your page that will show in search engines and on Open Graph previews.",
   openGraphImageName: "home", // name of the Open Graph image you created in the previous step (without file exension)
 ```
 
