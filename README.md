@@ -67,13 +67,23 @@ npm run cli -- dev
 - Add your edge function to the `netlify/edge-handlers` directory
 - Add your page which explains this example as a new directory in the `pages` directory. Copying one of the other
   directories in `examples` is a good start
-- Create an open graph image for your page with https://netlify-seo-images.netlify.app/ and save it to /public/img
-- Add your page metadata (title, meta description, open graph image name) to `data/pageMetaData.json`
+- Create an Open Graph image as a `png` file for your page with https://netlify-seo-images.netlify.app/ and save it to
+  /public/img
+- Update your page meta data in your index.js file:
+
+```javascript
+  title: "Page title", // will be suffixed with "| Edge Functions on Netlify"
+  metaDescription: "Explore our library of edge function examples and deploy your own to Netlify.",
+  openGraphImageName: "home", // name of the Open Graph image you created in the previous step (without file exension)
+```
+
 - Populate the page and the README.me in your folder
 - Import your new page in the `[pages].js` edge function which serves the example pages.
 - Add your new example page to the list on the index page in `pages/home`
 - Add routes to your new edge function as necessary in the `netlify.toml` file.
 - Add a link to your file on THIS README.md
+
+---
 
 ## Deploying examples to production
 
