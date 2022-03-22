@@ -2,6 +2,18 @@
 // You know, for consistency.
 import layout from "../../components/layout.js";
 
+// A data file containing metadata for each page
+import pageMetaData from "../../data/pageMetaData.json" assert { type: "json" };
+
+/** Example pageMetaData object
+ *
+ * "path" {
+ *  "title": "Name of your edge function",
+ *  "description": "One or two sentences describing your edge function"
+ *  "image": "pathname"
+ * }
+ */
+
 // A bit convoluted, but necessary for the moment
 // until we can import the page templates we need
 // dynamically from withing the exported function
@@ -16,13 +28,6 @@ const pages = {
   include: pageIncludes,
 };
 
-function makeTitle(pathname) {
-  if (pathname === "/") {
-    return "Home";
-  }
-  return pathname.replace("/example/", "").replace("-", " ");
-}
-
 export default async (Request) => {
   const url = new URL(Request.url);
   const path = url.pathname.split("/example/")[1] || "home";
@@ -31,7 +36,9 @@ export default async (Request) => {
 
   // render the appropriate page with the global layout
   const html = layout({
-    title: makeTitle(url.pathname),
+    title: pageMetaData[path].title,
+    metaDescription: pageMetaData[path].metaDescription,
+    openGraphImageName: pageMetaData[path].openGraphImageName,
     url: url,
     content: pages[path](),
   });

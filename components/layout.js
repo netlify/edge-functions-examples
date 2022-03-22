@@ -7,7 +7,12 @@ export default function layout(data) {
   return `
 <!DOCTYPE html>
 <html lang="en">
-  ${head({ title: data.title, description: "TO DO!!!!!" })}
+  ${head({
+    title: data.title,
+    metaDescription: data.metaDescription,
+    url: data.url,
+    openGraphImageName: data.openGraphImageName,
+  })}
   <body>
   ${header({ title: data.title })}
   <main class="main">
