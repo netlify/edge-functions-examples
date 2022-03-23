@@ -10,6 +10,7 @@ import pageHello from "../../pages/hello/index.js";
 import pageTransform from "../../pages/transform/index.js";
 import pageIncludes from "../../pages/includes/index.js";
 import pageRewrite from "../../pages/rewrite/index.js";
+import pageJson from "../../pages/json/index.js";
 
 const pages = {
   home: pageHome,
@@ -17,6 +18,7 @@ const pages = {
   transform: pageTransform,
   include: pageIncludes,
   rewrite: pageRewrite,
+  json: pageJson,
 };
 
 export default async (Request) => {
