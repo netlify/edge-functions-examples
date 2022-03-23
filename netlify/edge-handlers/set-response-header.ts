@@ -3,7 +3,7 @@ import type { Context } from "netlify:edge";
 export default async (req: Request, { next }: Context) => {
   
   const url = new URL(req.url);
-  if (url.searchParams.get("method") !== "set-header") {
+  if (url.searchParams.get("method") !== "set-response-header") {
     return next();
   }  
   

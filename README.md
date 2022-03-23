@@ -4,7 +4,8 @@
 
 ## Contents
 
-- [Set HTTP headers](/pages/set-header)
+- [Set HTTP response headers](/pages/set-response-header)
+- [Set HTTP request headers](/pages/set-request-header)
 - A/B Testing with Google Optimize
 - A/B Testing Example
 - Add Header Example

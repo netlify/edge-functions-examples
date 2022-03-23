@@ -13,7 +13,10 @@
   handler = "transform"
   path = "/*"
 [[edge_handlers]]
-  handler = "set-header"
+  handler = "set-repsonse-header"
+  path = "/*"
+[[edge_handlers]]
+  handler = "set-request-header"
   path = "/*"
 
 [[edge_handlers]]
