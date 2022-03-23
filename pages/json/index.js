@@ -2,7 +2,7 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "JSON Response",
-  description: "Use Edge Functions to return a JSON response using the Context without JSON.stringify.",
+  description: "Use Edge Functions to return a JSON response using Context.json().",
   image: "jsonresponse",
   page: function () {
     return `
