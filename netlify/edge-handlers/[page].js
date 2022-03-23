@@ -10,13 +10,17 @@ import pageHello from "../../pages/hello/index.js";
 import pageTransform from "../../pages/transform/index.js";
 import pageIncludes from "../../pages/includes/index.js";
 import pageJson from "../../pages/json/index.js";
+import pageSetRequestHeader from "../../pages/set-request-header/index.js";
+import pageSetResponseHeader from "../../pages/set-response-header/index.js";
 
 const pages = {
-  home: pageHome,
-  hello: pageHello,
-  transform: pageTransform,
-  include: pageIncludes,
-  json: pageJson,
+  "home": pageHome,
+  "hello": pageHello,
+  "transform": pageTransform,
+  "include": pageIncludes,
+  "json": pageJson,
+  "set-response-header": pageSetResponseHeader,
+  "set-request-header": pageSetRequestHeader,
 };
 
 export default async(Request) => {
