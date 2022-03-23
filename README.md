@@ -2,6 +2,10 @@
 
 # Netlify Edge Functions Examples
 
+Explore these examples here: https://edge-funk.netlify.app/
+(This URL to change after we launch)
+
+
 ## Contents
 
 - [Set HTTP response headers](/pages/set-response-header)
