@@ -14,10 +14,10 @@ const pages = {
   home: pageHome,
   hello: pageHello,
   transform: pageTransform,
-  include: pageIncludes,
+  includes: pageIncludes,
 };
 
-export default async (Request) => {
+export default async(Request) => {
   const url = new URL(Request.url);
   const path = url.pathname.split("/example/")[1] || "home";
 
