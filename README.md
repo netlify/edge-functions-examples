@@ -15,7 +15,7 @@
 - Bot Detection with Botd
 - Bot Detection with Datadome
 - Clerk Authentication at the Edge
-- Cookies Example
+- [Managing Cookies](/pages/cookies)
 - CORS
 - Crypto
 - Feature Flag Apple STore
