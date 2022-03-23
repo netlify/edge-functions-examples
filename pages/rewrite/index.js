@@ -12,8 +12,7 @@ export default {
       <ul>
         <li>Link to any context setting</li>
         <li><a href="/rewrite">Run the rewrite edge function</li>
-        <li>Link to the edge function in the code on GitHub</li>
-        <li><li>${repoLink("rewrite.ts")}</li></li>
+        <li>${repoLink("rewrite.ts")}</li>
       </ul>
     </section>
   `;
