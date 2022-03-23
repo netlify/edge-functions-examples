@@ -3,7 +3,6 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "Includes at the Edge",
   metaDescription: "Dynamically include content into templates at the edge.",
-  openGraphImageName: "include",
   page: function() {
     return `
     <section>

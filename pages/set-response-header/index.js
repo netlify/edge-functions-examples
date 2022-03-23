@@ -3,7 +3,6 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "Set HTTP response header",
   description: "Set a custom HTTP response header",
-  image: "set-response-header",
   page: function() {
     return `
     <section>

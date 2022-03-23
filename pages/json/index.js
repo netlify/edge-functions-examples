@@ -3,8 +3,7 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "JSON Response",
   description: "Use Edge Functions to return a JSON response using Context.json().",
-  image: "jsonresponse",
-  page: function () {
+  page: function() {
     return `
     <section>
       <h1>JSON Response</h1>
@@ -12,7 +11,7 @@ export default {
       <p>In this example, we return a JSON object containing <code>hello: "world"</code>.</p>
       <ul>
         <li><a href="/json">View the response from the Edge Function</a></li>
-        <li>${repoLink("json.js")}</li>
+        <li>${repoLink("json.ts")}</li>
       </ul>
     </section>
   `;
