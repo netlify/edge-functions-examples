@@ -17,7 +17,7 @@ const pages = {
   "home": pageHome,
   "hello": pageHello,
   "transform": pageTransform,
-  "include": pageIncludes,
+  "includes": pageIncludes,
   "json": pageJson,
   "set-response-header": pageSetResponseHeader,
   "set-request-header": pageSetRequestHeader,
