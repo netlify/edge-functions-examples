@@ -31,6 +31,10 @@
   path = "/json"
   handler = "json"
 
+[[edge_handlers]]
+  path = "/cookies"
+  handler = "cookies"
+
 # Serve pages explaining each example 
 [[edge_handlers]]
   path = "/example/*"

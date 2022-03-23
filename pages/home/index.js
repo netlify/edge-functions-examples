@@ -13,6 +13,7 @@ export default {
         <li><a href="/example/json">Return a JSON response at the edge</a></li>
         <li><a href="/example/set-response-header">Set custom HTTP response headers</a></li>
         <li><a href="/example/set-request-header">Set custom HTTP request headers</a></li>
+        <li><a href="/example/cookies">Cookies</a></li>
 
         <!--
         <li><a href="/rewrite">Deno rewrite to hello world</a></li>
