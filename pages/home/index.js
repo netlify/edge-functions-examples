@@ -12,6 +12,7 @@ export default {
         <li><a href="/example/transform">Transform HTTP responses</a></li>
         <li><a href="/example/includes">Dynamically include content with Edge Includes</a></li>
         <li><a href="/example/json">Return a JSON response at the edge</a></li>
+        <li><a href="/example/set-header">Set custom HTTP headers</a></li>
 
         <!--
         <li><a href="/rewrite">Deno rewrite to hello world</a></li>

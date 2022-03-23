@@ -12,6 +12,9 @@
 [[edge_handlers]]
   handler = "transform"
   path = "/*"
+[[edge_handlers]]
+  handler = "set-header"
+  path = "/*"
 
 [[edge_handlers]]
   handler = "includes"
