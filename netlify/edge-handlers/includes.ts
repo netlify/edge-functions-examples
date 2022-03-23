@@ -15,7 +15,7 @@ export default async (req: Request, { next }: Context) => {
   console.log("Including pricing content into the page");
   const page = await resp.text();
   const pricingContent = "It's expensive, but buy it anyway.";
-  const regex = /{{EDGE_INCLUDE}}/i;
+  const regex = /{{INCLUDE_PRICE_INFO}}/i;
   const updatedPage = page.replace(regex, pricingContent);
   return new Response(updatedPage, resp);
 };

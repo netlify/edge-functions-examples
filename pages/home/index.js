@@ -1,7 +1,6 @@
 export default {
   title: "Home",
   metaDescription: "Explore our library of edge function examples and deploy your own to Netlify.",
-  openGraphImageName: "home",
   page: function () {
     return `
     <section>
@@ -10,8 +9,10 @@ export default {
       <ul>
         <li><a href="/example/hello">Static Hello World page</a></li>
         <li><a href="/example/transform">Transform HTTP responses</a></li>
-        <li><a href="/example/include">Dynamically include content with edge includes</a></li>
+        <li><a href="/example/includes">Dynamically include content with Edge Includes</a></li>
         <li><a href="/example/json">Return a JSON response at the edge</a></li>
+        <li><a href="/example/set-response-header">Set custom HTTP response headers</a></li>
+        <li><a href="/example/set-request-header">Set custom HTTP request headers</a></li>
         <li><a href="/example/rewrite">Rewrite a URL at the Edge</a></li>
 
         <!--

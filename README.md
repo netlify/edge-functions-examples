@@ -4,6 +4,8 @@
 
 ## Contents
 
+- [Set HTTP response headers](/pages/set-response-header)
+- [Set HTTP request headers](/pages/set-request-header)
 - A/B Testing with Google Optimize
 - A/B Testing Example
 - Add Header Example
@@ -67,17 +69,14 @@ npm run cli -- dev
 - Add your edge function to the `netlify/edge-handlers` directory
 - Add your page which explains this example as a new directory in the `pages` directory. Copying one of the other
   directories in `examples` is a good start
-- Create an Open Graph image as a `png` file for your page with https://netlify-seo-images.netlify.app/ and save it to
-  /public/img
 - Update your page meta data in your index.js file:
 
 ```javascript
   title: "Page title", // will be suffixed with "| Edge Functions on Netlify"
   metaDescription: "A one sentence description of your page that will show in search engines and on Open Graph previews.",
-  openGraphImageName: "home", // name of the Open Graph image you created in the previous step (without file exension)
 ```
 
-- Populate the page and the README.me in your folder
+- Populate the page and the README.md in your folder
 - Import your new page in the `[pages].js` edge function which serves the example pages.
 - Add your new example page to the list on the index page in `pages/home`
 - Add routes to your new edge function as necessary in the `netlify.toml` file.

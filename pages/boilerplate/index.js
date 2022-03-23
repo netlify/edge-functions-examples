@@ -3,7 +3,6 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "Name of your edge function",
   description: "One or two sentences describing your edge function",
-  image: "pathname",
   page: function () {
     return `
     <section>
