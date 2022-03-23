@@ -2,7 +2,7 @@ export default {
   title: "Home",
   metaDescription: "Explore our library of edge function examples and deploy your own to Netlify.",
   openGraphImageName: "home",
-  page: function() {
+  page: function () {
     return `
     <section>
     <h1>Edge Functions on Netlify</h1>
@@ -11,6 +11,7 @@ export default {
         <li><a href="/example/hello">Static Hello World page</a></li>
         <li><a href="/example/transform">Transform HTTP responses</a></li>
         <li><a href="/example/include">Dynamically include content with edge includes</a></li>
+        <li><a href="/example/rewrite">Rewrite a URL at the Edge</a></li>
 
         <!--
         <li><a href="/rewrite">Deno rewrite to hello world</a></li>

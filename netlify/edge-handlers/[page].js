@@ -9,12 +9,14 @@ import pageHome from "../../pages/home/index.js";
 import pageHello from "../../pages/hello/index.js";
 import pageTransform from "../../pages/transform/index.js";
 import pageIncludes from "../../pages/includes/index.js";
+import pageRewrite from "../../pages/rewrite/index.js";
 
 const pages = {
   home: pageHome,
   hello: pageHello,
   transform: pageTransform,
   include: pageIncludes,
+  rewrite: pageRewrite,
 };
 
 export default async (Request) => {
