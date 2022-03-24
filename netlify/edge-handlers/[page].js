@@ -40,7 +40,6 @@ export default async (Request, Context) => {
     title: pages[path].title,
     content: pages[path].page(),
     metaDescription: pages[path].metaDescription,
-    openGraphImageName: pages[path].openGraphImageName,
     geo: Context.geo,
   });
 
