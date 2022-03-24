@@ -10,17 +10,26 @@ import pageHello from "../../pages/hello/index.js";
 import pageTransform from "../../pages/transform/index.js";
 import pageIncludes from "../../pages/includes/index.js";
 import pageGeolocation from "../../pages/geolocation/index.js";
+import pageJson from "../../pages/json/index.js";
+import pageSetRequestHeader from "../../pages/set-request-header/index.js";
+import pageSetResponseHeader from "../../pages/set-response-header/index.js";
+import pageCookies from "../../pages/cookies/index.js";
 
+// The keys here correspond to the path in the request to `/example/PATH`
 const pages = {
   home: pageHome,
   hello: pageHello,
   transform: pageTransform,
-  include: pageIncludes,
+  includes: pageIncludes,
+  json: pageJson,
+  "set-response-header": pageSetResponseHeader,
+  "set-request-header": pageSetRequestHeader,
+  cookies: pageCookies,
   geolocation: pageGeolocation,
 };
 
-export default async (request, context) => {
-  const url = new URL(request.url);
+export default async (Request, Context) => {
+  const url = new URL(Request.url);
   const path = url.pathname.split("/example/")[1] || "home";
 
   console.log(`serve page for ${url} `);
@@ -32,7 +41,7 @@ export default async (request, context) => {
     content: pages[path].page(),
     metaDescription: pages[path].metaDescription,
     openGraphImageName: pages[path].openGraphImageName,
-    geo: context.geo,
+    geo: Context.geo,
   });
 
   // send our response

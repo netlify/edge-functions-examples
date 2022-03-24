@@ -25,7 +25,9 @@ export default {
       <p>You can use Edge Functions to get information about a user's location to serve location-specific content.</p>
       <p>In this example, we use the <code>Context.geo</code> object to display information about your location.</p>
 
-      ${geolocationInfo({ city: "Manchester", countryCode: "GB", countryName: "Great Britain" })}
+      <h3>Dummy data is below!</h3>
+
+      ${geolocationInfo({ city: "FunkyTown", countryCode: "GB", countryName: "Phil's Country" })}
 
       <ul>
         <li>View raw geolocation data at <a href="/geolocation">/geolocation</a></li>

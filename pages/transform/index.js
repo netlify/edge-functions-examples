@@ -3,7 +3,6 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "Transform HTTP Response",
   metaDescription: "Dynamically transform any page response at the edge..",
-  openGraphImageName: "transform",
   page: function() {
     return `
     <section>

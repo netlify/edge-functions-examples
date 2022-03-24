@@ -12,9 +12,15 @@
 [[edge_handlers]]
   handler = "transform"
   path = "/*"
-# The URL for each edge handler
 [[edge_handlers]]
-  handler = "include"
+  handler = "set-repsonse-header"
+  path = "/*"
+[[edge_handlers]]
+  handler = "set-request-header"
+  path = "/*"
+
+[[edge_handlers]]
+  handler = "includes"
   path = "/*"
 
 [[edge_handlers]]
@@ -22,8 +28,16 @@
   handler = "hello"
 
 [[edge_handlers]]
-  path = "/geolocation"
-  handler = "geolocation"
+  path = "/json"
+  handler = "json"
+
+[[edge_handlers]]
+  path = "/json"
+  handler = "json"
+
+[[edge_handlers]]
+  path = "/cookies"
+  handler = "cookies"
 
 # Serve pages explaining each example 
 [[edge_handlers]]
@@ -34,6 +48,11 @@
 [[edge_handlers]]
   path = "/"
   handler = "[page]"
+
+[[redirects]]
+ from = "/img/og/:text"
+ to = "https://res.cloudinary.com/netlify/image/upload/c_fit,g_west,h_400,co_rgb:FFFFFFFF,l_text:netlify.com:Pacaembu-Bold.ttf_57::text,w_1053,x_46/v1619123320/netlify.com/default-og-background-learn-more.png"
+ status = 200
 
 
 

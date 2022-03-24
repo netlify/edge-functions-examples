@@ -1,21 +1,19 @@
 ![Netlify examples](https://user-images.githubusercontent.com/5865/159468750-df1c2783-39b2-40da-9c0f-971f72a7ea3f.png)
 
-# Edge Includes with Netlify Edge Functions
+# JSON Response with Netlify Edge Functions
 
-The ability to transform the content of an HTTP response with Edge Functions enables you to substitute content into templates as you would with Edge Includes.
-
-In this example, we look for an <code>{{INCLUDE_PRICE_INFO}}</code> placeholder in our response, and replace it with some other content.
-
+You can use Edge Functions to return a JSON response by returning `context.json()` with a JavaScript object — no need to
+`JSON.stringify`!
 
 ## Code example
 
 Edge Functions are files held in the `netlify/edge-handlers` directory.
 
-- [Explore the code for this Edge Function](../../netlify/edge-handlers/includes.js)
+- [Explore the code for this Edge Function](../../netlify/edge-handlers/json.ts)
 
 ## View this example on the web
 
-- https://edge-functions-examples.netlify.app/example/includes
+- https://edge-functions-examples.netlify.app/example/json
 
 ## Deploy to Netlify
 

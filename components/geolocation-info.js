@@ -17,7 +17,5 @@ export default function geolocation({ city, countryCode, countryName }) {
         <span>${city}</span>
       </li>
     </ul>
-
-    <p>**********Show headers?</p>
   `;
 }
