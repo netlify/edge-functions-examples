@@ -28,6 +28,10 @@
   handler = "hello"
 
 [[edge_handlers]]
+  path = "/geolocation"
+  handler = "geolocation"
+
+[[edge_handlers]]
   path = "/json"
   handler = "json"
 

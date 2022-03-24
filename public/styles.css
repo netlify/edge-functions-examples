@@ -249,3 +249,28 @@ pre code {
   color: var(--color-gray-L800);
   max-width: none;
 }
+
+.geolocation {
+  padding: 0;
+  list-style: none;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  background-color: var(--color-bg);
+  box-shadow: 0 2px 4px rgb(14 30 37 / 12%);
+  padding: 1.5rem;
+  border-radius: 0.625em;
+  border: 1px solid var(--color-gray-L300);
+}
+
+.geolocation__flag {
+  height: 2.5rem;
+}
+
+.geolocation__item {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 1rem;
+}

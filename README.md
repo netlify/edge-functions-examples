@@ -27,7 +27,7 @@ Explore these examples here: https://edge-funk.netlify.app/
 - Feature Flag Posthog
 - Feature Flag Split
 - Geolocation Country Block
-- Geolocation
+- [Geolocation](/pages/geolocation/)
 - [Hello, World](/pages/hello/)
 - Hostname Rewrites
 - i18n
