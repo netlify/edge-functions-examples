@@ -5,45 +5,50 @@
   command = "echo No build for this site, we are living on the edge"
   publish = "public"
 
-[[plugins]]
-  package = "@netlify-labs/plugin-edge-handlers-test"
-
-# The URL for each edge handler
-[[edge_handlers]]
-  handler = "transform"
+# The URL for each edge function
+[[edge_functions]]
+  function = "transform"
   path = "/*"
-[[edge_handlers]]
-  handler = "set-repsonse-header"
+[[edge_functions]]
+  function = "set-repsonse-header"
   path = "/*"
-[[edge_handlers]]
-  handler = "set-request-header"
+[[edge_functions]]
+  function = "set-request-header"
   path = "/*"
 
-[[edge_handlers]]
-  handler = "includes"
+[[edge_functions]]
+  function = "includes"
   path = "/*"
 
-[[edge_handlers]]
+[[edge_functions]]
   path = "/hello"
-  handler = "hello"
+  function = "hello"
 
-[[edge_handlers]]
+[[edge_functions]]
+  path = "/geolocation"
+  function = "geolocation"
+
+[[edge_functions]]
   path = "/json"
-  handler = "json"
+  function = "json"
+
+[[edge_functions]]
+  path = "/cookies"
+  function = "cookies"
 
 [[edge_handlers]]
   path = "/rewrite"
   handler = "rewrite"
 
 # Serve pages explaining each example 
-[[edge_handlers]]
+[[edge_functions]]
   path = "/example/*"
-  handler = "[page]"
+  function = "[page]"
 
 # Serve our index page
-[[edge_handlers]]
+[[edge_functions]]
   path = "/"
-  handler = "[page]"
+  function = "[page]"
 
 [[redirects]]
  from = "/img/og/:text"

@@ -2,6 +2,10 @@
 
 # Netlify Edge Functions Examples
 
+Explore these examples here: https://edge-funk.netlify.app/
+(This URL to change after we launch)
+
+
 ## Contents
 
 - [Set HTTP response headers](/pages/set-response-header)
@@ -15,7 +19,7 @@
 - Bot Detection with Botd
 - Bot Detection with Datadome
 - Clerk Authentication at the Edge
-- Cookies Example
+- [Managing Cookies](/pages/cookies)
 - CORS
 - Crypto
 - Feature Flag Apple STore
@@ -23,7 +27,7 @@
 - Feature Flag Posthog
 - Feature Flag Split
 - Geolocation Country Block
-- Geolocation
+- [Geolocation](/pages/geolocation/)
 - [Hello, World](/pages/hello/)
 - Hostname Rewrites
 - i18n

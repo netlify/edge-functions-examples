@@ -9,11 +9,13 @@ export default {
       <ul>
         <li><a href="/example/hello">Static Hello World page</a></li>
         <li><a href="/example/transform">Transform HTTP responses</a></li>
-        <li><a href="/example/includes">Dynamically include content with Edge Includes</a></li>
+        <li><a href="/example/include">Dynamically include content with edge includes</a></li>
+        <li><a href="/example/geolocation">Determine a user's location</a></li>
         <li><a href="/example/json">Return a JSON response at the edge</a></li>
         <li><a href="/example/set-response-header">Set custom HTTP response headers</a></li>
         <li><a href="/example/set-request-header">Set custom HTTP request headers</a></li>
         <li><a href="/example/rewrite">Rewrite a URL at the Edge</a></li>
+        <li><a href="/example/cookies">Cookies</a></li>
 
         <!--
         <li><a href="/rewrite">Deno rewrite to hello world</a></li>
