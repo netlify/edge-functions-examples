@@ -9,6 +9,7 @@
 [[edge_functions]]
   function = "transform"
   path = "/*"
+  
 [[edge_functions]]
   function = "set-repsonse-header"
   path = "/*"
