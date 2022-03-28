@@ -12,6 +12,7 @@
 [[edge_functions]]
   function = "set-repsonse-header"
   path = "/*"
+
 [[edge_functions]]
   function = "set-request-header"
   path = "/*"
@@ -36,9 +37,9 @@
   path = "/cookies"
   function = "cookies"
 
-[[edge_handlers]]
+[[edge_functions]]
   path = "/rewrite"
-  handler = "rewrite"
+  function = "rewrite"
 
 # Serve pages explaining each example 
 [[edge_functions]]
