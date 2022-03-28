@@ -1,7 +1,7 @@
 import type { Context } from "netlify:edge";
 
 export default async (req: Request, { next, cookies }: Context) => {
-  // look for existing "bucket" cookie
+  // look for existing "test_bucket" cookie
   const bucketName = "test_bucket";
   const bucket = cookies.get(bucketName);
 
@@ -10,7 +10,7 @@ export default async (req: Request, { next, cookies }: Context) => {
     return new Response(`Welcome back! You were assigned ${bucketName} **${bucket}** when you last visited the site!`);
   }
 
-  // if no "bucket" cookie is found, let's assign the user to a bucket
+  // if no "test_bucket" cookie is found, let's assign the user to a bucket
   // in this example we're using two buckets (a, b) with an equal weighting of 50/50
   const weighting = 0.5;
 
@@ -19,7 +19,7 @@ export default async (req: Request, { next, cookies }: Context) => {
   const random = Math.random();
   const newBucketValue = random <= weighting ? "a" : "b";
 
-  // set the new "bucket" cookie
+  // set the new "test_bucket" cookie
   cookies.set({
     name: bucketName,
     value: newBucketValue,
