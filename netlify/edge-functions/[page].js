@@ -9,6 +9,7 @@ import pageHome from "../../pages/home/index.js";
 import pageHello from "../../pages/hello/index.js";
 import pageTransform from "../../pages/transform/index.js";
 import pageIncludes from "../../pages/includes/index.js";
+import pageRewrite from "../../pages/rewrite/index.js";
 import pageGeolocation from "../../pages/geolocation/index.js";
 import pageJson from "../../pages/json/index.js";
 import pageSetRequestHeader from "../../pages/set-request-header/index.js";
@@ -25,6 +26,7 @@ const pages = {
   "set-response-header": pageSetResponseHeader,
   "set-request-header": pageSetRequestHeader,
   cookies: pageCookies,
+  rewrite: pageRewrite,
   geolocation: pageGeolocation,
 };
 

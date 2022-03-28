@@ -9,9 +9,11 @@
 [[edge_functions]]
   function = "transform"
   path = "/*"
+  
 [[edge_functions]]
   function = "set-repsonse-header"
   path = "/*"
+
 [[edge_functions]]
   function = "set-request-header"
   path = "/*"
@@ -35,6 +37,10 @@
 [[edge_functions]]
   path = "/cookies"
   function = "cookies"
+
+[[edge_functions]]
+  path = "/rewrite"
+  function = "rewrite"
 
 # Serve pages explaining each example 
 [[edge_functions]]

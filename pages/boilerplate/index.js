@@ -3,7 +3,7 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "Name of your edge function",
   description: "One or two sentences describing your edge function",
-  page: function() {
+  page: function () {
     return `
     <section>
       <h1>Title of edge function</h1>
@@ -12,9 +12,9 @@ export default {
         <li>Link to any context setting</li>
         <li>Link to result of edge function example</li>
         <li>Link to the edge function in the code on GitHub</li>
-        <li><li>${repoLink("edge-function-name.js")}</li></li>
+        <li>${repoLink("edge-function-name.js")}</li>
       </ul>
     </section>
-  `
-  }
+  `;
+  },
 };
