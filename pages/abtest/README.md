@@ -7,6 +7,8 @@ particular test "bucket" the first time they visit a site, usually using a rando
 
 Visitors can then be redirected to different pages, depending on the bucket and cookie they were assigned.
 
+You could even use A/B testing in combination with Geolocation at the Edge!
+
 ## Code example
 
 Edge Functions are files held in the `netlify/edge-functions` directory.
