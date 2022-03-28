@@ -24,9 +24,9 @@ Context: {
 
 ## Code example
 
-Edge Functions are files held in the `netlify/edge-handlers` directory.
+Edge Functions are files held in the `netlify/edge-functions` directory.
 
-- [Explore the code for this Edge Function](../../netlify/edge-handlers/geolocation)
+- [Explore the code for this Edge Function](../../netlify/edge-functions/geolocation)
 
 ## View this example on the web
 

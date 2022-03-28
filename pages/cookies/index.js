@@ -3,17 +3,16 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "Managing cookies",
   description: "Manipulate HTTP cookies",
-  page: function() {
+  page: function () {
     return `
     <section>
       <h1>Managing cookies</h1>
       <p>Use an Edge Function to control cookies</p>
-      <pre><code>
-import type { Context } from "netlify:edge";
+      <pre><code>import type { Context } from "netlify:edge";
 
 export default async (req: Request, { next, cookies }: Context) => {
   
-  // set a cookie    
+  // Set a cookie    
   cookies.set({
     name: "My cookie",
     value: "hello",
@@ -24,9 +23,7 @@ export default async (req: Request, { next, cookies }: Context) => {
 
   // Read the value of a cookie
   const value = cookies.get("My cookie");
-
-};
-</code></pre>
+};</code></pre>
 
       <ul>
         <li><a href="/cookies?action=set">Set a cookie</a></li>
@@ -35,6 +32,6 @@ export default async (req: Request, { next, cookies }: Context) => {
         <li>${repoLink("cookies.ts")}</li>
       </ul>
     </section>
-  `
-  }
+  `;
+  },
 };

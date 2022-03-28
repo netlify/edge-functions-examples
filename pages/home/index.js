@@ -16,16 +16,7 @@ export default {
         <li><a href="/example/set-request-header">Set custom HTTP request headers</a></li>
         <li><a href="/example/rewrite">**NOT WORKING** Rewrite a URL at the Edge</a></li>
         <li><a href="/example/cookies">Cookies</a></li>
-
-        <!--
-        <li><a href="/rewrite">Deno rewrite to hello world</a></li>
-        <li><a href="/hello?method=transform">Hello world transformed at the edge</a></li>
-        <li><a href="/rewrite?method=transform">Chaining transform and rewrite handlers</a></li>
-        <li><a href="/admin/">Edge authenticated admin area</a></li>
-        <li><a href="/stream">Streaming the contents of the next handler</a></li>
-        <li><a href="/hello">Adding headers to the request</a></li>
-        <li><a href="/cookies">Reading and writing cookies</a></li>
-        -->
+        <li><a href="/example/abtest">Set up an A/B test using cookies at the Edge</a></li>
       </ul>
     </section>
   `;

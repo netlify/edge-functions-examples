@@ -7,9 +7,9 @@ World!" as text/html.
 
 ## Code example
 
-Edge Functions are files held in the `netlify/edge-handlers` directory.
+Edge Functions are files held in the `netlify/edge-functions` directory.
 
-- [Explore the code for this Edge Function](../../netlify/edge-handlers/hello.js)
+- [Explore the code for this Edge Function](../../netlify/edge-functions/hello.js)
 
 ## View this example on the web
 

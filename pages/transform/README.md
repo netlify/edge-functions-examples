@@ -7,9 +7,9 @@ request to <a href="/hello">/hello</a> with JavaScript's <code>toUpperCase()</co
 
 ## Code example
 
-Edge Functions are files held in the `netlify/edge-handlers` directory.
+Edge Functions are files held in the `netlify/edge-functions` directory.
 
-- [Explore the code for this Edge Function](../../netlify/edge-handlers/transform.ts)
+- [Explore the code for this Edge Function](../../netlify/edge-functions/transform.ts)
 
 ## View this example on the web
 
