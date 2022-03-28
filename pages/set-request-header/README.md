@@ -6,10 +6,9 @@ Use an Edge Function to add HTTP headers to any HTTP request at the edge
 
 ## Code example
 
-Edge Functions are files held in the `netlify/edge-handlers` directory.
+Edge Functions are files held in the `netlify/edge-functions` directory.
 
-- [Explore the code for this Edge Function](../../netlify/edge-handlers/set-request-header.ts)
-
+- [Explore the code for this Edge Function](../../netlify/edge-functions/set-request-header.ts)
 
 ```ts
 import type { Context } from "netlify:edge";
@@ -17,7 +16,7 @@ import type { Context } from "netlify:edge";
 export default async (req: Request, { next }: Context) => {
   const res = await next();
   res.headers.set("X-Your-Custom-Header", "Your custom header value");
-  return res
+  return res;
 };
 ```
 
@@ -27,6 +26,7 @@ export default async (req: Request, { next }: Context) => {
 
 ## Deploy to Netlify
 
-You can deploy this and all the other examples in this repo as a site of your own to explore and experiment with, by clicking this button.
+You can deploy this and all the other examples in this repo as a site of your own to explore and experiment with, by
+clicking this button.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/edge-functions-examples)

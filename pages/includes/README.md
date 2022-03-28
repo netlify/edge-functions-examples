@@ -2,16 +2,17 @@
 
 # Edge Includes with Netlify Edge Functions
 
-The ability to transform the content of an HTTP response with Edge Functions enables you to substitute content into templates as you would with Edge Includes.
+The ability to transform the content of an HTTP response with Edge Functions enables you to substitute content into
+templates as you would with Edge Includes.
 
-In this example, we look for an <code>{{INCLUDE_PRICE_INFO}}</code> placeholder in our response, and replace it with some other content.
-
+In this example, we look for an <code>{{INCLUDE_PRICE_INFO}}</code> placeholder in our response, and replace it with
+some other content.
 
 ## Code example
 
-Edge Functions are files held in the `netlify/edge-handlers` directory.
+Edge Functions are files held in the `netlify/edge-functions` directory.
 
-- [Explore the code for this Edge Function](../../netlify/edge-handlers/includes.js)
+- [Explore the code for this Edge Function](../../netlify/edge-functions/includes.js)
 
 ## View this example on the web
 

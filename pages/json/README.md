@@ -7,9 +7,9 @@ You can use Edge Functions to return a JSON response by returning `context.json(
 
 ## Code example
 
-Edge Functions are files held in the `netlify/edge-handlers` directory.
+Edge Functions are files held in the `netlify/edge-functions` directory.
 
-- [Explore the code for this Edge Function](../../netlify/edge-handlers/json.ts)
+- [Explore the code for this Edge Function](../../netlify/edge-functions/json.ts)
 
 ## View this example on the web
 

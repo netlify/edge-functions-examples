@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/netlify/edge-handlers-examples.git"
+    "url": "git+https://github.com/netlify/edge-functions-examples.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/netlify/edge-handlers-examples/issues"
+    "url": "https://github.com/netlify/edge-functions-examples/issues"
   },
-  "homepage": "https://github.com/netlify/edge-handlers-examples#readme",
+  "homepage": "https://github.com/netlify/edge-functions-examples#readme",
   "dependencies": {
     "@netlify-labs/cli-internal": "^2.0.2"
   }

@@ -1,36 +1,21 @@
 ![Netlify examples](https://user-images.githubusercontent.com/5865/159468750-df1c2783-39b2-40da-9c0f-971f72a7ea3f.png)
 
-# Geolocation with Netlify Edge Functions
+# A/B Test with Netlify Edge Functions
 
-You can use Edge Functions to get information about a user's location to serve location-specific content.
+A/B tests are a great way to test new features on your site. A basic A/B test works by assigning visitors to a
+particular test "bucket" the first time they visit a site, usually using a random number between 0 and 1.
 
-Use the `Context.geo` object to get location information.
-
-```javascript
-Context: {
-  geo: {
-    city?: string;
-    country?: {
-      code?: string;
-      name?: string;
-    },
-    subdivision?: {
-      code?: string;
-      name?: string;
-    },
-  }
-}
-```
+Visitors can then be redirected to different pages, depending on the bucket and cookie they were assigned.
 
 ## Code example
 
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
-- [Explore the code for this Edge Function](../../netlify/edge-functions/geolocation)
+- [Explore the code for this Edge Function](../../netlify/edge-functions/abtest)
 
 ## View this example on the web
 
-- https://edge-functions-examples.netlify.app/example/geolocation
+- https://edge-functions-examples.netlify.app/example/abtest
 
 ## Deploy to Netlify
 

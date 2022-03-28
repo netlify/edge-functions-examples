@@ -2,18 +2,17 @@
 
 # Read, write, and delete cookies with Netlify Edge Functions
 
-Manipulate HTTP cookies 
+Manipulate HTTP cookies
 
 ## Code example
 
-Edge Functions are files held in the `netlify/edge-handlers` directory.
+Edge Functions are files held in the `netlify/edge-functions` directory.
 
 ```ts
 import type { Context } from "netlify:edge";
 
 export default async (req: Request, { next, cookies }: Context) => {
-  
-  // set a cookie    
+  // Set a cookie
   cookies.set({
     name: "My cookie",
     value: "hello",
@@ -24,12 +23,10 @@ export default async (req: Request, { next, cookies }: Context) => {
 
   // Read the value of a cookie
   const value = cookies.get("My cookie");
-
 };
 ```
-    
-- [Explore the code for this Edge Function](../../netlify/edge-handlers/cookies.ts)
-    
+
+- [Explore the code for this Edge Function](../../netlify/edge-functions/cookies.ts)
 
 ## View this example on the web
 
@@ -37,6 +34,7 @@ export default async (req: Request, { next, cookies }: Context) => {
 
 ## Deploy to Netlify
 
-You can deploy this and all the other examples in this repo as a site of your own to explore and experiment with, by clicking this button.
+You can deploy this and all the other examples in this repo as a site of your own to explore and experiment with, by
+clicking this button.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/edge-functions-examples)

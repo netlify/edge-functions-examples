@@ -2,9 +2,7 @@
 
 # Netlify Edge Functions Examples
 
-Explore these examples here: https://edge-funk.netlify.app/
-(This URL to change after we launch)
-
+Explore these examples here: https://edge-funk.netlify.app/ (This URL to change after we launch)
 
 ## Contents
 
@@ -70,7 +68,7 @@ npm run cli -- dev
 
 ## Adding a new Edge function example
 
-- Add your edge function to the `netlify/edge-handlers` directory
+- Add your edge function to the `netlify/edge-functions` directory
 - Add your page which explains this example as a new directory in the `pages` directory. Copying one of the other
   directories in `examples` is a good start
 - Update your page meta data in your index.js file:

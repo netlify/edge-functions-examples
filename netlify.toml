@@ -42,6 +42,10 @@
   path = "/rewrite"
   function = "rewrite"
 
+[[edge_functions]]
+  path = "/abtest"
+  function = "abtest"
+
 # Serve pages explaining each example 
 [[edge_functions]]
   path = "/example/*"
