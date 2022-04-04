@@ -10,10 +10,10 @@ export default {
       <p>Use an Edge Function to create and manage HTTP cookies</p>
       <pre><code>import type { Context } from "netlify:edge";
 
-export default async (req: Request, { next, cookies }: Context) => {
+export default async (req: Request, context: Context) => {
   
   // Set a cookie    
-  cookies.set({
+  context.cookies.set({
     name: "My cookie",
     value: "hello",
   });

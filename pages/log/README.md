@@ -14,8 +14,8 @@ Edge Functions are files held in the `netlify/edge-functions` directory.
 ```ts
 import type { Context } from "netlify:edge";
 
-export default async (request: Request, { log }: Context) => {
-  log("Hello from the logging service");
+export default async (request: Request, context: Context) => {
+  context.log("Hello from the logging service");
 };
 ```
 

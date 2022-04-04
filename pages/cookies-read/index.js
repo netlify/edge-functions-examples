@@ -3,17 +3,17 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "Reading cookies",
   description: "Read HTTP cookie values",
-  page: function() {
+  page: function () {
     return `
     <section>
       <h1>Reading cookies</h1>
       <p>Use an Edge Function to read and manage HTTP cookies</p>
       <pre><code>import type { Context } from "netlify:edge";
 
-export default async (req: Request, { next, cookies }: Context) => {
+export default async (req: Request, context: Context) => {
   
   // Read the value of a cookie
-  const value = cookies.get("My cookie");
+  const value = context.cookies.get("My cookie");
 
 };</code></pre>
     </section>

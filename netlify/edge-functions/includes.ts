@@ -1,13 +1,12 @@
 import { Context } from "netlify:edge";
 
-export default async (req: Request, { next }: Context) => {
-  
+export default async (req: Request, context: Context) => {
   const url = new URL(req.url);
   if (url.searchParams.get("include") !== "pricing") {
-    return next();
+    return context.next();
   }
 
-  const resp = await next();
+  const resp = await context.next();
   if (resp.status === 304) {
     return resp;
   }

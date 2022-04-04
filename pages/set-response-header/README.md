@@ -13,8 +13,8 @@ Edge Functions are files held in the `netlify/edge-functions` directory.
 ```ts
 import type { Context } from "netlify:edge";
 
-export default async (req: Request, { next }: Context) => {
-  const res = await next();
+export default async (req: Request, context: Context) => {
+  const res = await context.next();
   res.headers.set("X-Your-Custom-Header", "Your custom header value");
   return res;
 };

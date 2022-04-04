@@ -1,9 +1,9 @@
 import type { Context } from "netlify:edge";
 
-export default async (req: Request, { next, cookies }: Context) => {
+export default async (req: Request, context: Context) => {
   // look for existing "test_bucket" cookie
   const bucketName = "test_bucket";
-  const bucket = cookies.get(bucketName);
+  const bucket = context.cookies.get(bucketName);
 
   // return here if we find a cookie
   if (bucket) {
@@ -20,7 +20,7 @@ export default async (req: Request, { next, cookies }: Context) => {
   const newBucketValue = random <= weighting ? "a" : "b";
 
   // set the new "test_bucket" cookie
-  cookies.set({
+  context.cookies.set({
     name: bucketName,
     value: newBucketValue,
   });

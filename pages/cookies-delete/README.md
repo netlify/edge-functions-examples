@@ -11,18 +11,18 @@ Edge Functions are files held in the `netlify/edge-functions` directory.
 ```ts
 import type { Context } from "netlify:edge";
 
-export default async (req: Request, { next, cookies }: Context) => {
+export default async (req: Request, context: Context) => {
   // Set a cookie
-  cookies.set({
+  context.cookies.set({
     name: "My cookie",
     value: "hello",
   });
 
   // Delete a cookie
-  cookies.delete("My cookie");
+  context.cookies.delete("My cookie");
 
   // Read the value of a cookie
-  const value = cookies.get("My cookie");
+  const value = context.cookies.get("My cookie");
 };
 ```
 

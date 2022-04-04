@@ -11,15 +11,15 @@ export default {
       <pre><code>
 import type { Context } from "netlify:edge";
 
-export default async (req: Request, { next }: Context) => {
+export default async (req: Request, context: Context) => {
   req.headers.set("X-Your-Custom-Header", "Your custom header value");
-  return next();
+  return context.next();
 };    
       </code></pre>
       <ul>
         <li>${repoLink("set-request-header.ts")}</li>
       </ul>
     </section>
-  `
+  `;
   }
 };

@@ -11,8 +11,8 @@ export default {
       <pre><code>
 import type { Context } from "netlify:edge";
 
-export default async (req: Request, { next }: Context) => {
-  const res = await next();
+export default async (req: Request, context: Context) => {
+  const res = await context.next();
   res.headers.set("X-Your-Custom-Header", "Your custom header value");
   return res
 };
@@ -25,6 +25,6 @@ export default async (req: Request, { next }: Context) => {
         <li>${repoLink("set-response-header.ts")}</li>
       </ul>
     </section>
-  `
+  `;
   }
 };

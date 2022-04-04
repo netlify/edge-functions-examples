@@ -3,17 +3,17 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "Deleting cookies",
   description: "Delete an HTTP cookie",
-  page: function() {
+  page: function () {
     return `
     <section>
       <h1>Delete HTTP cookies</h1>
       <p>Use an Edge Function to delete cookies</p>
       <pre><code>import type { Context } from "netlify:edge";
 
-export default async (req: Request, { next, cookies }: Context) => {
+export default async (req: Request, context: Context) => {
   
   // Delete a cookie
-  cookies.delete("My cookie");
+  context.cookies.delete("My cookie");
 
 };</code></pre>
 
