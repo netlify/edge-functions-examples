@@ -28,7 +28,8 @@ export default async (request: Request, context: Context) => {
       <ul>
         <li><a href="/image-internal">Return an image stored in your project</a></li>
         <li><a href="/image-external">Return an image from the internet</a></li>
-        <li>${repoLink("image-internal.ts")}</li>
+        <li>${repoLink("image-internal.ts", "View the code for the internal image request:")}</li>
+        <li>${repoLink("image-external.ts", "View the code for the external image request:")}</li>
       </ul>
     </section>
   `;

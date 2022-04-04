@@ -46,7 +46,7 @@ export default async (Request, Context) => {
   const url = new URL(Request.url);
   const path = url.pathname.split("/example/")[1] || "home";
 
-  console.log(`serve page for ${url} `);
+  Context.log(`serve page for ${url} `);
 
   // render the appropriate page with the global layout
   const html = layout({
