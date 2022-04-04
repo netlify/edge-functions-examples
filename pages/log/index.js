@@ -8,6 +8,7 @@ export default {
     <section>
       <h1>Logging with Edge Functions</h1>
       <p>You can output content to the logs during the execution of your edge function.</p>
+      <p><strong>Note: </strong>You can still use <code>console.log()</code> in your Edge Functions, but using <code>context.log()</code> will tell you which Edge Function generated the message for easier debugging!</p>
       <pre><code>import type { Context } from "netlify:edge";
 
 export default async (request: Request, context: Context) => {
