@@ -53,6 +53,10 @@
 [[edge_functions]]
   path = "/image-external"
   function = "image-external"
+  
+[[edge_functions]]
+  path = "/log"
+  function = "log"
 
 # Serve pages explaining each example 
 [[edge_functions]]
