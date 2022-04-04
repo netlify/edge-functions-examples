@@ -52,8 +52,8 @@ export default async (request: Request, context: Context) => {
   path = "/*"</code></pre>
 
     <ul>
-      <li><a href="/some-content-page">The original resource, before any replacement.</a></li>
-      <li><a href="/some-content-page?include=pricing">The returned response after the include has been inserted.</a></li>
+      <li><a href="/some-content-page">View the original resource, before any replacement.</a></li>
+      <li><a href="/some-content-page?include=pricing">View the returned response after the include has been inserted.</a></li>
       <li>${repoLink("include.ts")}</li>
     </p>
     </section>
