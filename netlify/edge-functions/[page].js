@@ -8,7 +8,7 @@ import layout from "../../components/layout.js";
 import pageHome from "../../pages/home/index.js";
 import pageHello from "../../pages/hello/index.js";
 import pageTransform from "../../pages/transform/index.js";
-import pageIncludes from "../../pages/includes/index.js";
+import pageInclude from "../../pages/include/index.js";
 import pageRewrite from "../../pages/rewrite/index.js";
 import pageGeolocation from "../../pages/geolocation/index.js";
 import pageJson from "../../pages/json/index.js";
@@ -27,7 +27,7 @@ const pages = {
   home: pageHome,
   hello: pageHello,
   transform: pageTransform,
-  includes: pageIncludes,
+  include: pageInclude,
   json: pageJson,
   "set-response-header": pageSetResponseHeader,
   "set-request-header": pageSetRequestHeader,
