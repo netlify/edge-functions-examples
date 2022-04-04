@@ -45,16 +45,6 @@ export default {
     </section>
 
     <section class="home__section">
-      <h2 class="home__sectionHeader">Cookies</h2>
-      <ul class="home__sectionList">
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies-set">Set cookies</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies-read">Read cookies</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies-delete">Delete cookies</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/abtest">Set up an A/B test using cookies</a></li>
-      </ul>
-    </section>
-
-    <section class="home__section">
       <h2 class="home__sectionHeader">Transforming responses</h2>
       <ul class="home__sectionList">
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/transform">Text transformations</a></li>
