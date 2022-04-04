@@ -16,6 +16,7 @@ import pageSetRequestHeader from "../../pages/set-request-header/index.js";
 import pageSetResponseHeader from "../../pages/set-response-header/index.js";
 import pageCookies from "../../pages/cookies/index.js";
 import pageABTest from "../../pages/abtest/index.js";
+import pageImage from "../../pages/image/index.js";
 
 // The keys here correspond to the path in the request to `/example/PATH`
 const pages = {
@@ -30,6 +31,7 @@ const pages = {
   rewrite: pageRewrite,
   geolocation: pageGeolocation,
   abtest: pageABTest,
+  image: pageImage,
 };
 
 export default async (Request, Context) => {
