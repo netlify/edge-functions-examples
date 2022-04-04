@@ -38,9 +38,9 @@ export default {
     <section class="home__section">
       <h2 class="home__sectionHeader">Cookies</h2>
       <ul class="home__sectionList">
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies">Set cookies</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies">Read cookies</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies">Delete cookies</a></li>
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies-set">Set cookies</a></li>
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies-read">Read cookies</a></li>
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies-delete">Delete cookies</a></li>
       </ul>
     </section>
 
