@@ -8,6 +8,7 @@ export default {
     <section>
       <h1>Title of edge function - THIS IS PURPOSELY NOT DONE</h1>
       <p>One or two sentences describing what it does.</p>
+      <h2>See this in action</h2>
       <ul>
         <li>Link to any context setting</li>
         <li>Link to result of edge function example</li>

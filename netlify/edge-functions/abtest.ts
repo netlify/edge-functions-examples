@@ -10,7 +10,7 @@ export default async (req: Request, context: Context) => {
     return new Response(`Welcome back! You were assigned ${bucketName} **${bucket}** when you last visited the site!`);
   }
 
-  // if no "test_bucket" cookie is found, let's assign the user to a bucket
+  // if no "test_bucket" cookie is found, assign the user to a bucket
   // in this example we're using two buckets (a, b) with an equal weighting of 50/50
   const weighting = 0.5;
 

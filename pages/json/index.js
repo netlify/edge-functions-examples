@@ -16,7 +16,7 @@ export default async (request: Request, context: Context) => {
   return context.json({ hello: "world" });
 };
 </code></pre>
-
+      <h2>See this in action</h2>
       <ul>
         <li><a href="/json">View the response from the Edge Function</a></li>
         <li>${repoLink("json.ts")}</li>

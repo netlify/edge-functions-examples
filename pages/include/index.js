@@ -50,7 +50,7 @@ export default async (request: Request, context: Context) => {
   <pre><code>[[edge_functions]]
   function = "include"
   path = "/*"</code></pre>
-
+    <h2>See this in action</h2>
     <ul>
       <li><a href="/some-content-page">View the original resource, before any replacement.</a></li>
       <li><a href="/some-content-page?include=pricing">View the returned response after the include has been inserted.</a></li>

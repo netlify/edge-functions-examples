@@ -24,7 +24,7 @@ export default async (request: Request, context: Context) => {
 
 };
 </code></pre>
-
+      <h2>See this in action</h2>
       <ul>
         <li><a href="/image-internal">Return an image stored in your project</a></li>
         <li><a href="/image-external">Return an image from the internet</a></li>

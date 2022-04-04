@@ -13,18 +13,12 @@ export default {
 export default async (request: Request, context: Context) => {
   context.log("Hello from the logging service");
 };</code></pre>
-    </section>
-
-    <section>
-    <h2>See this in action</h2>
+      <h2>See this in action</h2>
       <ul>
         <li><a href="/log">Echo content to the logs</a></li>
         <li>${repoLink("log.ts")}</li>
       </ul>
-      </section>
     </section>
-
-
   `;
   },
 };

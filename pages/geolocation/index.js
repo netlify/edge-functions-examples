@@ -29,6 +29,7 @@ export default {
 
       ${geolocationInfo({ city: "FunkyTown", countryCode: "GB", countryName: "Phil's Country" })}
 
+      <h2>See this in action</h2>
       <ul>
         <li>View raw geolocation data at <a href="/geolocation">/geolocation</a></li>
         <li>${repoLink("geolocation.js")}</li>

@@ -39,7 +39,7 @@ export default async (request: Request, context: Context) => {
     <pre><code>[[edge_functions]]
   function = "transform"
   path = "/*"</code></pre>
-
+      <h2>See this in action</h2>
       <ul>
         <li><a href="/hello">View the original response from /hello</a> without a transform</li>
         <li>View the response from /hello <a href="/hello?method=transform">dynamically transformed with an Edge Function</a></li>

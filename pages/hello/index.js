@@ -16,7 +16,7 @@ export default {
     headers: { "content-type": "text/html" },
   });
 };</code></pre>
-
+      <h2>See this in action</h2>
       <ul>
         <li><a href="/hello">View the response from the Edge Function</a></li>
         <li>${repoLink("hello.js")}</li>
