@@ -19,7 +19,7 @@
   path = "/*"
 
 [[edge_functions]]
-  function = "includes"
+  function = "include"
   path = "/*"
 
 [[edge_functions]]
