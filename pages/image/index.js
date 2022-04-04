@@ -2,7 +2,7 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "Return an image",
-  description: "One or two sentences describing your edge function",
+  description: "Use Edge Functions to return an image from your project, or an image from the internet.",
   page: function () {
     return `
     <section>
