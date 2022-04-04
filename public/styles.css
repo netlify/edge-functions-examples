@@ -4,6 +4,8 @@
 
   --color-gray-L300: #e7eaed;
   --color-gray-L800: #151a1e;
+  --color-teal-T900: #054861;
+  --color-teal-T600: #30c8c9;
 
   --font-family-main: Mulish, sans-serif;
   --font-weight-normal: 300;
@@ -41,6 +43,14 @@ body {
 
 a {
   color: currentColor;
+}
+
+a:focus {
+  outline: transparent;
+  outline-style: solid;
+  border-radius: 0.125em;
+  box-shadow: var(--color-bg) 0 0 0 0.125rem, var(--color-teal-T600) 0 0 0 0.375rem;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 hr {
@@ -273,4 +283,34 @@ pre code {
   gap: 1rem;
   justify-content: space-between;
   margin: 1rem;
+}
+
+.home__section {
+}
+
+.home__sectionHeader {
+}
+
+.home__sectionList {
+  list-style: none;
+  margin: 2rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.home__sectionListItem {
+  box-shadow: 0 2px 4px rgb(14 30 37 / 12%);
+  padding: 1.5rem;
+  border-radius: 0.625em;
+  border: 1px solid var(--color-gray-L300);
+}
+
+.home__sectionListItemLink {
+  text-decoration: none;
+  display: block;
+}
+
+.home__sectionListItemLink:hover {
+  text-decoration: underline;
 }
