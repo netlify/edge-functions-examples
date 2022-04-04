@@ -12,7 +12,7 @@ export default {
         <ul class="home__sectionList">
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/hello">Hello, world</a></li>
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/json">Return JSON</a></li>
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/image">Return an image **TO DO**</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/image">Return an image</a></li>
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/log">Write to the logs</a></li>
         </ul>
       </section>
