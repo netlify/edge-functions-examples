@@ -9,17 +9,12 @@ export default {
       <section class="home__section">
         <h2 class="home__sectionHeader">Working with HTTP</h2>
 
-        <ul class="home__sectionList">
-        
-        </ul>
-
         <h3>HTTP requests</h3>
         <ul class="home__sectionList">
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-request-header">Set custom HTTP request headers</a></li>
         </ul>
 
         <h3>HTTP responses</h3>
-
         <ul class="home__sectionList">
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/hello">Return an HTML response</a></li>
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/json">Return a JSON response</a></li>
