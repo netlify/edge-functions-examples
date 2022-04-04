@@ -10,19 +10,31 @@ export default {
         <h2 class="home__sectionHeader">Working with HTTP</h2>
 
         <ul class="home__sectionList">
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/hello">Static Hello World page</a></li>
+        
+        </ul>
+
+        <h3>HTTP requests</h3>
+        <ul class="home__sectionList">
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-request-header">Set custom HTTP request headers</a></li>
+        </ul>
+
+        <h3>HTTP responses</h3>
+
+        <ul class="home__sectionList">
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/hello">Return an HTML response</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/json">Return a JSON response</a></li>
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/transform">Transform HTTP responses</a></li>
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-response-header">Set custom HTTP response headers</a></li>
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-request-header">Set custom HTTP request headers</a></li>
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/json">Return a JSON response at the edge</a></li>
         </ul>
       </section>
 
       <section class="home__section">
-        <h2 class="home__sectionHeader">Geolocation</h2>
+        <h2 class="home__sectionHeader">Geolocation **NOT WORKING** </h2>
 
         <ul class="home__sectionList">
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/geolocation">**NOT WORKING** Determine a user's location</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/geolocation">Determine a user's location</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/geoblock">Block content according to country **TO DO**</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/internationalization">Internationalization **TO DO**</a></li>
         </ul>
       </section>
 
@@ -30,15 +42,7 @@ export default {
         <h2 class="home__sectionHeader">Cookie management</h2>
 
         <ul class="home__sectionList">
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies">Cookies</a></li>
-        </ul>
-      </section>
-
-      <section class="home__section">
-        <h2 class="home__sectionHeader">Rewrites</h2>
-
-        <ul class="home__sectionList">
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/rewrite">**NOT WORKING** Rewrite a URL at the Edge</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies">Set, read and delete cookies</a></li>
         </ul>
       </section>
 
@@ -47,6 +51,14 @@ export default {
 
         <ul class="home__sectionList">
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/abtest">Set up an A/B test using cookies</a></li>
+        </ul>
+      </section>
+
+      <section class="home__section">
+        <h2 class="home__sectionHeader">Rewrites **NOT WORKING** </h2>
+
+        <ul class="home__sectionList">
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/rewrite">Rewrite a URL</a></li>
         </ul>
       </section>
 
