@@ -14,6 +14,7 @@ export default async (request: Request, context: Context) => {
 
   // Check to see if the response has already been modified.
   // If it has, return it.
+
   if (response.status === 304) {
     return response;
   }

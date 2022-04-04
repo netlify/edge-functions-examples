@@ -11,7 +11,7 @@
   path = "/*"
   
 [[edge_functions]]
-  function = "set-repsonse-header"
+  function = "set-response-header"
   path = "/*"
 
 [[edge_functions]]
