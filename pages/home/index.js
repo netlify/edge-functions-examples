@@ -7,37 +7,49 @@ export default {
       <p>Explore a library of reference examples for exploring and learning about Edge Functions on Netlify.</p>
 
       <section class="home__section">
-        <h2 class="home__sectionHeader">Working with HTTP</h2>
+        <h2 class="home__sectionHeader">Responses</h2>
 
-        <h3>HTTP requests</h3>
+        <ul class="home__sectionList">
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/hello">Hello, world</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/json">Return JSON</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/image">Return an image **TO DO**</a></li>
+        </ul>
+      </section>
+
+      <section class="home__section">
+        <h2 class="home__sectionHeader">Rewrites and proxies **NOT WORKING**</h2>
+
+        <ul class="home__sectionList">
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/rewrite">Rewrite a URL</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/proxy">Proxy requests to another source **TO DO**</a></li>
+        </ul>
+      </section>
+
+      <section class="home__section">
+        <h2 class="home__sectionHeader">HTTP Headers</h2>
         <ul class="home__sectionList">
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-request-header">Set custom HTTP request headers</a></li>
-        </ul>
-
-        <h3>HTTP responses</h3>
-        <ul class="home__sectionList">
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/hello">Return a text/html response</a></li>
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/json">Return a JSON response</a></li>
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/transform">Transform HTTP responses</a></li>
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-response-header">Set custom HTTP response headers</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/headers-i18n">Use request headers to serve internationalized content **TO DO**</a></li>
         </ul>
       </section>
 
       <section class="home__section">
         <h2 class="home__sectionHeader">Geolocation **NOT WORKING** </h2>
-
         <ul class="home__sectionList">
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/geolocation">Determine a user's location</a></li>
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/geoblock">Block content according to country **TO DO**</a></li>
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/internationalization">Internationalization **TO DO**</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/internationalization">Serve localized content **TO DO**</a></li>
         </ul>
       </section>
 
       <section class="home__section">
-        <h2 class="home__sectionHeader">Cookie management</h2>
+        <h2 class="home__sectionHeader">Cookies</h2>
 
         <ul class="home__sectionList">
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies">Set, read and delete cookies</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies">Set cookies</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies">Read cookies</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies">Delete cookies</a></li>
         </ul>
       </section>
 
@@ -50,18 +62,11 @@ export default {
       </section>
 
       <section class="home__section">
-        <h2 class="home__sectionHeader">Rewrites **NOT WORKING** </h2>
+        <h2 class="home__sectionHeader">Transforming responses</h2>
 
         <ul class="home__sectionList">
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/rewrite">Rewrite a URL</a></li>
-        </ul>
-      </section>
-
-      <section class="home__section">
-        <h2 class="home__sectionHeader">Content includes</h2>
-
-        <ul class="home__sectionList">
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/include">Dynamically include content with edge includes</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/transform">Text transformations</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/include">Content includes</a></li>
         </ul>
       </section>
   `;
