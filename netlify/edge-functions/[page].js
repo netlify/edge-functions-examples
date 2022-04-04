@@ -18,6 +18,7 @@ import pageCookiesSet from "../../pages/cookies-set/index.js";
 import pageCookiesRead from "../../pages/cookies-read/index.js";
 import pageCookiesDelete from "../../pages/cookies-delete/index.js";
 import pageABTest from "../../pages/abtest/index.js";
+import pageImage from "../../pages/image/index.js";
 import pageLog from "../../pages/log/index.js";
 
 // The keys here correspond to the path in the request to `/example/PATH`
@@ -35,6 +36,7 @@ const pages = {
   "rewrite": pageRewrite,
   "geolocation": pageGeolocation,
   "abtest": pageABTest,
+  "image": pageImage,
   "log": pageLog,
 };
 
