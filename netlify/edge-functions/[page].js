@@ -20,27 +20,29 @@ import pageCookiesDelete from "../../pages/cookies-delete/index.js";
 import pageABTest from "../../pages/abtest/index.js";
 import pageImage from "../../pages/image/index.js";
 import pageLog from "../../pages/log/index.js";
+import pageAuthJwt from "../../pages/auth-jwt/index.js";
 
 // The keys here correspond to the path in the request to `/example/PATH`
 const pages = {
-  "home": pageHome,
-  "hello": pageHello,
-  "transform": pageTransform,
-  "includes": pageIncludes,
-  "json": pageJson,
+  home: pageHome,
+  hello: pageHello,
+  transform: pageTransform,
+  includes: pageIncludes,
+  json: pageJson,
   "set-response-header": pageSetResponseHeader,
   "set-request-header": pageSetRequestHeader,
   "cookies-set": pageCookiesSet,
   "cookies-read": pageCookiesRead,
   "cookies-delete": pageCookiesDelete,
-  "rewrite": pageRewrite,
-  "geolocation": pageGeolocation,
-  "abtest": pageABTest,
-  "image": pageImage,
-  "log": pageLog,
+  rewrite: pageRewrite,
+  geolocation: pageGeolocation,
+  abtest: pageABTest,
+  image: pageImage,
+  log: pageLog,
+  "auth-jwt": pageAuthJwt,
 };
 
-export default async(Request, Context) => {
+export default async (Request, Context) => {
   const url = new URL(Request.url);
   const path = url.pathname.split("/example/")[1] || "home";
 

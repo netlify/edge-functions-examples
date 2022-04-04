@@ -59,6 +59,13 @@ export default {
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/include">Content includes</a></li>
       </ul>
     </section>
+
+    <section class="home__section">
+      <h2 class="home__sectionHeader">Authentication</h2>
+      <ul class="home__sectionList">
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/auth-jwt">JWT Authentication</a></li>
+      </ul>
+    </section>
   `;
   },
 };
