@@ -14,25 +14,31 @@ import pageGeolocation from "../../pages/geolocation/index.js";
 import pageJson from "../../pages/json/index.js";
 import pageSetRequestHeader from "../../pages/set-request-header/index.js";
 import pageSetResponseHeader from "../../pages/set-response-header/index.js";
-import pageCookies from "../../pages/cookies/index.js";
+import pageCookiesSet from "../../pages/cookies-set/index.js";
+import pageCookiesRead from "../../pages/cookies-read/index.js";
+import pageCookiesDelete from "../../pages/cookies-delete/index.js";
 import pageABTest from "../../pages/abtest/index.js";
+import pageLog from "../../pages/log/index.js";
 
 // The keys here correspond to the path in the request to `/example/PATH`
 const pages = {
-  home: pageHome,
-  hello: pageHello,
-  transform: pageTransform,
-  includes: pageIncludes,
-  json: pageJson,
+  "home": pageHome,
+  "hello": pageHello,
+  "transform": pageTransform,
+  "includes": pageIncludes,
+  "json": pageJson,
   "set-response-header": pageSetResponseHeader,
   "set-request-header": pageSetRequestHeader,
-  cookies: pageCookies,
-  rewrite: pageRewrite,
-  geolocation: pageGeolocation,
-  abtest: pageABTest,
+  "cookies-set": pageCookiesSet,
+  "cookies-read": pageCookiesRead,
+  "cookies-delete": pageCookiesDelete,
+  "rewrite": pageRewrite,
+  "geolocation": pageGeolocation,
+  "abtest": pageABTest,
+  "log": pageLog,
 };
 
-export default async (Request, Context) => {
+export default async(Request, Context) => {
   const url = new URL(Request.url);
   const path = url.pathname.split("/example/")[1] || "home";
 

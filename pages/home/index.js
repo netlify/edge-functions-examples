@@ -1,7 +1,7 @@
 export default {
   title: "Home",
   metaDescription: "Explore our library of Edge Function examples and deploy your own to Netlify.",
-  page: function () {
+  page: function() {
     return `
     <h1>Edge Functions on Netlify</h1>
       <p>Explore a library of reference examples for exploring and learning about Edge Functions on Netlify.</p>
@@ -13,6 +13,7 @@ export default {
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/hello">Hello, world</a></li>
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/json">Return JSON</a></li>
           <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/image">Return an image **TO DO**</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/log">Write to the logs</a></li>
         </ul>
       </section>
 
@@ -47,9 +48,9 @@ export default {
         <h2 class="home__sectionHeader">Cookies</h2>
 
         <ul class="home__sectionList">
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies">Set cookies</a></li>
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies">Read cookies</a></li>
-          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies">Delete cookies</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies-set">Set cookies</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies-read">Read cookies</a></li>
+          <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies-delete">Delete cookies</a></li>
         </ul>
       </section>
 
