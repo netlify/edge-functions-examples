@@ -4,45 +4,45 @@
 
 Explore these examples here: https://edge-funk.netlify.app/ (This URL to change after we launch)
 
-## Contents
+## Responses
 
-- [Set HTTP response headers](/pages/set-response-header)
-- [Set HTTP request headers](/pages/set-request-header)
-- A/B Testing with Google Optimize
-- A/B Testing Example
-- Add Header Example
-- API Rate Limiting with API Keys and IP Blocking
-- API Rate Limiting with Upstash
-- Basic Auth Password Protection
-- Bot Detection with Botd
-- Bot Detection with Datadome
-- Clerk Authentication at the Edge
-- [Managing Cookies](/pages/cookies)
-- CORS
-- Crypto
-- Feature Flag Apple STore
-- Feature Flag Config Cat
-- Feature Flag Posthog
-- Feature Flag Split
-- Geolocation Country Block
-- [Geolocation](/pages/geolocation/)
-- [Hello, World](/pages/hello/)
-- Hostname Rewrites
-- i18n
-- Image Response
-- [Includes at the Edge](/pages/includes)
-- IP Blocking Datadome
-- [JSON Response at the Edge](/pages/json)
+- [Hello, world](/pages/hello/)
+- [Return JSON](/pages/json)
+- [Return an image](/pages/image)
+- [Write to the logs](/pages/log)
+
+## Rewrites and proxies
+
+- Rewrite responses from another URL
+- Proxy requests to another source
+
+## HTTP Headers
+
+- [Set custom HTTP request headers](/pages/set-request-header)
+- [Set custom HTTP response headers](/pages/set-response-header)
+- Use request headers to serve internationalized content
+
+## Geolocation
+
+- [Determine a user's location](/pages/geolocation/)
+- Block content according to country
+- Serve localized content
+
+## Cookies
+
+- [Set cookies](/pages/cookies-set)
+- [Read cookies](/pages/cookies-read)
+- [Delete cookies](/pages/cookies-delete)
+- [Set up an A/B test using cookies](/pages/abtest)
+
+## Transforming responses
+
+- [Text transformation](/pages/transform)
+- [Content includes](/pages/include)
+
+## Authentication
+
 - JWT Authentication
-- Logging
-- Next News
-- Personalization Builder io
-- Power Parity Pricing Strategies
-- Power Parity Pricing
-- Query Params Filter
-- Redirects Upstash
-- Rewrites Upstash
-- [Transform HTTP Response](/pages/transform)
 
 ---
 
