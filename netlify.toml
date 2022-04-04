@@ -10,17 +10,17 @@
   function = "transform"
   path = "/*"
   
-[[edge_functions]]
-  function = "set-response-header"
-  path = "/*"
+# [[edge_functions]]
+#   function = "set-response-header"
+#   path = "/*"
 
-[[edge_functions]]
-  function = "set-request-header"
-  path = "/*"
+# [[edge_functions]]
+#   function = "set-request-header"
+#   path = "/*"
 
-[[edge_functions]]
-  function = "include"
-  path = "/*"
+# [[edge_functions]]
+#   function = "include"
+#   path = "/*"
 
 [[edge_functions]]
   path = "/hello"
