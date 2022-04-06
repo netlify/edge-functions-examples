@@ -58,6 +58,14 @@
   path = "/log"
   function = "log"
 
+[[edge_functions]]
+  path = "/country-block"
+  function = "country-block"
+
+[[edge_functions]]
+  path = "/localized-content"
+  function = "localized-content"
+
 # Serve pages explaining each example 
 [[edge_functions]]
   path = "/example/*"
@@ -69,9 +77,9 @@
   function = "[page]"
 
 [[redirects]]
- from = "/img/og/:text"
- to = "https://res.cloudinary.com/netlify/image/upload/c_fit,g_west,h_400,co_rgb:FFFFFFFF,l_text:netlify.com:Pacaembu-Bold.ttf_57::text,w_1053,x_46/v1619123320/netlify.com/default-og-background-learn-more.png"
- status = 200
+  from = "/img/og/:text"
+  to = "https://res.cloudinary.com/netlify/image/upload/c_fit,g_west,h_400,co_rgb:FFFFFFFF,l_text:netlify.com:Pacaembu-Bold.ttf_57::text,w_1053,x_46/v1619123320/netlify.com/default-og-background-learn-more.png"
+  status = 200
 
 
 

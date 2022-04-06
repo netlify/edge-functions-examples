@@ -37,8 +37,8 @@ export default {
       <h2 class="home__sectionHeader">Geolocation **NOT WORKING** </h2>
       <ul class="home__sectionList">
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/geolocation">Determine a user's location</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/geoblock">Block content according to country **TO DO**</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/internationalization">Serve localized content **TO DO**</a></li>
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/country-block">Block content according to country **TO DO**</a></li>
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/localized-content">Serve localized content **TO DO**</a></li>
       </ul>
     </section>
 
