@@ -13,7 +13,7 @@ export default {
         <li>Link to any context setting</li>
         <li>Link to result of edge function example</li>
         <li>Link to the edge function in the code on GitHub</li>
-        <li>${repoLink("edge-function-name.js")}</li>
+        <li>${repoLink("localized-content.ts")}</li>
       </ul>
     </section>
   `;

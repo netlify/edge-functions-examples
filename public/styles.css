@@ -306,6 +306,10 @@ pre code {
   border: 1px solid var(--color-gray-L300);
 }
 
+.home__sectionListItem--warning {
+  outline: 4px solid red;
+}
+
 .home__sectionListItemLink {
   text-decoration: none;
   display: block;

@@ -66,6 +66,14 @@
   path = "/localized-content"
   function = "localized-content"
 
+[[edge_functions]]
+  path = "/proxy-requests"
+  function = "proxy-requests"
+
+[[edge_functions]]
+  path = "/headers-i18n"
+  function = "headers-i18n"
+
 # Serve pages explaining each example 
 [[edge_functions]]
   path = "/example/*"

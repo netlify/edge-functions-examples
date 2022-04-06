@@ -19,8 +19,8 @@ export default {
     <section class="home__section">
       <h2 class="home__sectionHeader">Rewrites and proxies</h2>
       <ul class="home__sectionList">
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/rewrite">Rewrite responses from another URL **TODO**</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/proxy">Proxy requests to another source **TODO**</a></li>
+        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/rewrite">Rewrite responses from another URL</a></li>
+        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/proxy-requests">Proxy requests to another source</a></li>
       </ul>
     </section>
 
@@ -29,16 +29,16 @@ export default {
       <ul class="home__sectionList">
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-request-header">Set custom HTTP request headers</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-response-header">Set custom HTTP response headers</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/headers-i18n">Use request headers to serve internationalized content **TO DO**</a></li>
+        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/headers-i18n">Use request headers to serve internationalized content</a></li>
       </ul>
     </section>
 
     <section class="home__section">
-      <h2 class="home__sectionHeader">Geolocation **NOT WORKING** </h2>
+      <h2 class="home__sectionHeader">Geolocation</h2>
       <ul class="home__sectionList">
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/geolocation">Determine a user's location</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/country-block">Block content according to country **TO DO**</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/localized-content">Serve localized content **TO DO**</a></li>
+        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/geolocation">Determine a user's location</a></li>
+        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/country-block">Block content according to country</a></li>
+        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/localized-content">Serve localized content</a></li>
       </ul>
     </section>
 
@@ -55,15 +55,15 @@ export default {
     <section class="home__section">
       <h2 class="home__sectionHeader">Transforming responses</h2>
       <ul class="home__sectionList">
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/transform">Text transformations</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/include">Content includes</a></li>
+        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/transform">Text transformations</a></li>
+        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/include">Content includes</a></li>
       </ul>
     </section>
 
     <section class="home__section">
       <h2 class="home__sectionHeader">Authentication</h2>
       <ul class="home__sectionList">
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/auth-jwt">JWT Authentication **TO DO**</a></li>
+        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/auth-jwt">JWT Authentication</a></li>
       </ul>
     </section>
   `;

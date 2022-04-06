@@ -3,7 +3,6 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "Rewrite",
   description: "...",
-  image: "rewrite",
   page: function () {
     return `
     <section>

@@ -23,6 +23,8 @@ import pageLog from "../../pages/log/index.js";
 import pageAuthJwt from "../../pages/auth-jwt/index.js";
 import pageCountryBlock from "../../pages/country-block/index.js";
 import pageLocalizedContent from "../../pages/localized-content/index.js";
+import pageProxyRequests from "../../pages/proxy-requests/index.js";
+import pageHeadersI18n from "../../pages/headers-i18n/index.js";
 
 // The keys here correspond to the path in the request to `/example/PATH`
 const pages = {
@@ -44,6 +46,8 @@ const pages = {
   "auth-jwt": pageAuthJwt,
   "country-block": pageCountryBlock,
   "localized-content": pageLocalizedContent,
+  "proxy-requests": pageProxyRequests,
+  "headers-i18n": pageHeadersI18n,
 };
 
 export default async (Request, Context) => {
