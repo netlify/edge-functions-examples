@@ -1,9 +1,9 @@
 import { Context } from "netlify:edge";
 
 export default async (req: Request, context: Context) => {
-  // Here's what's available on Context.geo
+  // Here's what's available on context.geo
 
-  // Context: {
+  // context: {
   //   geo: {
   //     city?: string;
   //     country?: {
