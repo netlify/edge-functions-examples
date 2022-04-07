@@ -8,7 +8,6 @@ export default {
     <section>
       <h1>Logging with Edge Functions</h1>
       <p>You can output content to the logs during the execution of your edge function.</p>
-      <p><strong>Note: </strong>You can still use <code>console.log()</code> in your Edge Functions, but using <code>context.log()</code> will tell you which Edge Function generated the message for easier debugging!</p>
       <pre><code>import type { Context } from "netlify:edge";
 
 export default async (request: Request, context: Context) => {
@@ -19,6 +18,11 @@ export default async (request: Request, context: Context) => {
         <li><a href="/log">Echo content to the logs</a></li>
         <li>${repoLink("log.ts")}</li>
       </ul>
+
+      <div class="protip">
+        <h2>Pro tip!</h2>
+          <p>You can still use <code>console.log()</code> in your Edge Functions, but using <code>context.log()</code> will tell you which Edge Function generated the message for easier debugging!</p>
+      </div>
     </section>
   `;
   },
