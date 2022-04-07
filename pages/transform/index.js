@@ -8,7 +8,7 @@ export default {
     <section>
       <h1>Transform responses</h1>
       <p>
-        You can use Edge Functions to transform the content of an HTTP response. In this example, we transform the response of a request to <a href="/hello">/hello</a> with a simple <code>toUpperCase()</code> function, using the query parameter <code>method=transform</code>.
+        You can use Edge Functions to transform the content of an HTTP response. In this example, we transform the response of a request to <a href="/hello">/hello</a> with a <code>toUpperCase()</code> function, using the query parameter <code>method=transform</code>.
       </p>
 
       <pre><code>import { Context } from "netlify:edge";
