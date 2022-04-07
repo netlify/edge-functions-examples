@@ -1,18 +1,18 @@
 ![Netlify examples](https://user-images.githubusercontent.com/5865/159468750-df1c2783-39b2-40da-9c0f-971f72a7ea3f.png)
 
-# {Name of example} with Netlify Edge Functions
+# Serve localized content with Netlify Edge Functions
 
-Description of what this example does
+You can use geolocation data to serve localized content according to country code.
 
 ## Code example
 
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
-- [Explore the code for this Edge Function](../../netlify/edge-functions/THE-EDGE-FUNCTION-FILE)
+- [Explore the code for this Edge Function](../../netlify/edge-functions/localized-content)
 
 ## View this example on the web
 
-- https://edge-functions-examples.netlify.app/example/THE-EXAMPLE-PATH
+- https://edge-functions-examples.netlify.app/example/localized-content
 
 ## Deploy to Netlify
 

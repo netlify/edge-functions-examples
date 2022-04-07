@@ -8,6 +8,7 @@ export default {
     <section>
       <h1>Block content according to country</h1>
       <p>You can use geolocation data to identify a user's country and block content if required.</p>
+      <p>Geolocation information is available on the <code>Context.geo</code> object.</p>
 
       <pre><code>import { Context } from "netlify:edge";
 

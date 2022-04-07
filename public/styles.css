@@ -244,7 +244,6 @@ pre code {
   text-align: left;
   color: var(--color-gray-L800);
   max-width: none;
-  text-transform: capitalize;
 }
 
 .footer {
