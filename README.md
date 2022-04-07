@@ -22,6 +22,11 @@ Explore these examples here: https://edge-funk.netlify.app/ (This URL to change 
 - [Set custom HTTP response headers](/pages/set-response-header)
 - [Use request headers to serve internationalized content](/pages/headers-i18n)
 
+## Transforming responses
+
+- [Text transformation](/pages/transform)
+- [Content includes](/pages/include)
+
 ## Geolocation
 
 - [Determine a user's location](/pages/geolocation)
@@ -34,11 +39,6 @@ Explore these examples here: https://edge-funk.netlify.app/ (This URL to change 
 - [Read cookies](/pages/cookies-read)
 - [Delete cookies](/pages/cookies-delete)
 - [Set up an A/B test using cookies](/pages/abtest)
-
-## Transforming responses
-
-- [Text transformation](/pages/transform)
-- [Content includes](/pages/include)
 
 ## Authentication
 
