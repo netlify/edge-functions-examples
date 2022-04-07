@@ -2,7 +2,7 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "Deleting cookies",
-  description: "Delete an HTTP cookie",
+  metaDescription: "Delete an HTTP cookie",
   page: function () {
     return `
     <section>

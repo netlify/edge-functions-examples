@@ -2,7 +2,7 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "JWT Authentication",
-  description: "One or two sentences describing your edge function",
+  metaDescription: "One or two sentences describing your edge function",
   page: function () {
     return `
     <section>

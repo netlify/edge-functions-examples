@@ -2,7 +2,7 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "Block content according to country",
-  description: "Use geolocation data to block content according to country.",
+  metaDescription: "Use geolocation data to block content according to country.",
   page: function () {
     return `
     <section>

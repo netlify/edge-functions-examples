@@ -2,7 +2,7 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "Rewrite",
-  description: "...",
+  metaDescription: "...",
   page: function () {
     return `
     <section>

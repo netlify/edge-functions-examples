@@ -2,7 +2,7 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "Set HTTP request header",
-  description: "Set a custom HTTP request header",
+  metaDescription: "Set a custom HTTP request header",
   page: function () {
     return `
     <section>

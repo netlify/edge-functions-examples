@@ -2,7 +2,7 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "Serve localized content",
-  description: "Use geolocation data to serve localized content according to country.",
+  metaDescription: "Use geolocation data to serve localized content according to country.",
   page: function () {
     return `
     <section>

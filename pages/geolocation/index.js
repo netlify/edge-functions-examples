@@ -3,8 +3,8 @@ import geolocationInfo from "../../components/geolocation-info.js";
 
 export default {
   title: "Geolocation",
-  description:
-    "Use Netlify Edge Functions to get information about a user's location to serve location-specific content",
+  metaDescription:
+    "Use Netlify Edge Functions to get information about a user's location to serve location-specific content.",
   page: function ({ geo }) {
     return `
     <section>

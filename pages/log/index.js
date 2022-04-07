@@ -2,7 +2,7 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "Logging with Edge Functions",
-  description: "Output content to the logs from an edge function",
+  metaDescription: "Output content to the logs from an edge function",
   page: function () {
     return `
     <section>

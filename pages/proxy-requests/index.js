@@ -2,7 +2,7 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "Proxy requests to another source",
-  description: "...",
+  metaDescription: "...",
   page: function () {
     return `
     <section>

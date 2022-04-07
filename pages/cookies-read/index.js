@@ -2,7 +2,7 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "Reading cookies",
-  description: "Read HTTP cookie values",
+  metaDescription: "Read HTTP cookie values",
   page: function () {
     return `
     <section>

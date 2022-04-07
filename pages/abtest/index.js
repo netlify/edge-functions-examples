@@ -2,7 +2,7 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "Set up an A/B Test",
-  description: "Use cookies to power an A/B test at the Edge.",
+  metaDescription: "Use cookies to power an A/B test at the Edge.",
   page: function () {
     return `
     <section>
