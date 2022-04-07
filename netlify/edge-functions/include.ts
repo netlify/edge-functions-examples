@@ -16,7 +16,7 @@ export default async (request: Request, context: Context) => {
     return response;
   }
 
-  context.log("Including pricing content into the page");
+  console.log("Including pricing content into the page");
 
   // Get the page content
   const page = await response.text();
