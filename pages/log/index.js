@@ -7,7 +7,7 @@ export default {
     return `
     <section>
       <h1>Logging with Edge Functions</h1>
-      <p>You can output content to the logs during the execution of your edge function.</p>
+      <p>You can output content to the logs during the execution of your Edge Function.</p>
       <pre><code>import type { Context } from "netlify:edge";
 
 export default async (request: Request, context: Context) => {
