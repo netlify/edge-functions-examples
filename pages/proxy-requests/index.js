@@ -26,6 +26,11 @@ export default async (request: Request, context: Context) => {
         <li><a href="/fetch-joke">Fetch a random joke from https://icanhazdadjoke.com/ via an Edge Function</a></li>
         <li>${repoLink("proxy-requests.ts")}</li>
       </ul>
+
+      <div class="protip">
+        <h2>Pro tip!</h2>
+        <p>Curious about <code>context.json()</code> in the code example above? Check out how you can return a <a href="/example/json">JSON response</a> using Edge Functions.</p>
+      </div>
     </section>
 `;
   },
