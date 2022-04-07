@@ -6,27 +6,27 @@ Explore these examples here: https://edge-funk.netlify.app/ (This URL to change 
 
 ## Responses
 
-- [Hello, world](/pages/hello/)
+- [Hello, world](/pages/hello)
 - [Return JSON](/pages/json)
 - [Return an image](/pages/image)
 - [Write to the logs](/pages/log)
 
 ## Rewrites and proxies
 
-- Rewrite responses from another URL
-- Proxy requests to another source
+- [Rewrite responses from another URL](/pages/rewrite)
+- [Proxy requests to another source](/pages/proxy-requests)
 
 ## HTTP Headers
 
 - [Set custom HTTP request headers](/pages/set-request-header)
 - [Set custom HTTP response headers](/pages/set-response-header)
-- Use request headers to serve internationalized content
+- [Use request headers to serve internationalized content](/pages/headers-i18n)
 
 ## Geolocation
 
-- [Determine a user's location](/pages/geolocation/)
-- Block content according to country
-- Serve localized content
+- [Determine a user's location](/pages/geolocation)
+- [Block content according to country](/pages/country-block)
+- [Serve localized content](/pages/localized-content)
 
 ## Cookies
 
@@ -42,7 +42,7 @@ Explore these examples here: https://edge-funk.netlify.app/ (This URL to change 
 
 ## Authentication
 
-- JWT Authentication
+- [JWT Authentication](/pages/auth-jwt)
 
 ---
 
