@@ -26,7 +26,7 @@ context: {
 
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
-- [Explore the code for this Edge Function](../../netlify/edge-functions/localized-content)
+- [Explore the code for this Edge Function](../../netlify/edge-functions/localized-content.js)
 
 ## View this example on the web
 
