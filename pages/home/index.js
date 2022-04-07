@@ -1,7 +1,7 @@
 export default {
   title: "Home",
   metaDescription: "Explore our library of Edge Function examples and deploy your own to Netlify.",
-  page: function () {
+  page: function() {
     return `
     <h1>Edge Functions on Netlify</h1>
     <p>Explore a library of reference examples for exploring and learning about Edge Functions on Netlify.</p>
@@ -17,22 +17,30 @@ export default {
     </section>
 
     <section class="home__section">
-      <h2 class="home__sectionHeader">Rewrites and proxies</h2>
-      <ul class="home__sectionList">
-        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/rewrite">Rewrite responses from another URL</a></li>
-        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/proxy-requests">Proxy requests to another source</a></li>
-      </ul>
+    <h2 class="home__sectionHeader">Rewrites and proxies</h2>
+    <ul class="home__sectionList">
+    <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/rewrite">Rewrite responses from another URL</a></li>
+    <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/proxy-requests">Proxy requests to another source</a></li>
+    </ul>
     </section>
-
+    
     <section class="home__section">
-      <h2 class="home__sectionHeader">HTTP Headers</h2>
+    <h2 class="home__sectionHeader">HTTP Headers</h2>
+    <ul class="home__sectionList">
+    <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-request-header">Set custom HTTP request headers</a></li>
+    <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-response-header">Set custom HTTP response headers</a></li>
+    <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/headers-i18n">Use request headers to serve internationalized content</a></li>
+    </ul>
+    </section>
+    
+    <section class="home__section">
+      <h2 class="home__sectionHeader">Transforming responses</h2>
       <ul class="home__sectionList">
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-request-header">Set custom HTTP request headers</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-response-header">Set custom HTTP response headers</a></li>
-        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/headers-i18n">Use request headers to serve internationalized content</a></li>
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/transform">Text transformations</a></li>
+        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/include">Content includes</a></li>
       </ul>
     </section>
-
+    
     <section class="home__section">
       <h2 class="home__sectionHeader">Geolocation</h2>
       <ul class="home__sectionList">
@@ -52,13 +60,6 @@ export default {
       </ul>
     </section>
 
-    <section class="home__section">
-      <h2 class="home__sectionHeader">Transforming responses</h2>
-      <ul class="home__sectionList">
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/transform">Text transformations</a></li>
-        <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/include">Content includes</a></li>
-      </ul>
-    </section>
 
     <section class="home__section">
       <h2 class="home__sectionHeader">Authentication</h2>

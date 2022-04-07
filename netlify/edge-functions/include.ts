@@ -1,22 +1,18 @@
 import { Context } from "netlify:edge";
 
 export default async (request: Request, context: Context) => {
+  
+  // Just return what was requested without transforming it, 
+  // unless we fnd the query parameter for this demo
   const url = new URL(request.url);
-
-  // Look for the query parameter, and return if we don't find it
   if (url.searchParams.get("include") !== "pricing") {
     return context.next();
   }
 
-  const response = await context.next();
-
-  if (response.status === 304) {
-    return response;
-  }
-
   console.log("Including pricing content into the page");
-
+  
   // Get the page content
+  const response = await context.next();
   const page = await response.text();
 
   // Search for the placeholder

@@ -3,7 +3,7 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "Includes at the Edge",
   metaDescription: "Dynamically include content into templates at the edge.",
-  page: function () {
+  page: function() {
     return `
     <section>
     <h1>Include content into templates at the edge</h1>
@@ -17,30 +17,29 @@ export default {
     <pre><code>import { Context } from "netlify:edge";
 
 export default async (request: Request, context: Context) => {
+  
+  // Just return what was requested without transforming it, 
+  // unless we fnd the query parameter for this demo
   const url = new URL(request.url);
-
-  // Look for the query parameter, and return if we don't find it
   if (url.searchParams.get("include") !== "pricing") {
     return context.next();
   }
 
-  const response = await context.next();
-
-  if (response.status === 304) {
-    return response;
-  }
-
-  // Get the page content
-  const page = await response.text();
+  console.log("Including pricing content into the page");
   
+  // Get the page content
+  const response = await context.next();
+  const page = await response.text();
+
   // Search for the placeholder
   const regex = /{{INCLUDE_PRICE_INFO}}/i;
-  
+
   // Replace the content
   const pricingContent = "It's expensive, but buy it anyway.";
   const updatedPage = page.replace(regex, pricingContent);
   return new Response(updatedPage, response);
 };
+
 </code></pre>
 
   <p>This include Edge Function is set up to run using the <code>include=pricing</code> query parameter on any URL, using this entry in the netlify.toml file:</p>
