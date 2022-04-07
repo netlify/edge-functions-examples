@@ -1,7 +1,7 @@
 import type { Context } from "netlify:edge";
 
-export default async (req: Request, context: Context) => {
-  const url = new URL(req.url);
+export default async (request: Request, context: Context) => {
+  const url = new URL(request.url);
 
   switch (url.searchParams.get("action")) {
     case "set":

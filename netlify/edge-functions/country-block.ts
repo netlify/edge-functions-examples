@@ -1,6 +1,6 @@
 import { Context } from "netlify:edge";
 
-export default async (req: Request, context: Context) => {
+export default async (request: Request, context: Context) => {
   // Here's what's available on context.geo
 
   // context: {

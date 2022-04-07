@@ -14,7 +14,7 @@ export default {
       <pre><code>import { Context } from "netlify:edge";
 
 export default async (request: Request, context: Context) => {
-  const url = new URL(req.url);
+  const url = new URL(request.url);
 
   // Look for the query parameter, and return if we don't find it
   if (url.searchParams.get("method") !== "transform") {

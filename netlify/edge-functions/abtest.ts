@@ -1,6 +1,6 @@
 import type { Context } from "netlify:edge";
 
-export default async (req: Request, context: Context) => {
+export default async (request: Request, context: Context) => {
   // look for existing "test_bucket" cookie
   const bucketName = "test_bucket";
   const bucket = context.cookies.get(bucketName);

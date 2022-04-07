@@ -10,7 +10,7 @@ export default {
       <p>Use an Edge Function to read and manage HTTP cookies.</p>
       <pre><code>import type { Context } from "netlify:edge";
 
-export default async (req: Request, context: Context) => {  
+export default async (request: Request, context: Context) => {  
   // Read the value of a cookie
   const value = context.cookies.get("My cookie");
 };</code></pre>

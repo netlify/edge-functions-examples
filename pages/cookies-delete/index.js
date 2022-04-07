@@ -10,7 +10,7 @@ export default {
       <p>Use an Edge Function to delete cookies.</p>
       <pre><code>import type { Context } from "netlify:edge";
 
-export default async (req: Request, context: Context) => {
+export default async (request: Request, context: Context) => {
   // Delete a cookie
   context.cookies.delete("My cookie");
 };</code></pre>

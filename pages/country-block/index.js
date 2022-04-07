@@ -12,7 +12,7 @@ export default {
 
       <pre><code>import { Context } from "netlify:edge";
 
-export default async (req: Request, context: Context) => {
+export default async (request: Request, context: Context) => {
   const BLOCKED_COUNTRY_CODE = "GB";
   const countryCode = context.geo?.country?.code || "US";
   const countryName = context.geo?.country?.name || "United States of America";
