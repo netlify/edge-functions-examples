@@ -8,26 +8,26 @@ their experience.
 Geolocation information is available on the `Context.geo` object.
 
 ```javascript
-// Context: {
-//   geo: {
-//     city?: string;
-//     country?: {
-//       code?: string;
-//       name?: string;
-//     },
-//     subdivision?: {
-//       code?: string;
-//       name?: string;
-//     },
-//   }
-// }
+context: {
+  geo: {
+    city?: string;
+    country?: {
+      code?: string;
+      name?: string;
+    },
+    subdivision?: {
+      code?: string;
+      name?: string;
+    },
+  }
+}
 ```
 
 ## Code example
 
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
-- [Explore the code for this Edge Function](../../netlify/edge-functions/geolocation)
+- [Explore the code for this Edge Function](../../netlify/edge-functions/geolocation.ts)
 
 ## View this example on the web
 
