@@ -17,7 +17,7 @@ export default async (request: Request, context: Context) => {
 };</code></pre>
       <h2>See this in action</h2>
       <ul>
-        <li><a href="/example/set-response-header">This page, without custom HTTP response header</a></li>
+        <li><a href="/example/set-response-header">This page, without a custom HTTP response header</a></li>
         <li><a href="/example/set-response-header?method=set-response-header">This page, but with a custom HTTP response header added</a></li>
         <li>${repoLink("set-response-header.ts")}</li>
       </ul>
