@@ -14,6 +14,8 @@ export default {
         <li><a href="/rewrite">Run the rewrite edge function</li>
         <li>${repoLink("rewrite.ts")}</li>
       </ul>
+      <h2>Pro tip!</h2>
+      <p>You can combine <a href="/example/localized-content">geolocation data</a> with URL rewrites to serve different URLs powering internationalized content.</p>
     </section>
   `;
   },

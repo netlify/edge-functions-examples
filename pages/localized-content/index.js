@@ -32,6 +32,8 @@ export default {
         <li><a href="/localized-content">Get your localized content from the Edge Function</a></li>
         <li>${repoLink("localized-content.js")}</li>
       </ul>
+      <h2>Pro tip!</h2>
+      <p>You can also combine geolocation data with <a href="/example/rewrite">URL rewrites</a> for another way to serve internationalized content.</p>
     </section>
   `;
   },
