@@ -21,7 +21,6 @@ export default async (request: Request, context: Context) => {
   // Use fetch() and return the image response
   const kitten = await fetch("https://placekitten.com/g/300/300");
   return kitten;
-
 };
 </code></pre>
       <h2>See this in action</h2>
