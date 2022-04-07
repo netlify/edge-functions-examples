@@ -4,7 +4,7 @@ export default {
   page: function () {
     return `
     <h1>Edge Functions on Netlify</h1>
-    <p>Explore a library of reference examples for exploring and learning about Edge Functions on Netlify.</p>
+    <p>Explore a library of reference examples for learning about Edge Functions on Netlify.</p>
 
     <section class="home__section">
       <h2 class="home__sectionHeader">Responses</h2>
