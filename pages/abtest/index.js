@@ -2,14 +2,14 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "Set up an A/B Test",
-  metaDescription: "Use cookies to power an A/B test at the Edge.",
+  metaDescription: "Use cookies to power an A/B test at The Edge.",
   page: function () {
     return `
     <section>
-      <h1>Set up an A/B Test at the Edge</h1>
+      <h1>Set up an A/B Test at The Edge</h1>
       <p>A/B tests are a great way to test new features on your site. A basic A/B test works by assigning visitors to a particular test "bucket" the first time they visit a site, usually using a random number between 0 and 1.</p>
       <p>Visitors can then be redirected to different pages, depending on the bucket and cookie they were assigned.</p> 
-      <p>You could even use A/B testing in combination with Geolocation at the Edge!</p>
+      <p>You could even use A/B testing in combination with Geolocation at The Edge!</p>
 
       <pre><code>import type { Context } from "netlify:edge";
 
@@ -51,8 +51,8 @@ export default async (request: Request, context: Context) => {
       </ul>
       <h2>Related</h2>
       <ul>
-        <li><a href="/example/cookies">Read more about managing cookies at the Edge</a></li>
-        <li><a href="/example/geolocation">Read more about Geolocation at the Edge</a></li>
+        <li><a href="/example/cookies">Read more about managing cookies at The Edge</a></li>
+        <li><a href="/example/geolocation">Read more about Geolocation at The Edge</a></li>
       </ul>
     </section>
   `;

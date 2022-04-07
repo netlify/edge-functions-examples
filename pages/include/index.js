@@ -1,12 +1,12 @@
 import repoLink from "../../components/repo-link.js";
 
 export default {
-  title: "Includes at the Edge",
-  metaDescription: "Dynamically include content into templates at the edge.",
+  title: "Includes at The Edge",
+  metaDescription: "Dynamically include content into templates at The Edge.",
   page: function() {
     return `
     <section>
-    <h1>Include content into templates at the edge</h1>
+    <h1>Include content into templates at The Edge</h1>
     <p>
       The ability to transform the content of an HTTP response with Edge Functions enables you to substitute content into templates as you would with Edge Includes.
     </p>

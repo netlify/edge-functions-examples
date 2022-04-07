@@ -2,7 +2,7 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "Transform HTTP Response",
-  metaDescription: "Dynamically transform any page response at the edge..",
+  metaDescription: "Dynamically transform any page response at The Edge.",
   page: function () {
     return `
     <section>

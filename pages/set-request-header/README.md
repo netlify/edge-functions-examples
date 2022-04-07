@@ -2,7 +2,7 @@
 
 # Set custom HTTP request headers with Netlify Edge Functions
 
-Use an Edge Function to add HTTP headers to any HTTP request at the edge
+Use an Edge Function to add HTTP headers to any HTTP request at The Edge.
 
 ## Code example
 
