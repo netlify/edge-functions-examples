@@ -26,8 +26,6 @@ export default async (request: Request, context: Context) => {
 
   const response = await context.next();
 
-  // Check to see if the response has already been modified.
-  // If it has, return it.
   if (response.status === 304) {
     return response;
   }
