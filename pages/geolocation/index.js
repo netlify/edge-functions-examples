@@ -1,37 +1,48 @@
 import repoLink from "../../components/repo-link.js";
 import geolocationInfo from "../../components/geolocation-info.js";
 
-// todo - add geo to footer!
-
 export default {
   title: "Geolocation",
   description:
     "Use Netlify Edge Functions to get information about a user's location to serve location-specific content",
-  image: "geolocation",
-  page: function () {
+  page: function ({ geo }) {
     return `
     <section>
       <h1>Geolocation</h1>
-      <p>You can use Edge Functions to get information about a user's location to serve location-specific content.</p>
-      <p>In this example, we use the <code>Context.geo</code> object to display information about your location.</p>
-      <pre><code>//TO DO!
+      <p>You can use Edge Functions to get information about a user's location to serve location-specific content and personalize their experience.</p>
+      
+      ${geolocationInfo({ city: geo?.city, countryCode: geo?.country?.code, countryName: geo?.country?.name })}
+      
+      <p>Geolocation information is available on the <code>Context.geo</code> object.</p>
 
-// city?: string;
-// country?: {
-//   code?: string;
-//   name?: string;
-// };
-// subdivision?: {
-//   code?: string;
-//   name?: string;
-// };</code></pre>
-      <h2>See this in action ** DUMMY DATA — REPLACE! **</h2>
+      <pre><code>import { Context } from "netlify:edge";
 
-      ${geolocationInfo({ city: "FunkyTown", countryCode: "GB", countryName: "Phil's Country" })}
+export default async (req: Request, context: Context) => {
+  // Here's what's available on Context.geo
 
+  // Context: {
+  //   geo: {
+  //     city?: string;
+  //     country?: {
+  //       code?: string;
+  //       name?: string;
+  //     },
+  //     subdivision?: {
+  //       code?: string;
+  //       name?: string;
+  //     },
+  //   }
+  // }
+
+  return context.json({
+    geo: context.geo,
+    header: req.headers.get("x-nf-geo"),
+  });
+};</code></pre>
+      <h2>See this in action</h2>
       <ul>
-        <li>View raw geolocation data at <a href="/geolocation">/geolocation</a></li>
-        <li>${repoLink("geolocation.js")}</li>
+        <li>View your raw geolocation data at <a href="/geolocation">/geolocation</a></li>
+        <li>${repoLink("geolocation.ts")}</li>
       </ul>
     </section>
   `;

@@ -1,13 +1,24 @@
 import { Context } from "netlify:edge";
 
 export default async (req: Request, context: Context) => {
-  console.log(context.geo);
+  // Here's what's available on Context.geo
 
-  const response = {
-    message: "Data not available yet!",
-  };
+  // Context: {
+  //   geo: {
+  //     city?: string;
+  //     country?: {
+  //       code?: string;
+  //       name?: string;
+  //     },
+  //     subdivision?: {
+  //       code?: string;
+  //       name?: string;
+  //     },
+  //   }
+  // }
 
-  return new Response(JSON.stringify(response), {
-    headers: { "content-type": "application/json" },
+  return context.json({
+    geo: context.geo,
+    header: req.headers.get("x-nf-geo"),
   });
 };

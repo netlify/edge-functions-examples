@@ -60,9 +60,8 @@ export default async (Request, Context) => {
   const html = layout({
     url: url,
     title: pages[path].title,
-    content: pages[path].page(),
+    content: pages[path].page({ geo: Context.geo }),
     metaDescription: pages[path].metaDescription,
-    geo: Context.geo,
   });
 
   // send our response
