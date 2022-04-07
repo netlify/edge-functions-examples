@@ -24,9 +24,6 @@ export default function layout(data) {
     
     <section>
       <h2>What are Edge Functions?</h2>
-
-      <p>Netlify Edge Functions connects our powerful web development workflow with an open runtime standard at the network edge, making it easy for developers to build fast, personalized web experiences with existing development tools.<p>
-      
       <p>Using Javascript and Typescript, Netlify Edge Functions give you the power to modify network requests to localize content, serve relevant ads, authenticate visitors, A/B test content, and much more! And this all happens at the <strong>Edge</strong> — directly from the worldwide location closest to each user.</p>
 
       <p>To use Edge Functions on Netlify, add JavaScript or Typescript files to an edge-functions directory in your project, and add <code>[[edge_functions]]</code> entries to your netlify.toml file. <a href="https://docs.netlify.com/edge-functions/configure-and-build/" target="_blank">Learn more on the docs</a>.</p>
