@@ -67,7 +67,7 @@
   function = "localized-content"
 
 [[edge_functions]]
-  path = "/proxy-requests"
+  path = "/fetch-joke"
   function = "proxy-requests"
 
 [[edge_functions]]

@@ -2,20 +2,31 @@ import repoLink from "../../components/repo-link.js";
 
 export default {
   title: "Proxy requests to another source",
-  metaDescription: "...",
-  page: function () {
+  metaDescription: "Make requests to other sources via an Edge Function",
+  page: function() {
     return `
     <section>
-      <h1>Proxy requests to another source — purposefully not complete</h1>
-      <p>One or two sentences describing what it does.</p>
+      <h1>Proxy requests to another source</h1>
+      <p>You can use <a href="https://developer.mozilla.org/en-US/docs/Web/API/fetch" target="_BLANK" rel=noopener>fetch()</a> to make requests to other sources via an Edge Function.</p>
+      <pre><code>import { Context } from "netlify:edge";
+
+export default async (request: Request, context: Context) => {
+
+  const joke = await fetch("https://icanhazdadjoke.com/", {
+    "headers": {
+      "Accept": "application/json"
+    }
+  });
+  const jsonData = await joke.json();
+  return context.json(jsonData);
+
+};</code></pre>
       <h2>See this in action</h2>
       <ul>
-        <li>Link to any context setting</li>
-        <li>Link to result of edge function example</li>
-        <li>Link to the edge function in the code on GitHub</li>
+        <li><a href="/fetch-joke">Fetch a random joke from https://icanhazdadjoke.com/ via an Edge Function</a></li>
         <li>${repoLink("proxy-requests.ts")}</li>
       </ul>
     </section>
-  `;
+`;
   },
 };

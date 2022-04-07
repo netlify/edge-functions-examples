@@ -20,7 +20,7 @@ export default {
     <h2 class="home__sectionHeader">Rewrites and proxies</h2>
     <ul class="home__sectionList">
     <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/rewrite">Rewrite responses from another URL</a></li>
-    <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/proxy-requests">Proxy requests to another source</a></li>
+    <li class="home__sectionListItem home__sectionListItem"><a class="home__sectionListItemLink" href="/example/proxy-requests">Proxy requests to another source</a></li>
     </ul>
     </section>
     
