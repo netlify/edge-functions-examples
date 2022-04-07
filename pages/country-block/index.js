@@ -7,7 +7,11 @@ export default {
     return `
     <section>
       <h1>Block content according to country</h1>
-      <p>You can use geolocation data to block content according to country.</p>
+      <p>You can use geolocation data to identify a user's country, block content and/or redirect to alternative content.</p>
+
+      <pre><code>//add code example here
+//include using rewrite?</code></pre>
+
       <h2>See this in action</h2>
       <ul>
         <li>Link to any context setting</li>

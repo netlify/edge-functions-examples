@@ -1,13 +1,16 @@
 import repoLink from "../../components/repo-link.js";
 
 export default {
-  title: "Name of your edge function",
+  title: "JWT Authentication",
   description: "One or two sentences describing your edge function",
   page: function () {
     return `
     <section>
-      <h1>Title of edge function - THIS IS PURPOSELY NOT DONE</h1>
+      <h1>JWT Authentication</h1>
       <p>One or two sentences describing what it does.</p>
+
+        <pre><code>//add code example here</code></pre>
+
       <h2>See this in action</h2>
       <ul>
         <li>Link to any context setting</li>
