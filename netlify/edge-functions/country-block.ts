@@ -1,7 +1,34 @@
 import { Context } from "netlify:edge";
 
-export default async (request: Request, context: Context) => {
-  return new Response("This is a placeholder for country block!", {
+export default async (req: Request, context: Context) => {
+  // Here's what's available on Context.geo
+
+  // Context: {
+  //   geo: {
+  //     city?: string;
+  //     country?: {
+  //       code?: string;
+  //       name?: string;
+  //     },
+  //     subdivision?: {
+  //       code?: string;
+  //       name?: string;
+  //     },
+  //   }
+  // }
+
+  const BLOCKED_COUNTRY_CODE = "GB";
+  const countryCode = context.geo?.country?.code || "US";
+  const countryName = context.geo?.country?.name || "United States of America";
+
+  if (countryCode === BLOCKED_COUNTRY_CODE) {
+    return new Response(`We're sorry, you can't access our content from ${countryName}!`, {
+      headers: { "content-type": "text/html" },
+      status: 451,
+    });
+  }
+
+  return new Response(`Hello there! You can freely access our content from ${countryName}!`, {
     headers: { "content-type": "text/html" },
   });
 };
