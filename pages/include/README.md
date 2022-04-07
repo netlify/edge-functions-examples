@@ -10,6 +10,26 @@ some other content.
 
 ## Code example
 
+```ts
+import { Context } from "netlify:edge";
+
+export default async (request: Request, context: Context) => {
+  
+  // Get the page content
+  const response = await context.next();
+  const page = await response.text();
+
+  // Search for the placeholder
+  const regex = /{{INCLUDE_PRICE_INFO}}/i;
+
+  // Replace the content
+  const pricingContent = "It's expensive, but buy it anyway.";
+  const updatedPage = page.replace(regex, pricingContent);
+  return new Response(updatedPage, response);
+};
+
+```
+
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
 - [Explore the code for this Edge Function](../../netlify/edge-functions/includes.js)
