@@ -2,7 +2,7 @@
 
 # Netlify Edge Functions Examples
 
-Explore these examples here: https://edge-funk.netlify.app/ (This URL to change after we launch)
+Explore these examples here: https://edge-functions-example.netlify.app/
 
 ## Responses
 
