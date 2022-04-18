@@ -3,11 +3,15 @@ export default {
   metaDescription: "Explore our library of Edge Function examples and deploy your own to Netlify.",
   page: function() {
     return `
-    <h1>Edge Functions on Netlify</h1>
-    <p>Explore a library of reference examples for learning about Edge Functions on Netlify.</p>
+    <section class="home__section">
+    <h2>Edge Functions Examples</h2>
+    <p>
+      Explore these examples here or over in their <a href="https://github.com/netlify/edge-functions-examples" target="_BLANK" rel="noopener">GitHub repository</a>
+    </p>
+    </section>
 
     <section class="home__section">
-      <h2 class="home__sectionHeader">Responses</h2>
+      <h3 class="home__sectionHeader">Responses</h3>
       <ul class="home__sectionList">
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/hello">Hello, world</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/json">Return JSON</a></li>
@@ -17,7 +21,7 @@ export default {
     </section>
 
     <section class="home__section">
-    <h2 class="home__sectionHeader">Rewrites and proxies</h2>
+    <h3 class="home__sectionHeader">Rewrites and proxies</h3>
     <ul class="home__sectionList">
     <li class="home__sectionListItem home__sectionListItem--warning"><a class="home__sectionListItemLink" href="/example/rewrite">Rewrite responses from another URL</a></li>
     <li class="home__sectionListItem home__sectionListItem"><a class="home__sectionListItemLink" href="/example/proxy-requests">Proxy requests to another source</a></li>
@@ -25,7 +29,7 @@ export default {
     </section>
     
     <section class="home__section">
-    <h2 class="home__sectionHeader">HTTP Headers</h2>
+    <h3 class="home__sectionHeader">HTTP Headers</h3>
     <ul class="home__sectionList">
     <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-request-header">Set custom HTTP request headers</a></li>
     <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-response-header">Set custom HTTP response headers</a></li>
@@ -34,7 +38,7 @@ export default {
     </section>
     
     <section class="home__section">
-      <h2 class="home__sectionHeader">Transforming responses</h2>
+      <h3 class="home__sectionHeader">Transforming responses</h3>
       <ul class="home__sectionList">
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/transform">Text transformations</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/include">Content includes</a></li>
@@ -42,7 +46,7 @@ export default {
     </section>
     
     <section class="home__section">
-      <h2 class="home__sectionHeader">Geolocation</h2>
+      <h3 class="home__sectionHeader">Geolocation</h3>
       <ul class="home__sectionList">
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/geolocation">Determine a user's location</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/country-block">Block content according to country</a></li>
@@ -51,7 +55,7 @@ export default {
     </section>
 
     <section class="home__section">
-      <h2 class="home__sectionHeader">Cookies</h2>
+      <h3 class="home__sectionHeader">Cookies</h3>
       <ul class="home__sectionList">
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies-set">Set cookies</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies-read">Read cookies</a></li>

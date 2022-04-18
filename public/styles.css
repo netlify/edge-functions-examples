@@ -1,18 +1,14 @@
 :root {
   --color-bg: #ffffff;
   --color-fg: #151a1e;
-
   --color-gray-L300: #e7eaed;
   --color-gray-L800: #151a1e;
   --color-teal-T900: #054861;
   --color-teal-T600: #30c8c9;
-
   --font-family-main: Mulish, sans-serif;
   --font-weight-normal: 300;
   --font-weight-bold: 900;
-
   --max-width-main: 800px;
-
   --box-shadow: 0 2px 4px rgb(14 30 37 / 12%);
 }
 
@@ -72,6 +68,7 @@ h1 {
 }
 
 h2 {
+  margin-top: 4rem;
   margin-bottom: 1.5rem;
   font-family: var(--font-family-main);
   font-weight: var(--font-weight-bold);
@@ -136,30 +133,38 @@ pre code {
 .hljs-prolog {
   color: #a3a7ac;
 }
+
 .hljs-punctuation {
   color: #c5c8c6;
 }
+
 .namespace {
   opacity: 0.7;
 }
+
 .hljs-keyword,
 .hljs-property,
 .hljs-tag {
   color: #96cbfe;
 }
+
 .hljs-title.class_ {
   color: #ffffb6;
 }
+
 .hljs-boolean,
 .hljs-constant {
   color: #9c9;
 }
+
 .hljs-symbol {
   color: #f92672;
 }
+
 .hljs-number {
   color: #ff73fd;
 }
+
 .hljs-attr-name,
 .hljs-builtin,
 .hljs-char,
@@ -168,43 +173,55 @@ pre code {
 .hljs-string {
   color: #a8ff60;
 }
+
 .hljs-variable {
   color: #c6c5fe;
 }
+
 .hljs-operator {
   color: #ededed;
 }
+
 .hljs-entity {
   color: #ffffb6;
   cursor: help;
 }
+
 .hljs-url {
   color: #96cbfe;
 }
+
 .language-css .hljs-string,
 .style .hljs-string {
   color: #87c38a;
 }
+
 .hljs-atrule,
 .hljs-attr-value {
   color: #f9ee98;
 }
+
 .hljs-title.function_ {
   color: #dad085;
 }
+
 .hljs-regex {
   color: #e9c062;
 }
+
 .hljs-important {
   color: #fd971f;
 }
+
 .hljs-bold,
 .hljs-important {
   font-weight: bold;
 }
+
 .hljs-italic {
   font-style: italic;
 }
+
 .hljs-prefix.deleted,
 .hljs-prefix.inserted,
 .hljs-prefix.unchanged {
@@ -213,6 +230,7 @@ pre code {
   -ms-user-select: none;
   user-select: none;
 }
+
 .hljs-table {
   background: 0 0;
   box-shadow: none;
@@ -248,8 +266,7 @@ pre code {
   max-width: none;
 }
 
-.footer {
-}
+.footer {}
 
 .footer__copyright {
   border-top: 1px solid var(--color-gray-L300);
@@ -287,10 +304,10 @@ pre code {
 }
 
 .home__section {
+  margin-bottom: 5rem;
 }
 
-.home__sectionHeader {
-}
+.home__sectionHeader {}
 
 .home__sectionList {
   list-style: none;
@@ -328,4 +345,8 @@ pre code {
   padding: 1.5rem;
   border-radius: 0.625em;
   border: 1px solid var(--color-gray-L300);
+}
+
+.protip h2 {
+  margin-top: 0;
 }
