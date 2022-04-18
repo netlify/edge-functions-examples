@@ -34,7 +34,7 @@ export default function head({ title, metaDescription, url, openGraphImageName }
     <meta property="og:locale" content="en_US" />
 
 
-    <meta property="og:image" content="https://edge-funk.netlify.app/img/og/Netlify Edge Functions:%0A${title}" />
+    <meta property="og:image" content="https://edge-functions-examples.netlify.app/img/og/Netlify Edge Functions:%0A${title}" />
     <meta property="og:image:alt" content="A Netlify branded open graph image representing ${title}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
