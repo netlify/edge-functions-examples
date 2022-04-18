@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/netlify/edge-functions-examples#readme",
   "dependencies": {
-    "@netlify-labs/cli-internal": "^2.2.0"
+    "@netlify-labs/cli-internal": "^2.3.0"
   }
 }
