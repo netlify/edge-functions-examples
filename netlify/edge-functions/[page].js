@@ -20,7 +20,6 @@ import pageCookiesDelete from "../../pages/cookies-delete/index.js";
 import pageABTest from "../../pages/abtest/index.js";
 import pageImage from "../../pages/image/index.js";
 import pageLog from "../../pages/log/index.js";
-import pageAuthJwt from "../../pages/auth-jwt/index.js";
 import pageCountryBlock from "../../pages/country-block/index.js";
 import pageLocalizedContent from "../../pages/localized-content/index.js";
 import pageProxyRequests from "../../pages/proxy-requests/index.js";
@@ -43,14 +42,13 @@ const pages = {
   abtest: pageABTest,
   image: pageImage,
   log: pageLog,
-  "auth-jwt": pageAuthJwt,
   "country-block": pageCountryBlock,
   "localized-content": pageLocalizedContent,
   "proxy-requests": pageProxyRequests,
   "headers-i18n": pageHeadersI18n,
 };
 
-export default async (Request, Context) => {
+export default async(Request, Context) => {
   const url = new URL(Request.url);
   const path = url.pathname.split("/example/")[1] || "home";
 
