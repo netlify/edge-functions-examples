@@ -2,17 +2,26 @@
 
 # Rewrite with Netlify Edge Functions
 
-Description of what this example does
+You can rewrite requests on one URL to resources available on another URL using an Edge Function.
 
 ## Code example
 
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
-- [Explore the code for this Edge Function](../../netlify/edge-functions/THE-EDGE-FUNCTION-FILE)
+- [Explore the code for this Edge Function](../../netlify/edge-functions/rewrite.ts)
+
+
+```ts
+import type { Context } from "netlify:edge";
+
+export default async (request: Request, context: Context) => {
+  return context.rewrite("/something-to-serve-with-a-rewrite");
+};
+```
 
 ## View this example on the web
 
-- https://edge-functions-examples.netlify.app/example/THE-EXAMPLE-PATH
+- https://edge-functions-examples.netlify.app/example/rewrite
 
 ## Deploy to Netlify
 

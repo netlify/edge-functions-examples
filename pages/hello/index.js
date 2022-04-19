@@ -1,7 +1,7 @@
 import repoLink from "../../components/repo-link.js";
 
 export default {
-  title: "Home",
+  title: "Hello world",
   metaDescription: "Explore our library of edge function examples and deploy your own to Netlify.",
   page: function () {
     return `

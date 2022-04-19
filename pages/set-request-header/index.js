@@ -3,7 +3,7 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "Set HTTP request header",
   metaDescription: "Set a custom HTTP request header",
-  page: function () {
+  page: function() {
     return `
     <section>
       <h1>Set custom HTTP request headers with an Edge Function</h1>

@@ -1,9 +1,9 @@
 import repoLink from "../../components/repo-link.js";
 
 export default {
-  title: "Set up an A/B Test",
+  title: "Set up an AB Test",
   metaDescription: "Use cookies to power an A/B test at The Edge.",
-  page: function () {
+  page: function() {
     return `
     <section>
       <h1>Set up an A/B Test at The Edge</h1>
@@ -47,11 +47,11 @@ export default async (request: Request, context: Context) => {
       <h2>See this in action</h2>
       <ul>
         <li><a href="/abtest">Run the A/B test code, and see which bucket you were assigned!</a></li>
-        <li>${repoLink("abtest.js")}</li>
+        <li>${repoLink("abtest.ts")}</li>
       </ul>
       <h2>Related</h2>
       <ul>
-        <li><a href="/example/cookies">Read more about managing cookies at The Edge</a></li>
+        <li><a href="/example/cookies-set">Read more about managing cookies at The Edge</a></li>
         <li><a href="/example/geolocation">Read more about Geolocation at The Edge</a></li>
       </ul>
     </section>
