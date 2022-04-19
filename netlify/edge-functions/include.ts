@@ -6,7 +6,7 @@ export default async (request: Request, context: Context) => {
   // unless we fnd the query parameter for this demo
   const url = new URL(request.url);
   if (url.searchParams.get("include") !== "pricing") {
-    return context.next();
+    return;
   }
 
   console.log("Including pricing content into the page");

@@ -12,7 +12,6 @@ export default {
 
 export default async (request: Request, context: Context) => {
   request.headers.set("X-Your-Custom-Header", "Your custom header value");
-  return context.next();
 };</code></pre>
       <ul>
         <li>${repoLink("set-request-header.ts")}</li>
