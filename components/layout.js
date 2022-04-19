@@ -3,8 +3,6 @@ import header from "./header.js";
 import footer from "./footer.js";
 import deployButton from "./deploy-button.js";
 
-
-
 const explainer = `
 <section>
   <h2>What are Edge Functions?</h2>
@@ -30,7 +28,11 @@ export default function layout(data) {
 
 
 
-    ${data.url.pathname !== "/" ? "" : `<h1>Edge Functions on Netlify</h1><p>Explore a library of reference examples for learning about Edge Functions on Netlify.</p>`}
+    ${
+      data.url.pathname !== "/"
+        ? ""
+        : `<h1>Edge Functions on Netlify</h1><p>Explore a library of reference examples for learning about Edge Functions on Netlify.</p>`
+    }
     ${data.url.pathname !== "/" ? "" : explainer}
 
     <section class="home__section">  
