@@ -1,0 +1,18 @@
+{
+  "name": "edge-functions-examples",
+  "description": "Explore a library of reference examples for learning about Edge Functions on Netlify.",
+  "version": "1.0.0",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netlify/edge-functions-examples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netlify/edge-functions-examples/issues"
+  },
+  "homepage": "https://github.com/netlify/edge-functions-examples#readme",
+  "dependencies": {}
+}
