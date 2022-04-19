@@ -47,7 +47,7 @@ export default async (request: Request, context: Context) => {
       <h2>See this in action</h2>
       <ul>
         <li><a href="/abtest">Run the A/B test code, and see which bucket you were assigned!</a></li>
-        <li>${repoLink("abtest.js")}</li>
+        <li>${repoLink("abtest.ts")}</li>
       </ul>
       <h2>Related</h2>
       <ul>
