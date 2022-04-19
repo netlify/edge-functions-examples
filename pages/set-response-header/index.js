@@ -3,7 +3,7 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "Set HTTP response header",
   metaDescription: "Set a custom HTTP response header",
-  page: function () {
+  page: function() {
     return `
     <section>
       <h1>Set custom HTTP response headers with an Edge Function</h1>
@@ -12,7 +12,7 @@ export default {
 
 export default async (request: Request, context: Context) => {
   const response = await context.next();
-  response.headers.set("X-Your-Custom-Header", "Your custom value");
+  response.headers.set("X-Your-Custom-Header", "A custom value");
   return response;
 };</code></pre>
       <h2>See this in action</h2>

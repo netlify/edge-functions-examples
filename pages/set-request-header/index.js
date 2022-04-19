@@ -3,7 +3,7 @@ import repoLink from "../../components/repo-link.js";
 export default {
   title: "Set HTTP request header",
   metaDescription: "Set a custom HTTP request header",
-  page: function () {
+  page: function() {
     return `
     <section>
       <h1>Set custom HTTP request headers with an Edge Function</h1>
@@ -11,7 +11,7 @@ export default {
       <pre><code>import type { Context } from "netlify:edge";
 
 export default async (request: Request, context: Context) => {
-  request.headers.set("X-Your-Custom-Header", "Your custom header value");
+  request.headers.set("X-Your-Custom-Header", "A custom header value");
   return context.next();
 };</code></pre>
       <ul>
