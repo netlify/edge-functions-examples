@@ -8,8 +8,8 @@ import deployButton from "./deploy-button.js";
 const explainer = `
 <section>
   <h2>What are Edge Functions?</h2>
-  <p>Using Javascript and Typescript, Netlify Edge Functions give you the power to modify network requests to localize content, serve relevant ads, authenticate visitors, A/B test content, and much more! And this all happens at the <strong>Edge</strong> — directly from the worldwide location closest to each user.</p>
-  <p>To use Edge Functions on Netlify, add JavaScript or Typescript files to an edge-functions directory in your project, and add <code>[[edge_functions]]</code> entries to your netlify.toml file.</p>
+  <p>Using JavaScript and TypeScript, Netlify Edge Functions give you the power to modify network requests to localize content, serve relevant ads, authenticate visitors, A/B test content, and much more! And this all happens at the <strong>Edge</strong> — directly from the worldwide location closest to each user.</p>
+  <p>To use Edge Functions on Netlify, add JavaScript or TypeScript files to an edge-functions directory in your project, and add <code>[[edge_functions]]</code> entries to your netlify.toml file.</p>
   <p><a href="https://docs.netlify.com/netlify-labs/experimental-features/edge-functions/" target="_blank">Learn more in the docs</a>.</p>
 </section>
 `;
