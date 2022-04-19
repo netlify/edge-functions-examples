@@ -1,7 +1,7 @@
 export default {
   title: "Home",
   metaDescription: "Explore our library of Edge Function examples and deploy your own to Netlify.",
-  page: function() {
+  page: function () {
     return `
     <section class="home__section">
     <h2>Examples</h2>
@@ -13,7 +13,7 @@ export default {
     <section class="home__section">
       <h3 class="home__sectionHeader">Responses</h3>
       <ul class="home__sectionList">
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/hello">Hello, world</a></li>
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/hello">Hello world</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/json">Return JSON</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/image">Return an image</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/log">Write to the logs</a></li>
