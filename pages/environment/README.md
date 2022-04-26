@@ -9,7 +9,7 @@ use the `Deno.env` API.
 
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
-```js
+```ts
 import type { Context } from "netlify:edge";
 
 export default async (request: Request, context: Context) => {
