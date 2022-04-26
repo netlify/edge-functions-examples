@@ -1,6 +1,6 @@
 ![Netlify examples](https://user-images.githubusercontent.com/5865/159468750-df1c2783-39b2-40da-9c0f-971f72a7ea3f.png)
 
-# Netlify Edge Functions Examples
+# [Netlify Edge Functions](https://www.netlify.com/products/?utm_campaign=devex&utm_source=edge-functions-examples&utm_medium=github&utm_content=Edge%20Functions%20Product%20Page#netlify-edge-functions) Examples
 
 Explore these examples here: https://edge-functions-examples.netlify.app/
 
@@ -40,3 +40,9 @@ Explore these examples here: https://edge-functions-examples.netlify.app/
 - [Set up an A/B test using cookies](/pages/abtest)
 
 ---
+
+## Deploy this site to Netlify
+
+Click this button to deploy this site automatically to your Netlify account.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/edge-functions-examples&utm_campaign=devex&utm_source=edge-functions-examples&utm_medium=web&utm_content=Deploy%20Edge%20Functions%20Examples%20to%20Netlify)

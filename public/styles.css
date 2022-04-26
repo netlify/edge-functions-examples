@@ -289,7 +289,17 @@ pre code {
 
 .footer__copyright {
   border-top: 1px solid var(--color-gray-L300);
-  padding: 2.625em 0 1.5em;
+  padding: 1.5em 0;
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  color: var(--color-gray-L800);
+  max-width: none;
+  margin-bottom: 0;
+}
+
+.footer__source {
+  padding: 1.5em 0;
   font-size: 1rem;
   font-weight: var(--font-weight-bold);
   text-align: center;
@@ -326,7 +336,8 @@ pre code {
   margin-bottom: 5rem;
 }
 
-.home__sectionHeader {}
+.home__sectionHeader {
+}
 
 .home__sectionList {
   list-style: none;
@@ -375,10 +386,10 @@ pre code {
   font-weight: 600;
   color: var(--color-gray-L300);
   border-radius: 6px;
-  padding: .5em 1.5em;
+  padding: 0.5em 1.5em;
   text-decoration: none;
   background-color: var(--color-blue-B500);
-  transition: background .2s;
+  transition: background 0.2s;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
