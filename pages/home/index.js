@@ -16,7 +16,6 @@ export default {
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/hello">Hello world</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/json">Return JSON</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/image">Return an image</a></li>
-        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/log">Write to the logs</a></li>
       </ul>
     </section>
 
@@ -63,6 +62,13 @@ export default {
       </ul>
     </section>
 
+    <section class="home__section">
+      <h3 class="home__sectionHeader">Environment and Debugging</h3>
+      <ul class="home__sectionList">
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/log">Write to the logs</a></li>
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/environment">Use environment variables</a></li>
+      </ul>
+    </section>
   `;
   },
 };

@@ -1,36 +1,31 @@
 ![Netlify examples](https://user-images.githubusercontent.com/5865/159468750-df1c2783-39b2-40da-9c0f-971f72a7ea3f.png)
 
-# Serve localized content with Netlify Edge Functions
+# Use environment variables with Netlify Edge Functions
 
-You can use geolocation data to serve localized content according to country code.
+Netlify Edge Functions support open-source Deno APIs. To access your Netlify environment variables in Edge Functions,
+use the `Deno.env` API.
 
 ## Code example
 
-Geolocation information is available on the `Context.geo` object.
-
-```javascript
-context: {
-  geo: {
-    city?: string;
-    country?: {
-      code?: string;
-      name?: string;
-    },
-    subdivision?: {
-      code?: string;
-      name?: string;
-    },
-  }
-}
-```
-
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
-- [Explore the code for this Edge Function](../../netlify/edge-functions/localized-content.js)
+```js
+import type { Context } from "netlify:edge";
+
+export default async (request: Request, context: Context) => {
+  const value = Deno.env.get("MY_IMPORTANT_VARIABLE");
+
+  return new Response(&grave;Value of MY_IMPORTANT_VARIABLE is "&dollar;{value}".&grave;, {
+    headers: { "content-type": "text/html" },
+  });
+};
+```
+
+- [Explore the code for this Edge Function](../../netlify/edge-functions/environment.ts)
 
 ## View this example on the web
 
-- https://edge-functions-examples.netlify.app/example/localized-content
+- https://edge-functions-examples.netlify.app/example/environment
 
 ## Deploy to Netlify
 
