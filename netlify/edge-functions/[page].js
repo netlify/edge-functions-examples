@@ -23,6 +23,7 @@ import pageLog from "../../pages/log/index.js";
 import pageCountryBlock from "../../pages/country-block/index.js";
 import pageLocalizedContent from "../../pages/localized-content/index.js";
 import pageProxyRequests from "../../pages/proxy-requests/index.js";
+import pageEnvironment from "../../pages/environment/index.js";
 
 // The keys here correspond to the path in the request to `/example/PATH`
 const pages = {
@@ -44,9 +45,10 @@ const pages = {
   "country-block": pageCountryBlock,
   "localized-content": pageLocalizedContent,
   "proxy-requests": pageProxyRequests,
+  environment: pageEnvironment,
 };
 
-export default async(Request, Context) => {
+export default async (Request, Context) => {
   const url = new URL(Request.url);
   const path = url.pathname.split("/example/")[1] || "home";
 

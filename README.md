@@ -9,7 +9,6 @@ Explore these examples here: https://edge-functions-examples.netlify.app/
 - [Hello, world](/pages/hello)
 - [Return JSON](/pages/json)
 - [Return an image](/pages/image)
-- [Write to the logs](/pages/log)
 
 ## Rewrites and proxies
 
@@ -38,6 +37,11 @@ Explore these examples here: https://edge-functions-examples.netlify.app/
 - [Read cookies](/pages/cookies-read)
 - [Delete cookies](/pages/cookies-delete)
 - [Set up an A/B test using cookies](/pages/abtest)
+
+## Environment and debugging
+
+- [Write to the logs](/pages/log)
+- [Use environment variables](/pages/environment)
 
 ---
 
