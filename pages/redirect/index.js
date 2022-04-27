@@ -17,13 +17,13 @@ export default async (request: Request, context: Context) => {
 
     <h2>See this in action</h2>
     <ul>
-      <li><a href="/rewrite">Run the rewrite edge function</a></li>
+      <li><a href="/redirect">Run the redirect edge function</a></li>
       <li>${repoLink("redirect.ts")}</li>
     </ul>
 
     <div class="protip">
       <h2>Pro tip!</h2>
-      <p>You can combine <a href="/example/abtest">geolocation data</a> with URL redirects to redirect to different URLs for internationalized content.</p>
+      <p>You can combine <a href="/example/localized-content">geolocation data</a> with URL redirects to redirect to different URLs for internationalized content.</p>
     </div>
     </section>
   `;
