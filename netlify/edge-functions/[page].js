@@ -10,6 +10,7 @@ import pageHello from "../../pages/hello/index.js";
 import pageTransform from "../../pages/transform/index.js";
 import pageInclude from "../../pages/include/index.js";
 import pageRewrite from "../../pages/rewrite/index.js";
+import pageRedirect from "../../pages/redirect/index.js";
 import pageGeolocation from "../../pages/geolocation/index.js";
 import pageJson from "../../pages/json/index.js";
 import pageSetRequestHeader from "../../pages/set-request-header/index.js";
@@ -38,6 +39,7 @@ const pages = {
   "cookies-read": pageCookiesRead,
   "cookies-delete": pageCookiesDelete,
   rewrite: pageRewrite,
+  redirect: pageRedirect,
   geolocation: pageGeolocation,
   abtest: pageABTest,
   image: pageImage,

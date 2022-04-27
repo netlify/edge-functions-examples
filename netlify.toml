@@ -46,6 +46,10 @@
   function = "rewrite"
 
 [[edge_functions]]
+  path = "/redirect"
+  function = "redirect"
+
+[[edge_functions]]
   path = "/abtest"
   function = "abtest"
 
