@@ -77,6 +77,10 @@
   path = "/environment"
   function = "environment"
 
+[[edge_functions]]
+  path = "/error"
+  function = "error"
+
 # Serve pages explaining each example 
 [[edge_functions]]
   path = "/example/*"
