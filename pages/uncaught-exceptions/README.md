@@ -23,7 +23,7 @@ export default async () => {
 
 ## View this example on the web
 
-- https://edge-functions-examples.netlify.app/example/environment
+- https://edge-functions-examples.netlify.app/example/uncaught-exceptions
 
 ## Deploy to Netlify
 
