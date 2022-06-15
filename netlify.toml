@@ -97,7 +97,7 @@
   status = 200
 
 
-
-
+[[plugins]]
+package = "/print-edge-manifest"
 
 
