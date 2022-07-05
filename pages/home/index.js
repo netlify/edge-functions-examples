@@ -68,6 +68,7 @@ export default {
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/log">Write to the logs</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/environment">Use environment variables</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/uncaught-exceptions">Read logs for uncaught exceptions</a></li>
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/context-site">Access Site Information</a></li>
       </ul>
     </section>
   `;
