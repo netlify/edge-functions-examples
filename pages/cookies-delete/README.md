@@ -30,7 +30,7 @@ export default async (request: Request, context: Context) => {
 
 ## View this example on the web
 
-- https://edge-functions-examples.netlify.app/example/cookies
+- https://edge-functions-examples.netlify.app/example/cookies-delete
 
 ## Deploy to Netlify
 
