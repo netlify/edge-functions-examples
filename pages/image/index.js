@@ -9,7 +9,7 @@ export default {
       <h1>Image Response</h1>
       <p>You can use Edge Functions to return an image.</p>
 
-      <pre><code>import type { Context } from "netlify:edge";
+      <pre><code>import type { Context } from "https://edge.netlify.com";
 
 export default async (request: Request, context: Context) => {
 

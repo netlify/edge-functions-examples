@@ -9,7 +9,7 @@ You can rewrite requests on one URL to resources available on another URL using 
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
 ```ts
-import type { Context } from "netlify:edge";
+import type { Context } from "https://edge.netlify.com";
 
 export default async (request: Request, context: Context) => {
   return context.rewrite("/something-to-serve-with-a-rewrite");

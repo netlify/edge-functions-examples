@@ -14,7 +14,7 @@ export default {
       In this example, we look for an <code>{{INCLUDE_PRICE_INFO}}</code> placeholder in our response, and replace it with some other content.
     </p>
 
-    <pre><code>import { Context } from "netlify:edge";
+    <pre><code>import { Context } from "https://edge.netlify.com";
 
 export default async (request: Request, context: Context) => {
   

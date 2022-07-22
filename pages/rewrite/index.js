@@ -8,7 +8,7 @@ export default {
     <section>
       <h1>Rewrite with Edge Functions</h1>
       <p>You can rewrite requests on one URL to resources available on another URL using an Edge Function.</p>
-      <pre><code>import type { Context } from "netlify:edge";
+      <pre><code>import type { Context } from "https://edge.netlify.com";
 
 export default async (request: Request, context: Context) => {
   return context.rewrite("/something-to-serve-with-a-rewrite");

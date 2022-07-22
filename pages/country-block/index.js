@@ -10,7 +10,7 @@ export default {
       <p>You can use geolocation data to identify a user's country and block content if required.</p>
       <p>Geolocation information is available on the <code>Context.geo</code> object.</p>
 
-      <pre><code>import { Context } from "netlify:edge";
+      <pre><code>import { Context } from "https://edge.netlify.com";
 
 export default async (request: Request, context: Context) => {
   const BLOCKED_COUNTRY_CODE = "GB";
