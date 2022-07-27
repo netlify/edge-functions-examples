@@ -1,4 +1,4 @@
-import type { Context } from "netlify:edge";
+import type { Context } from "https://edge.netlify.com";
 
 // Let's serve an image of a kitten from the internet
 
