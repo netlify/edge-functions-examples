@@ -16,7 +16,7 @@ export default async (request: Request, context: Context) => {
 
       <h2>See this in action</h2>
       <ul>
-        <li><a href="/context-site">See Response from code snippet</a></li>
+        <li><a href="/context-site">See response from code snippet</a></li>
         <li>${repoLink("context-site.ts")}</li>
       </ul>
       <h2>Related</h2>
