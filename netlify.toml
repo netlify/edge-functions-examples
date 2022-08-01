@@ -81,6 +81,10 @@
   path = "/error"
   function = "error"
 
+[[edge_functions]]
+  path = "/context-site"
+  function = "context-site"
+
 # Serve pages explaining each example 
 [[edge_functions]]
   path = "/example/*"

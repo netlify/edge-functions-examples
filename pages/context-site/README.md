@@ -1,36 +1,26 @@
 ![Netlify examples](https://user-images.githubusercontent.com/5865/159468750-df1c2783-39b2-40da-9c0f-971f72a7ea3f.png)
 
-# Read, write, and delete cookies with Netlify Edge Functions
+# Access Site Information from Edge Functions
 
-Manipulate HTTP cookies
+Netlify Edge Functions give access to site information via `context.site`.
 
 ## Code example
 
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
 ```ts
-import type { Context } from "https://edge.netlify.com";
+import type { Context } from "netlify:edge";
 
 export default async (request: Request, context: Context) => {
-  // Set a cookie
-  context.cookies.set({
-    name: "My cookie",
-    value: "hello",
-  });
-
-  // Delete a cookie
-  context.cookies.delete("My cookie");
-
-  // Read the value of a cookie
-  const value = context.cookies.get("My cookie");
+  return new Response(`Hello from ${context.site.name}!`);
 };
 ```
 
-- [Explore the code for this Edge Function](../../netlify/edge-functions/cookies.ts)
+- [Explore the code for this Edge Function](../../netlify/edge-functions/context-site.ts)
 
 ## View this example on the web
 
-- https://edge-functions-examples.netlify.app/example/cookies-delete
+- https://edge-functions-examples.netlify.app/example/context-site
 
 ## Deploy to Netlify
 
