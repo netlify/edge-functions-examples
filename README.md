@@ -10,10 +10,12 @@ Explore these examples here: https://edge-functions-examples.netlify.app/
 - [Return JSON](/pages/json)
 - [Return an image](/pages/image)
 
-## Rewrites and proxies
+## Rewrites, redirects and proxies
 
 - [Rewrite responses from another URL](/pages/rewrite)
+- [Redirect requests to another URL](/pages/redirect)
 - [Proxy requests to another source](/pages/proxy-requests)
+
 
 ## HTTP Headers
 

@@ -20,9 +20,10 @@ export default {
     </section>
 
     <section class="home__section">
-    <h3 class="home__sectionHeader">Rewrites and proxies</h3>
+    <h3 class="home__sectionHeader">Rewrites, redirects and proxies</h3>
     <ul class="home__sectionList">
     <li class="home__sectionListItem home__sectionListItem"><a class="home__sectionListItemLink" href="/example/rewrite">Rewrite responses from another URL</a></li>
+    <li class="home__sectionListItem home__sectionListItem"><a class="home__sectionListItemLink" href="/example/redirect">Redirect responses to another URL</a></li>
     <li class="home__sectionListItem home__sectionListItem"><a class="home__sectionListItemLink" href="/example/proxy-requests">Proxy requests to another source</a></li>
     </ul>
     </section>
