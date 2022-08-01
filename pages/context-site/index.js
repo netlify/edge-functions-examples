@@ -1,8 +1,8 @@
 import repoLink from "../../components/repo-link.js";
 
 export default {
-  title: "Deleting cookies",
-  metaDescription: "Delete an HTTP cookie",
+  title: "Access Site Information from Edge Functions",
+  metaDescription: "Access Site Information from an Edge Function",
   page: function () {
     return `
     <section>
