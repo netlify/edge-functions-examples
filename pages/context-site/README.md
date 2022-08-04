@@ -9,7 +9,7 @@ Netlify Edge Functions give access to site information via `context.site`.
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
 ```ts
-import type { Context } from "netlify:edge";
+import type { Context } from "https://edge.netlify.com";
 
 export default async (request: Request, context: Context) => {
   return new Response(`Hello from ${context.site.name}!`);
