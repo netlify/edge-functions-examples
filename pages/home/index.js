@@ -63,6 +63,13 @@ export default {
     </section>
 
     <section class="home__section">
+      <h3 class="home__sectionHeader">WebAssembly</h3>
+      <ul class="home__sectionList">
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/wasm">Edge WebAssembly</a></li>
+      </ul>
+    </section>
+
+    <section class="home__section">
       <h3 class="home__sectionHeader">Environment and debugging</h3>
       <ul class="home__sectionList">
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/log">Write to the logs</a></li>

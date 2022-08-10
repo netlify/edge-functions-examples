@@ -85,6 +85,10 @@
   path = "/context-site"
   function = "context-site"
 
+[[edge_functions]]
+  path = "/wasm"
+  function = "wasm"
+
 # Serve pages explaining each example 
 [[edge_functions]]
   path = "/example/*"
