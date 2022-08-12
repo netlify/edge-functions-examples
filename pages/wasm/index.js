@@ -24,7 +24,7 @@ const wasmModule = new WebAssembly.Module(wasmCode);
 const wasmInstance = new WebAssembly.Instance(wasmModule);
 const main = wasmInstance.exports.main as CallableFunction;
 
-export default () => new Response(\`The answer is: \${ main().toString() }\`);
+export default () => new Response(\`The answer is: \${main().toString()}\`);
 </code></pre>
       <h2>See this in action</h2>
       <ul>
