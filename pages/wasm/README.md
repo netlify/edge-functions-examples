@@ -24,7 +24,9 @@ const wasmModule = new WebAssembly.Module(wasmCode);
 const wasmInstance = new WebAssembly.Instance(wasmModule);
 const main = wasmInstance.exports.main as CallableFunction;
 
-export default () => new Response(`The answer is: ${main().toString()}`);
+export default () => {
+  return new Response(`The answer is: ${main().toString()}`);
+}
 ```
 
 - [Explore the code for this Edge Function](../../netlify/edge-functions/wasm.ts)

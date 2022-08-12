@@ -7,8 +7,10 @@ export default {
     return `
     <section>
       <h1>WebAssembly</h1>
-      <p>You can use Edge Functions to return a JSON response by returning <code>context.json()</code> with a JavaScript object — no need to <code>JSON.stringify</code>!</p>
-      <p>In this example, we return a JSON object containing <code>hello: "world"</code>.</p>
+
+      <p>Using WebAssembly, you can speed up key components of your server logic. Using Netlify Edge Functions, you can bring that to the edge. This allows developers to build more calculation intensive logic in C, C++, Rust, etc. and push it even closer to users.</p>
+      <p>In this example, we return a wasm computed response <code>The answer is: 42</code>.</p>
+
 
       <pre><code>// inlined Rust compiled code that prints "42"
 const wasmCode = new Uint8Array([
@@ -24,7 +26,9 @@ const wasmModule = new WebAssembly.Module(wasmCode);
 const wasmInstance = new WebAssembly.Instance(wasmModule);
 const main = wasmInstance.exports.main as CallableFunction;
 
-export default () => new Response(\`The answer is: \${main().toString()}\`);
+export default () => {
+  return new Response(\`The answer is: \${ main().toString() }\`);
+}
 </code></pre>
       <h2>See this in action</h2>
       <ul>
