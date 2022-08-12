@@ -12,6 +12,6 @@ const wasmModule = new WebAssembly.Module(wasmCode);
 const wasmInstance = new WebAssembly.Instance(wasmModule);
 const main = wasmInstance.exports.main as CallableFunction;
 
-export default () => {
+export default async () => {
   return new Response(`The answer is ${main().toString()}`);
 }

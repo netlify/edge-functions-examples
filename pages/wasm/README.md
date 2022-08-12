@@ -2,7 +2,7 @@
 
 # WebAssembly with Netlify Edge Functions
 
-Using WebAssembly, you can speed up key components of your server logic. Using Netlify Edge Functions, you can bring that to the edge. This allows developers to build more calculation intensive logic in C, C++, Rust, etc. and push it even closer to users. 
+Using WebAssembly, you can speed up key components of your server logic. Using Netlify Edge Functions, you can bring that to the edge. This allows developers to build more calculation intensive logic in languages such as C, C++, and Rust. and push it even closer to users. 
 
 
 ## Code example
@@ -24,7 +24,7 @@ const wasmModule = new WebAssembly.Module(wasmCode);
 const wasmInstance = new WebAssembly.Instance(wasmModule);
 const main = wasmInstance.exports.main as CallableFunction;
 
-export default () => {
+export default async () => {
   return new Response(`The answer is: ${main().toString()}`);
 }
 ```
