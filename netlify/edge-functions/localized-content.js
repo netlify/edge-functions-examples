@@ -6,10 +6,11 @@ export default async (request, context) => {
     AU: "G'day, mate!",
   };
 
-  const countryCode = context.geo?.country?.code || "UNKNOWN";
+  const countryCode = context.geo?.country?.code;
+  const translation = translations[countryCode] || translations["UNKNOWN"];
   const countryName = context.geo?.country?.name || "somewhere in the world";
 
-  return new Response(`Your personalized greeting for ${countryName} is: ${translations[countryCode]}`, {
+  return new Response(`Your personalized greeting for ${countryName} is: ${translation}`, {
     headers: { "content-type": "text/html" },
   });
 };
