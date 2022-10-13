@@ -11,7 +11,7 @@ export default {
       You can use Edge Functions to return a plain HTTP text/html response. In this example, we return the string "Hello, World!" as text/html.
       </p>
 
-      <pre><code>export default async (Request) => {
+      <pre><code>export default async (request) => {
   return new Response("Hello, World!", {
     headers: { "content-type": "text/html" },
   });

@@ -10,7 +10,7 @@ World!" as text/html.
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
 ```js
-export default async (Request) => {
+export default async (request) => {
   return new Response("Hello, World!", {
     headers: { "content-type": "text/html" },
   });
