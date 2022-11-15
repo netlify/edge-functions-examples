@@ -1,4 +1,4 @@
-export default function geolocation({ city, countryCode, countryName }) {
+export default function geolocation({ city, countryCode, countryName, latitude, longitude, timezone }) {
   return `
     <ul class="geolocation">
       <li class="geolocation__item">
@@ -15,6 +15,14 @@ export default function geolocation({ city, countryCode, countryName }) {
       <li class="geolocation__item">
         <span>Your city</span>
         <span>${city}</span>
+      </li>
+      <li class="geolocation__item">
+        <span>Your coordinates</span>
+        <span>${latitude}N, ${longitude}W</span>
+      </li>
+      <li class="geolocation__item">
+        <span>Your timezone</span>
+        <span>${timezone}</span>
       </li>
     </ul>
   `;

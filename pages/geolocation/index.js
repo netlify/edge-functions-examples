@@ -11,7 +11,14 @@ export default {
       <h1>Geolocation</h1>
       <p>You can use Edge Functions to get information about a user's location to serve location-specific content and personalize their experience.</p>
       
-      ${geolocationInfo({ city: geo?.city, countryCode: geo?.country?.code, countryName: geo?.country?.name })}
+      ${geolocationInfo({
+        city: geo?.city,
+        countryCode: geo?.country?.code,
+        countryName: geo?.country?.name,
+        latitude: geo?.latitude,
+        longitude: geo?.longitude,
+        timezone: geo?.timezone,
+      })}
       
       <p>Geolocation information is available on the <code>Context.geo</code> object.</p>
 
@@ -31,6 +38,9 @@ export default async (request: Request, context: Context) => {
   //       code?: string;
   //       name?: string;
   //     },
+  //     latitude?: number;
+  //     longitude?: number;
+  //     timezone?: string;
   //   }
   // }
 

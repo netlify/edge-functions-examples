@@ -14,6 +14,9 @@ export default async (request: Request, context: Context) => {
   //       code?: string;
   //       name?: string;
   //     },
+  //     latitude?: number;
+  //     longitude?: number;
+  //     timezone?: string;
   //   }
   // }
 
