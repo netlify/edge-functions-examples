@@ -11,18 +11,13 @@ export default {
       <pre><code>import type { Context } from "https://edge.netlify.com";
 
 export default async (request: Request, context: Context) => {
-  context.log("Hello from the logging service");
+  console.log("Hello from the logging service");
 };</code></pre>
       <h2>See this in action</h2>
       <ul>
         <li><a href="/log">Echo content to the logs</a></li>
         <li>${repoLink("log.ts")}</li>
       </ul>
-
-      <div class="protip">
-        <h2>Pro tip!</h2>
-          <p>You can still use <code>console.log()</code> in your Edge Functions, but using <code>context.log()</code> will tell you which Edge Function generated the message for easier debugging!</p>
-      </div>
     </section>
   `;
   },
