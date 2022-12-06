@@ -8,7 +8,7 @@ export default async (request: Request, context: Context) => {
     return;
   }
 
-  context.log(`Transforming the response from this ${url}`);
+  console.log(`Transforming the response from this ${url}`);
 
   const response = await context.next();
 

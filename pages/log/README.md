@@ -2,7 +2,7 @@
 
 # Logging with Netlify Edge Functions
 
-Output content to the logs from an Edge Function using `context.log()`.
+Output content to the logs from an Edge Function using `console.log()`.
 
 ## Code example
 
@@ -12,7 +12,7 @@ Edge Functions are files held in the `netlify/edge-functions` directory.
 import type { Context } from "https://edge.netlify.com";
 
 export default async (request: Request, context: Context) => {
-  context.log("Hello from the logging service");
+  console.log("Hello from the logging service");
 };
 ```
 

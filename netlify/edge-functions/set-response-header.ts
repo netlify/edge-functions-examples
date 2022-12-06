@@ -7,7 +7,7 @@ export default async (request: Request, context: Context) => {
     return context.next();
   }
 
-  context.log(`Adding a custom header to the response for ${url}`);
+  console.log(`Adding a custom header to the response for ${url}`);
 
   const response = await context.next();
   response.headers.set("X-Your-Custom-Header", "Your custom header value");
