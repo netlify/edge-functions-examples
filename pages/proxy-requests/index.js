@@ -19,7 +19,7 @@ export default async (request: Request, context: Context) => {
   });
   
   const jsonData = await joke.json();
-  return context.json(jsonData);
+  return Response.json(jsonData);
 };</code></pre>
       <h2>See this in action</h2>
       <ul>
@@ -29,7 +29,7 @@ export default async (request: Request, context: Context) => {
 
       <div class="protip">
         <h2>Pro tip!</h2>
-        <p>Curious about <code>context.json()</code> in the code example above? Check out how you can return a <a href="/example/json">JSON response</a> using Edge Functions.</p>
+        <p>Curious about <code>Response.json()</code> in the code example above? Check out how you can return a <a href="/example/json">JSON response</a> using Edge Functions.</p>
       </div>
     </section>
 `;
