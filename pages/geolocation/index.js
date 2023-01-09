@@ -44,7 +44,7 @@ export default async (request: Request, context: Context) => {
   //   }
   // }
 
-  return context.json({
+  return Response.json({
     geo: context.geo,
     header: request.headers.get("x-nf-geo"),
   });

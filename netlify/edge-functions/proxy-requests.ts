@@ -8,5 +8,5 @@ export default async (request: Request, context: Context) => {
     }
   });
   const jsonData = await joke.json();
-  return context.json(jsonData);
+  return Response.json(jsonData);
 };
