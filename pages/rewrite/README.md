@@ -12,7 +12,7 @@ Edge Functions are files held in the `netlify/edge-functions` directory.
 import type { Context } from "https://edge.netlify.com";
 
 export default async (request: Request, context: Context) => {
-  return context.rewrite("/something-to-serve-with-a-rewrite");
+  return new URL("/something-to-serve-with-a-rewrite", request.url);
 };
 ```
 
