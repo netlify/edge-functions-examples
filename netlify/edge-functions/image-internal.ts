@@ -4,5 +4,5 @@ import type { Context } from "https://edge.netlify.com";
 // by rewriting the URL.
 
 export default async (request: Request, context: Context) => {
-  return context.rewrite("/apple-touch-icon.png");
+  return new URL("/apple-touch-icon.png", request.url);
 };

@@ -13,9 +13,9 @@ export default {
 
 export default async (request: Request, context: Context) => {
 
-  // Return an internal image using context.rewrite()
+  // Return an internal image using a rewrite
   // This image is stored in the /public directory of this project
-  return context.rewrite("/apple-touch-icon.png");
+  return new URL("/apple-touch-icon.png", request.url);
 
   // OR
 
