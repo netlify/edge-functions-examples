@@ -43,6 +43,15 @@ export default function head({ title, metaDescription, url, openGraphImageName }
 
     <script src="/lib/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2FMMZSSS9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-X2FMMZSSS9');
+    </script>
   </head>
   `;
 }
