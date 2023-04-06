@@ -1,13 +1,11 @@
 {
   "name": "Netlify Edge Functions Examples",
   "short_name": "Netlify Edge Functions",
-  "icons": [
-    {
-      "src": "google-touch-icon.png",
-      "sizes": "512x512"
-    }
-  ],
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
-  "display": "fullscreen"
+    "icons": [
+      { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+      { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
 }
