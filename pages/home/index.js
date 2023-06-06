@@ -2,7 +2,7 @@ export default {
   title: "Home",
   metaDescription: "Explore our library of Edge Function examples and deploy your own to Netlify.",
   page: function () {
-    return `
+    return /* html */`
     <section class="home__section">
     <h2>Examples</h2>
     <p>
@@ -59,6 +59,14 @@ export default {
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies-read">Read cookies</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/cookies-delete">Delete cookies</a></li>
         <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/abtest">Set up an A/B test using cookies</a></li>
+      </ul>
+    </section>
+
+    <section class="home__section">
+      <h3 class="home__sectionHeader">Streams</h3>
+      <ul class="home__sectionList">
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/long-running">Long-running edge functions</a></li>
+        <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/server-sent-events">Server-sent events (SSE)</a></li>
       </ul>
     </section>
 

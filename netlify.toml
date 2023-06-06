@@ -82,6 +82,14 @@
   function = "error"
 
 [[edge_functions]]
+  path = "/long-running"
+  function = "long-running"
+
+[[edge_functions]]
+  path = "/sse"
+  function = "sse"
+
+[[edge_functions]]
   path = "/context-site"
   function = "context-site"
 

@@ -38,6 +38,13 @@ Explore these examples here: https://edge-functions-examples.netlify.app/
 - [Delete cookies](/pages/cookies-delete)
 - [Set up an A/B test using cookies](/pages/abtest)
 
+## Streams
+- [Long-running edge functions](/pages/long-running)
+- [Server-sent events](/pages/server-sent-events)
+
+## WebAssembly
+- [Edge WebAssembly](/pages/wasm)
+
 ## Environment and debugging
 
 - [Write to the logs](/pages/log)
