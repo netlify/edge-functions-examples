@@ -27,6 +27,8 @@ import pageEnvironment from "../../pages/environment/index.js";
 import pageUncaughtExceptions from "../../pages/uncaught-exceptions/index.js";
 import pageContextSite from "../../pages/context-site/index.js";
 import pageWasm from "../../pages/wasm/index.js";
+import pageSse from "../../pages/server-sent-events/index.js";
+import pageLongRunning from "../../pages/long-running/index.js";
 
 // The keys here correspond to the path in the request to `/example/PATH`
 const pages = {
@@ -52,10 +54,12 @@ const pages = {
   "uncaught-exceptions": pageUncaughtExceptions,
   "context-site": pageContextSite,
   "wasm": pageWasm,
+  "server-sent-events": pageSse,
+  "long-running": pageLongRunning,
 };
 
-export default async (Request, Context) => {
-  const url = new URL(Request.url);
+export default (request, context) => {
+  const url = new URL(request.url);
   const path = url.pathname.split("/example/")[1] || "home";
 
   console.log(`serve page for ${url} `);
@@ -64,7 +68,7 @@ export default async (Request, Context) => {
   const html = layout({
     url: url,
     title: pages[path].title,
-    content: pages[path].page({ geo: Context.geo }),
+    content: pages[path].page({ geo: context.geo }),
     metaDescription: pages[path].metaDescription,
   });
 
