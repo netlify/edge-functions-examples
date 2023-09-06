@@ -9,7 +9,7 @@ Edge Functions are limited to 50ms of CPU time, but this does not include time s
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
 ```ts
-import type { Context } from "https://edge.netlify.com";
+import type { Context } from "@netlify/edge-functions";
 
 export default (request: Request, context: Context) => {
   const body = new ReadableStream({

@@ -9,7 +9,7 @@ Use an Edge Function to add HTTP headers to any HTTP request at The Edge.
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
 ```ts
-import type { Context } from "https://edge.netlify.com";
+import type { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   const response = await context.next();

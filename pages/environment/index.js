@@ -9,7 +9,7 @@ export default {
       <h1>Use environment variables</h1>
       <p>Netlify Edge Functions support open-source Deno APIs. To access your Netlify environment variables in Edge Functions, use the <code>Deno.env</code> API.</p> 
 
-      <pre><code>import type { Context } from "https://edge.netlify.com";
+      <pre><code>import type { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   const value = Deno.env.get("MY_IMPORTANT_VARIABLE");

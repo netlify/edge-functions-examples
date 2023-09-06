@@ -8,7 +8,7 @@ export default {
     <section>
       <h1>Logging with Edge Functions</h1>
       <p>You can output content to the logs during the execution of your Edge Function.</p>
-      <pre><code>import type { Context } from "https://edge.netlify.com";
+      <pre><code>import type { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   console.log("Hello from the logging service");

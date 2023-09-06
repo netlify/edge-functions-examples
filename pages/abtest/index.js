@@ -11,7 +11,7 @@ export default {
       <p>Visitors can then be redirected to different pages, depending on the bucket and cookie they were assigned.</p> 
       <p>You could even use A/B testing in combination with Geolocation at The Edge!</p>
 
-      <pre><code>import type { Context } from "https://edge.netlify.com";
+      <pre><code>import type { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   // look for existing "test_bucket" cookie

@@ -9,7 +9,7 @@ You can use Edge Functions to create a long-running service that can stream data
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
 ```ts
-import type { Context } from "https://edge.netlify.com";
+import type { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   let index = 0

@@ -12,7 +12,7 @@ export default {
       This means you can create a long-running service that can stream data to the browser.
       </p>
 
-      <pre><code>import type { Context } from "https://edge.netlify.com";
+      <pre><code>import type { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   let index = 0

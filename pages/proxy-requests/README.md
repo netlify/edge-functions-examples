@@ -10,7 +10,7 @@ Edge Function.
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
 ```ts
-import { Context } from "https://edge.netlify.com";
+import { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   const joke = await fetch("https://icanhazdadjoke.com/", {

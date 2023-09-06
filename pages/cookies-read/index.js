@@ -8,7 +8,7 @@ export default {
     <section>
       <h1>Reading cookies</h1>
       <p>Use an Edge Function to read and manage HTTP cookies.</p>
-      <pre><code>import type { Context } from "https://edge.netlify.com";
+      <pre><code>import type { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {  
   // Read the value of a cookie

@@ -11,7 +11,7 @@ request to `/hello` with JavaScript's <code>toUpperCase()</code> function, using
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
 ```ts
-import { Context } from "https://edge.netlify.com";
+import { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   const url = new URL(request.url);
