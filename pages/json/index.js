@@ -10,7 +10,7 @@ export default {
       <p>You can use Edge Functions to return a JSON response by returning <code>Response.json()</code> with a JavaScript object — no need to <code>JSON.stringify</code>!</p>
       <p>In this example, we return a JSON object containing <code>hello: "world"</code>.</p>
 
-      <pre><code>import type { Context } from "https://edge.netlify.com";
+      <pre><code>import type { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   return Response.json({ hello: "world" });

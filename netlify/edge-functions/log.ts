@@ -1,4 +1,4 @@
-import type { Context } from "https://edge.netlify.com";
+import type { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   console.log("Hello from the logging service");

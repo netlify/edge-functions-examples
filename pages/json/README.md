@@ -10,7 +10,7 @@ You can use Edge Functions to return a JSON response by returning `Response.json
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
 ```ts
-import type { Context } from "https://edge.netlify.com";
+import type { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   return Response.json({ hello: "world" });

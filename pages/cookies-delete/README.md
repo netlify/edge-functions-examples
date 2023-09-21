@@ -9,7 +9,7 @@ Manipulate HTTP cookies
 Edge Functions are files held in the `netlify/edge-functions` directory.
 
 ```ts
-import type { Context } from "https://edge.netlify.com";
+import type { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   // Set a cookie

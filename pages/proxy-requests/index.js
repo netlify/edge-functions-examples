@@ -8,7 +8,7 @@ export default {
     <section>
       <h1>Proxy requests to another source</h1>
       <p>You can use <a href="https://developer.mozilla.org/en-US/docs/Web/API/fetch" target="_BLANK" rel=noopener>fetch()</a> to make requests to other sources via an Edge Function.</p>
-      <pre><code>import { Context } from "https://edge.netlify.com";
+      <pre><code>import { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
 

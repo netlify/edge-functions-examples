@@ -1,4 +1,4 @@
-import type { Context } from "https://edge.netlify.com";
+import type { Context } from "@netlify/edge-functions";
 
 function doSomethingSlow(): Promise<string> {
   return new Promise((resolve) => {

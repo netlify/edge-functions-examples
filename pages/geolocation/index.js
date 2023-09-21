@@ -22,7 +22,7 @@ export default {
       
       <p>Geolocation information is available on the <code>Context.geo</code> object.</p>
 
-      <pre><code>import { Context } from "https://edge.netlify.com";
+      <pre><code>import { Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   // Here's what's available on context.geo

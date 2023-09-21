@@ -13,7 +13,7 @@ export default {
         from the function and write to it when you have the data.
       </p>
 
-      <pre><code>import type { Context } from "https://edge.netlify.com";
+      <pre><code>import type { Context } from "@netlify/edge-functions";
 
 export default (request: Request, context: Context) => {
   const body = new ReadableStream({
