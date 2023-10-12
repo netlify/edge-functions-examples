@@ -22,6 +22,10 @@
   path = "/*"
 
 [[edge_functions]]
+  function = "method"
+  path = "/method"
+
+[[edge_functions]]
   function = "include"
   path = "/*"
 

@@ -26,15 +26,16 @@ export default {
     <li class="home__sectionListItem home__sectionListItem"><a class="home__sectionListItemLink" href="/example/proxy-requests">Proxy requests to another source</a></li>
     </ul>
     </section>
-    
+
     <section class="home__section">
-    <h3 class="home__sectionHeader">HTTP Headers</h3>
+    <h3 class="home__sectionHeader">HTTP Headers and Methods</h3>
     <ul class="home__sectionList">
     <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-request-header">Set custom HTTP request headers</a></li>
     <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/set-response-header">Set custom HTTP response headers</a></li>
+    <li class="home__sectionListItem"><a class="home__sectionListItemLink" href="/example/method">Configure HTTP methods</a></li>
     </ul>
     </section>
-    
+
     <section class="home__section">
       <h3 class="home__sectionHeader">Transforming responses</h3>
       <ul class="home__sectionList">
