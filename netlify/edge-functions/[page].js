@@ -14,6 +14,7 @@ import pageGeolocation from "../../pages/geolocation/index.js";
 import pageJson from "../../pages/json/index.js";
 import pageSetRequestHeader from "../../pages/set-request-header/index.js";
 import pageSetResponseHeader from "../../pages/set-response-header/index.js";
+import pageMethod from "../../pages/method/index.js";
 import pageCookiesSet from "../../pages/cookies-set/index.js";
 import pageCookiesRead from "../../pages/cookies-read/index.js";
 import pageCookiesDelete from "../../pages/cookies-delete/index.js";
@@ -39,6 +40,7 @@ const pages = {
   json: pageJson,
   "set-response-header": pageSetResponseHeader,
   "set-request-header": pageSetRequestHeader,
+  "method": pageMethod,
   "cookies-set": pageCookiesSet,
   "cookies-read": pageCookiesRead,
   "cookies-delete": pageCookiesDelete,
