@@ -14,3 +14,7 @@ export default async (request, context) => {
     headers: { "content-type": "text/html" },
   });
 };
+
+export const config = {
+  path: "/localized-content",
+};

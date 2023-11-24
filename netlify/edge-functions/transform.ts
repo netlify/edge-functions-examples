@@ -1,4 +1,4 @@
-import { Context } from "@netlify/edge-functions";
+import type { Config, Context } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   const url = new URL(request.url);
@@ -14,4 +14,8 @@ export default async (request: Request, context: Context) => {
 
   const text = await response.text();
   return new Response(text.toUpperCase(), response);
+};
+
+export const config: Config = {
+  path: "/*",
 };

@@ -62,7 +62,7 @@ const pages = {
 
 export default (request, context) => {
   const url = new URL(request.url);
-  const path = url.pathname.split("/example/")[1] || "home";
+  const path = context.params?.page || "home";
 
   console.log(`serve page for ${url} `);
 
@@ -78,4 +78,8 @@ export default (request, context) => {
   return new Response(html, {
     headers: { "content-type": "text/html" },
   });
+};
+
+export const config = {
+  path: ["/", "/example/:page"],
 };

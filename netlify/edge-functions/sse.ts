@@ -1,4 +1,4 @@
-import type { Context } from "@netlify/edge-functions";
+import type { Context, Config } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   let index = 0
@@ -15,4 +15,8 @@ export default async (request: Request, context: Context) => {
       "Content-Type": "text/event-stream",
     },
   });
+};
+
+export const config: Config = {
+  path: "/sse",
 };

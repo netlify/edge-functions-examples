@@ -15,3 +15,7 @@ const main = wasmInstance.exports.main as CallableFunction;
 export default async () => {
   return new Response(`The answer is ${main().toString()}`);
 }
+
+export const config = {
+  path: "/wasm",
+};

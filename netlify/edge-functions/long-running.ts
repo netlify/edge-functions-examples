@@ -1,4 +1,4 @@
-import type { Context } from "@netlify/edge-functions";
+import type { Context, Config } from "@netlify/edge-functions";
 
 function doSomethingSlow(): Promise<string> {
   return new Promise((resolve) => {
@@ -21,4 +21,8 @@ export default (request: Request, context: Context) => {
       "Content-Type": "text/plain",
     },
   });
+};
+
+export const config: Config = {
+  path: "/long-running",
 };
