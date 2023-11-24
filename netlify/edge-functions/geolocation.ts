@@ -1,4 +1,5 @@
-import { Context } from "@netlify/edge-functions";
+import type { Config, Context } from "@netlify/edge-functions";
+
 
 export default async (request: Request, context: Context) => {
   // Here's what's available on context.geo
@@ -23,4 +24,8 @@ export default async (request: Request, context: Context) => {
   return Response.json({
     geo: context.geo,
   });
+};
+
+export const config: Config = {
+  path: "/geolocation",
 };

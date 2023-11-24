@@ -1,123 +1,15 @@
 [dev]
-  framework = "#static"
+framework = "#static"
 
 [build]
-  command = "echo No build for this site, we are living on the edge"
-  publish = "public"
+command = "echo No build for this site, we are living on the edge"
+publish = "public"
 
 [context.production]
-  environment = { MY_IMPORTANT_VARIABLE = "this is a very important secret" }
+environment = { MY_IMPORTANT_VARIABLE = "this is a very important secret" }
 
-# The URL for each edge function
-[[edge_functions]]
-  function = "transform"
-  path = "/*"
-  
-[[edge_functions]]
-  function = "set-response-header"
-  path = "/*"
-
-[[edge_functions]]
-  function = "set-request-header"
-  path = "/*"
-
-[[edge_functions]]
-  function = "method"
-  path = "/method"
-
-[[edge_functions]]
-  function = "include"
-  path = "/*"
-
-[[edge_functions]]
-  path = "/hello"
-  function = "hello"
-
-[[edge_functions]]
-  path = "/geolocation"
-  function = "geolocation"
-
-[[edge_functions]]
-  path = "/json"
-  function = "json"
-
-[[edge_functions]]
-  path = "/cookies"
-  function = "cookies"
-
-[[edge_functions]]
-  path = "/rewrite"
-  function = "rewrite"
-
-[[edge_functions]]
-  path = "/abtest"
-  function = "abtest"
-
-[[edge_functions]]
-  path = "/image-internal"
-  function = "image-internal"
-
-[[edge_functions]]
-  path = "/image-external"
-  function = "image-external"
-  
-[[edge_functions]]
-  path = "/log"
-  function = "log"
-
-[[edge_functions]]
-  path = "/country-block"
-  function = "country-block"
-
-[[edge_functions]]
-  path = "/localized-content"
-  function = "localized-content"
-
-[[edge_functions]]
-  path = "/fetch-joke"
-  function = "proxy-requests"
-
-[[edge_functions]]
-  path = "/environment"
-  function = "environment"
-
-[[edge_functions]]
-  path = "/error"
-  function = "error"
-
-[[edge_functions]]
-  path = "/long-running"
-  function = "long-running"
-
-[[edge_functions]]
-  path = "/sse"
-  function = "sse"
-
-[[edge_functions]]
-  path = "/context-site"
-  function = "context-site"
-
-[[edge_functions]]
-  path = "/wasm"
-  function = "wasm"
-
-# Serve pages explaining each example 
-[[edge_functions]]
-  path = "/example/*"
-  function = "[page]"
-
-# Serve our index page
-[[edge_functions]]
-  path = "/"
-  function = "[page]"
 
 [[redirects]]
-  from = "/img/og/:text"
-  to = "https://res.cloudinary.com/netlify/image/upload/c_fit,g_west,h_400,co_rgb:FFFFFFFF,l_text:netlify.com:Pacaembu-Bold.ttf_57::text,w_1053,x_46/v1619123320/netlify.com/default-og-background-learn-more.png"
-  status = 200
-
-
-
-
-
-
+from = "/img/og/:text"
+to = "https://res.cloudinary.com/netlify/image/upload/c_fit,g_west,h_400,co_rgb:FFFFFFFF,l_text:netlify.com:Pacaembu-Bold.ttf_57::text,w_1053,x_46/v1619123320/netlify.com/default-og-background-learn-more.png"
+status = 200

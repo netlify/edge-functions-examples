@@ -1,4 +1,4 @@
-import { Context } from "@netlify/edge-functions";
+import type { Context, Config } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   // Here's what's available on context.geo
@@ -31,4 +31,8 @@ export default async (request: Request, context: Context) => {
   return new Response(`Hello there! You can freely access our content from ${countryName}!`, {
     headers: { "content-type": "text/html" },
   });
+};
+
+export const config: Config = {
+  path: "/country-block",
 };

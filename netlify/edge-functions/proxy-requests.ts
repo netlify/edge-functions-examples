@@ -1,4 +1,4 @@
-import { Context } from "@netlify/edge-functions";
+import type { Context, Config } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
 
@@ -9,4 +9,8 @@ export default async (request: Request, context: Context) => {
   });
   const jsonData = await joke.json();
   return Response.json(jsonData);
+};
+
+export const config: Config = {
+  path: "/fetch-joke",
 };

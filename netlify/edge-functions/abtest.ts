@@ -1,4 +1,4 @@
-import type { Context } from "@netlify/edge-functions";
+import type { Context, Config } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   // look for existing "test_bucket" cookie
@@ -28,4 +28,8 @@ export default async (request: Request, context: Context) => {
   return new Response(
     `Congratulations! You have been assigned ${bucketName} **${newBucketValue}**. View your browser cookies to check it out!`,
   );
+};
+
+export const config: Config = {
+  path: "/abtest",
 };

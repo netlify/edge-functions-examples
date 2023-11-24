@@ -1,4 +1,4 @@
-import type { Context } from "@netlify/edge-functions";
+import type { Context, Config } from "@netlify/edge-functions";
 
 export default async (request: Request, context: Context) => {
   const url = new URL(request.url);
@@ -26,4 +26,8 @@ export default async (request: Request, context: Context) => {
     : 'Cookie has not been set. You can do so by adding "?action=set" to the URL.';
 
   return new Response(message);
+};
+
+export const config: Config = {
+  path: "/cookies",
 };
