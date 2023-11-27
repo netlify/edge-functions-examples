@@ -8,6 +8,7 @@ import layout from "../../components/layout.js";
 import pageHome from "../../pages/home/index.js";
 import pageHello from "../../pages/hello/index.js";
 import pageTransform from "../../pages/transform/index.js";
+import pageHtmlrewriter from "../../pages/htmlrewriter/index.js";
 import pageInclude from "../../pages/include/index.js";
 import pageRewrite from "../../pages/rewrite/index.js";
 import pageGeolocation from "../../pages/geolocation/index.js";
@@ -40,7 +41,7 @@ const pages = {
   json: pageJson,
   "set-response-header": pageSetResponseHeader,
   "set-request-header": pageSetRequestHeader,
-  "method": pageMethod,
+  method: pageMethod,
   "cookies-set": pageCookiesSet,
   "cookies-read": pageCookiesRead,
   "cookies-delete": pageCookiesDelete,
@@ -55,9 +56,10 @@ const pages = {
   environment: pageEnvironment,
   "uncaught-exceptions": pageUncaughtExceptions,
   "context-site": pageContextSite,
-  "wasm": pageWasm,
+  wasm: pageWasm,
   "server-sent-events": pageSse,
   "long-running": pageLongRunning,
+  htmlrewriter: pageHtmlrewriter,
 };
 
 export default (request, context) => {
