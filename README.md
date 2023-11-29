@@ -22,6 +22,7 @@ Explore these examples here: https://edge-functions-examples.netlify.app/
 
 ## Transforming responses
 
+- [HTML transformation](/pages/htmlrewriter)
 - [Text transformation](/pages/transform)
 - [Content includes](/pages/include)
 
