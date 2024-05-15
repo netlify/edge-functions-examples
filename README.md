@@ -1,4 +1,5 @@
-![Netlify examples](https://user-images.githubusercontent.com/5865/159468750-df1c2783-39b2-40da-9c0f-971f72a7ea3f.png)
+![Netlify examples](https://github.com/netlify/edge-functions-examples/assets/7912948/d34a626d-1c65-492d-bb14-85f50d9b72cb)
+
 
 # [Netlify Edge Functions](https://www.netlify.com/products/?utm_campaign=devex&utm_source=edge-functions-examples&utm_medium=github&utm_content=Edge%20Functions%20Product%20Page#netlify-edge-functions) Examples
 
