@@ -11,4 +11,4 @@ Try these examples here: https://edge-functions-examples.netlify.app/
 
 This repo has been migrated into the [Netlify Examples monorepo](https://github.com/netlify/examples/tree/main/examples/edge-functions ).
 
-Explore the code for these examples, along with many others here: https://github.com/netlify/examples/
+Explore the code for these examples, along with many others here: https://github.com/netlify/examples/ !
